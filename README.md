@@ -1,87 +1,408 @@
-# Clinical AI Research Atlas
+<div align="center">
 
-A three-modality Streamlit research explorer: publication time-series, text/NLP, and coauthorship networks. Built for a DATS 6401 multimodality project and research-analytics portfolio.
+# 🩺 Clinical AI Research Atlas
 
-**Status:** implemented with real OpenAlex data and automated validation. Human relevance screening, topic interpretation, browser accessibility/mobile QA, and public deployment are not yet certified. Do not claim this corpus represents all clinical AI or that papers are clinically trustworthy.
+### Mapping the evolution, language, and collaboration networks of trustworthy clinical AI research
 
-## Run on your Mac
+**An interactive, evidence-linked research explorer built with real OpenAlex records (2016–2025).**
 
-Install Python 3.12, then open Terminal in this extracted folder:
+[![Explore Dashboard](https://img.shields.io/badge/EXPLORE-LIVE%20ATLAS-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://clinical-ai-research-atlas.streamlit.app/)
+[![Explore Code](https://img.shields.io/badge/EXPLORE-SOURCE%20CODE-24292F?style=for-the-badge&logo=github&logoColor=white)](app.py)
+[![Methodology](https://img.shields.io/badge/READ-METHODOLOGY-236D7D?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/METHODOLOGY.md)
 
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
+![Python](https://img.shields.io/badge/Python-3.12%20recommended-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Interactive-FF4B4B?logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?logo=plotly&logoColor=white)
+![NetworkX](https://img.shields.io/badge/NetworkX-Graph%20Analysis-2A7A78)
+![PyVis](https://img.shields.io/badge/PyVis-Interactive%20Networks-8053AF)
+![OpenAlex](https://img.shields.io/badge/Data-OpenAlex-157D75)
+![License](https://img.shields.io/badge/Code%20License-MIT-555555)
+
+[**🚀 Launch Atlas**](https://clinical-ai-research-atlas.streamlit.app/) · [**📚 Research methods**](docs/METHODOLOGY.md) · [**🧪 QA & testing**](docs/QA.md) · [**📊 Data audit**](docs/DATA_AUDIT.md)
+
+</div>
+
+---
+
+## The research question
+
+> **Within a search-defined corpus of clinical prediction and decision-support research, how do trustworthiness-related language, publication activity, and coauthorship patterns vary across 2016–2025?**
+
+Clinical AI research is often summarized with a single number: papers published, a topic frequency, or a central author. Each view tells only part of the story.
+
+**Clinical AI Research Atlas connects three complementary data modalities**—publication timelines, scientific text, and coauthor relationships—so that researchers can inspect the evidence behind patterns instead of relying on isolated charts.
+
+This is **exploratory research analytics**, not a systematic review or a clinical performance evaluation.
+
+### Project at a glance
+
+| Research dimension | Source / implementation |
+|:--|:--|
+| **Research corpus** | OpenAlex, search-defined 2016–2025 snapshot |
+| **Selected works** | **1,395** |
+| **Text-eligible works** | **1,209** |
+| **Network-eligible works** | **1,352** |
+| **Identified authors** | **6,464** |
+| **Core modalities** | Time-series · Text/NMF · Coauthorship network |
+| **Interface** | 5-tab Streamlit research application |
+| **Analytical libraries** | Pandas · NumPy · scikit-learn · Plotly · NetworkX · PyVis |
+| **Provenance** | Retrieval manifest, frozen processed files and documented methods |
+| **Interpretation** | Descriptive; human relevance/topic review remains to be completed |
+
+*Numbers describe the bundled study snapshot, not all clinical AI literature or a live OpenAlex census. Eligibility denominators differ by visualization.*
+
+---
+
+## Explore the Atlas
+
+**[▶ Open the interactive research dashboard](https://clinical-ai-research-atlas.streamlit.app/)**
+
+Use shared filters to select a publication period, research signal, topic, or search term. Then move between research language, collaboration structure, and source-paper evidence.
+
+| Workspace | Question it helps answer | Exploration |
+|:--|:--|:--|
+| **01 · Overview** | Which works are represented? | Corpus summary, coverage, selected papers |
+| **02 · Research Evolution** | How do publication activity and signals change over time? | Annual counts, overlapping trustworthiness signals, denominators |
+| **03 · Research Language** | What do selected abstracts discuss? | Term frequency, fixed NMF topics, paper/abstract inspection |
+| **04 · Collaboration Network** | Which authors are connected in this corpus? | Animated or fixed networks, author focus, community structure, adjacency matrix |
+| **05 · Synthesis & Methods** | What can—and cannot—be concluded? | Methodology, provenance, eligibility, limitations, exports |
+
+<details>
+<summary><strong>▶ Try this guided exploration</strong></summary>
+
+1. **Start broad:** open *Overview* and note the selected-work count and eligible populations.
+2. **Narrow the corpus:** choose a year range, a trustworthiness signal, or a research term in the shared controls.
+3. **Compare evolution:** use *Research Evolution* to see how counts and signal shares change; inspect denominators before interpreting small years.
+4. **Inspect language:** open *Research Language*, compare term frequencies and NMF themes, then read representative source records.
+5. **Explore collaboration:** open *Collaboration Network*, change the shared-paper threshold and layout, and inspect author or author-pair evidence.
+6. **Check interpretation:** open *Synthesis & Methods* for provenance, selection limitations, and available filtered exports.
+7. **Reset with care:** confirm the filters, chips, selected record counts, and charts return to the intended default state after a reset.
+
+**Interaction note:** Not every animated chart is a clickable cross-filter. Sidebar controls and evidence selectors are the reliable primary selection paths; see current UI guidance for supported interactions.
+
+</details>
+
+---
+
+## Three modalities, one research population
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 📈 Research evolution
+
+Explore annual publication counts, time coverage, and overlapping trustworthiness-signal shares.
+
+**Reading rule:** a rise in search results is not automatically a rise in all clinical AI research.
+
+</td>
+<td width="33%" valign="top">
+
+### 🧠 Research language
+
+Compare document-frequency terms, interpretable NMF themes, and underlying abstracts.
+
+**Reading rule:** topic weights and algorithmic labels are not probabilities or human-validated conclusions.
+
+</td>
+<td width="33%" valign="top">
+
+### 🕸 Collaboration structure
+
+Explore coauthor edges, communities, centrality, thresholds, layouts, and adjacency matrices.
+
+**Reading rule:** observed connectivity does not establish scientific influence, friendship, or clinical impact.
+
+</td>
+</tr>
+</table>
+
+### How the modalities connect
+
+```mermaid
+flowchart TD
+    A[OpenAlex frozen research snapshot] --> B[Study scope and eligibility]
+    B --> C[Shared user-selected paper set]
+    C --> D[Publication timeline]
+    C --> E[Abstracts and NMF topics]
+    C --> F[Coauthor graph]
+    D --> G[Interpretation with source evidence]
+    E --> G
+    F --> G
+    G --> H[Methods, caveats and exports]
 ```
 
-Open the local URL printed by Streamlit, normally http://localhost:8501. Prepared data are bundled: the application does **not** need an API key or an internet connection to compute charts. Source-record buttons require internet.
+The project uses a **shared analytical selection** while applying explicit text and graph eligibility rules. A paper can appear in the overall corpus without contributing to every modality.
 
-## Research question
+<details>
+<summary><strong>▶ Why the denominators differ</strong></summary>
 
-Within a search-defined corpus of clinical prediction and decision-support research, how do trustworthiness-related language, publication activity, and coauthorship patterns vary across 2016–2025?
+The main population contains **1,395 selected works**. Text-specific views require eligible text and therefore use **1,209 text-eligible works**. Network analyses require usable authorship metadata and therefore use **1,352 network-eligible works**.
 
-## Five tabs
+These are **different analytical subsets**, not contradictory totals. Inspect the numerator, denominator, filter state and missing-data rules together when reporting a result.
 
-1. Overview: research question, selected coverage, traceable papers.
-2. Research Evolution: yearly counts, overlapping signal shares, denominator/missingness tables.
-3. Research Language: document-frequency bars, fixed NMF topics, actual abstracts, model evaluation.
-4. Collaboration Network: structural encodings, author focus, layouts, threshold, adjacency matrix, rankings.
-5. Synthesis & Methods: limits, provenance, eligibility, audit, filtered CSV export.
+</details>
 
-Shared year/signal/topic controls use one filtering function. Text and network eligibility rules are explicit. Color is supplemented by line styles, marker shapes, text summaries, and data tables.
+---
 
-## Understand the data before presenting
+## Analytical design
 
-Read `docs/DATA_AUDIT.md`, `docs/METHODOLOGY.md`, and `docs/ACCEPTANCE_MATRIX.md`. Complete `data/processed/manual_review.csv` and `data/processed/topic_review.csv` yourself. No human labels have been invented. Work type is metadata, not proof of peer review. The selection includes reviews and preprints where identified by OpenAlex.
+### 01 · Publication activity and trustworthiness signals
 
-## Reproduce preprocessing from the bundled raw snapshot
+Annual counts and signal-share trends help examine how the *selected corpus* changes from 2016 through 2025. Signals can overlap: a paper may discuss multiple concepts such as calibration, explainability, interpretability, or uncertainty. Shares should not be summed as mutually exclusive categories.
+
+<details>
+<summary><strong>▶ What a publication trend does—and does not—measure</strong></summary>
+
+The source is a query-defined OpenAlex snapshot. Changes in indexing, search language, eligibility, source types and coverage can change the observed yearly totals.
+
+The repository includes a dedicated [2025 spike audit](docs/2025_SPIKE_AUDIT.md). Read it before interpreting the apparent increase in retrieved papers as a field-wide research trend.
+
+</details>
+
+### 02 · Scientific text and NMF themes
+
+The language explorer combines transparent term frequencies with **non-negative matrix factorization (NMF)** topic assignments.
+
+- Document-frequency bars indicate how many eligible documents contain a term, not necessarily how often the token appears.
+- Topic labels are interpretive descriptions of statistical patterns, pending human review.
+- Original paper titles, abstracts and source links provide a way to inspect topic assignments.
+- Topic evaluation material is documented rather than presented as independent scientific validation.
+
+<details>
+<summary><strong>▶ How to interpret a topic bubble</strong></summary>
+
+A visually large circle indicates a greater quantity under the displayed topic-size encoding. Its position and proximity need not encode semantic distance unless explicitly documented.
+
+Compare the circle with its exact-count legend and supporting papers. Small or visually compelling clusters are not automatically clinically meaningful.
+
+</details>
+
+### 03 · Coauthor communities and network evidence
+
+NetworkX and PyVis support exploration of researcher relationships derived from **shared authored works** in the selected study corpus.
+
+| Visual encoding / measure | Interpretation |
+|:--|:--|
+| **Node** | Author identified in eligible work metadata |
+| **Edge** | Observed coauthorship relationship |
+| **Edge weight / shared-paper threshold** | Repeated coauthorship strength in this corpus |
+| **Node size / strength** | Selected structural metric (check view-specific legend) |
+| **Color** | Detected graph community or grouping |
+| **Force-directed layout** | Interactive structural overview, not geographical position |
+| **Adjacency matrix** | Pairwise connection structure without edge overlap |
+| **Author-pair evidence** | The paper records underlying a selected connection |
+
+<details>
+<summary><strong>▶ Broad and repeated-collaboration views</strong></summary>
+
+A network including authors with **at least one shared paper** differs substantially from a stricter network requiring **at least two shared papers**. Compare the displayed threshold, sample cap, node count and edge count before drawing conclusions.
+
+Algorithmically detected communities describe patterns of connections in the displayed graph. They do **not** establish real organizational groups or individual research quality.
+
+</details>
+
+---
+
+## Reproducibility and data provenance
+
+The project preserves processed study data and documents its retrieval scope. Core reproducibility resources include:
+
+| Resource | Purpose |
+|:--|:--|
+| [`configs/study_scope.json`](configs/study_scope.json) | Search scope, eligible types, dates and seeds |
+| [`data/processed/retrieval_manifest.json`](data/processed/retrieval_manifest.json) | Data retrieval/provenance |
+| [`data/processed/works.jsonl`](data/processed/works.jsonl) | Bundled processed work-level records |
+| [`docs/DATA_AUDIT.md`](docs/DATA_AUDIT.md) | Quality and scope review |
+| [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) | Selection, features and analytical definitions |
+| [`docs/REVIEW_PROTOCOL.md`](docs/REVIEW_PROTOCOL.md) | Human review process |
+| [`docs/ACCEPTANCE_MATRIX.md`](docs/ACCEPTANCE_MATRIX.md) | Verification and remaining acceptance criteria |
+
+The original retrieval query and exact study choices are documented in the linked configuration and manifest. A **new OpenAlex search is not identical to reproducing the frozen snapshot**.
+
+<details>
+<summary><strong>▶ Rebuild the processed study outputs</strong></summary>
+
+Where the frozen raw snapshot is available locally:
 
 ```bash
 python scripts/build_outputs.py --snapshot data/raw/snapshot_final_20261022
 ```
 
-This regenerates processed outputs, including blank review sheets; COPY completed review sheets to `reviews/` before rebuilding. Topic models are not pickled; the fixed assignments and evaluation tables are portable JSON/CSV. Exact direct package versions are pinned in `requirements.txt`; `docs/environment.txt` records the complete observed environment.
+Do not overwrite completed manual-review sheets. Preserve them separately before rebuilding, as described in the repository's original setup documentation and review protocol.
 
-## Fetch a NEW dated snapshot
+To retrieve a newly dated snapshot:
 
 ```bash
 python scripts/fetch_openalex.py --output data/raw/snapshot_NEW_DATE
 python scripts/build_outputs.py --snapshot data/raw/snapshot_NEW_DATE
 ```
 
-The output directory must be new. OpenAlex may impose budgets or require an API key for some requests. If needed, set `OPENALEX_API_KEY` in your environment; never commit it. The fetch script preserves exact filters, counts, page hashes, and retrieval time. Basic pagination supports only the first 10,000 results: larger searches require partitioning or authenticated cursor pagination. API search results can change; reproducing the bundled raw snapshot is distinct from re-querying today's database.
+OpenAlex API requirements and search results can change. Store secrets in environment variables rather than the repository.
 
-## Tests
+</details>
+
+---
+
+## Run locally
+
+**Recommended:** Python 3.12 in a clean virtual environment.
+
+```bash
+git clone https://github.com/nazishatta/clinical-ai-research-atlas.git
+cd clinical-ai-research-atlas
+
+python3.12 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+Open **http://localhost:8501** (or the URL printed by Streamlit).
+
+<details>
+<summary><strong>▶ Windows setup</strong></summary>
+
+```powershell
+git clone https://github.com/nazishatta/clinical-ai-research-atlas.git
+cd clinical-ai-research-atlas
+py -3.12 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+</details>
+
+### Run tests
 
 ```bash
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-AppTest simulates Streamlit runs; it does not certify browser pixels, touch behavior, or screen-reader usability. See `docs/QA.md` for the remaining checks.
+**Test-status transparency:** a prior local run reported **14 passed and 1 failed** because a network-label test expected hidden author labels while the newer interface displays them. The suite must be rerun after that test is appropriately corrected. A successful browser launch is not a substitute for passing automated tests.
 
-## Deploy
+---
 
-1. Create your own GitHub repository and add this project.
-2. Retain the manageable `data/processed/` files. The app needs them at runtime.
-3. Raw data are ignored by default; preserve the bundled raw snapshot separately or provide a versioned download/source regeneration route.
-4. In Streamlit Community Cloud, select the repository, `app.py`, and Python 3.12.
-5. After deployment, perform `docs/QA.md` against the real URL, including all five tabs.
-6. Submit the live URL, repository, and narrative required by Blackboard.
+## Project structure
 
-No repository has been published and no public deployment is claimed in this package.
+<details open>
+<summary><strong>▶ Expand repository structure</strong></summary>
 
-## Attribution and AI assistance
+```text
+clinical-ai-research-atlas/
+├── app.py                       # Streamlit interface
+├── src/
+│   ├── analysis.py              # Research analysis
+│   ├── evidence.py              # Source/evidence logic
+│   ├── motion.py                # Animated plots
+│   ├── topic_bubbles.py         # NMF topic circles
+│   ├── live_network.py          # Interactive PyVis network
+│   ├── clustered_network.py     # Network cluster views
+│   └── dense_clusters.py        # Additional cluster layout
+├── configs/
+│   └── study_scope.json
+├── data/
+│   └── processed/               # Prepared analytical outputs
+├── docs/                        # Methods, QA, reviews, deployment
+├── scripts/                     # Fetch, build and validation scripts
+├── tests/                       # Automated tests
+├── validation/                  # Validation evidence
+├── .streamlit/
+│   └── config.toml
+├── requirements.txt
+└── README.md
+```
 
-Source: OpenAlex, https://openalex.org and https://help.openalex.org. Retrieval details are in `data/processed/retrieval_manifest.json`. OpenAlex publishes its data under CC0; abstract text may retain rights of its original authors/publishers. Retain source links and check intended redistribution conditions. Source attribution is also good scholarly practice.
+</details>
 
-AI assisted coding, documentation, computational checks, and QA design. The project owner must inspect the data, make and defend analytical decisions, verify interpretations, and disclose assistance according to the actual course policy. The software does not substitute for that review.
+---
 
-Code license: MIT (`LICENSE`). Third-party data are not relicensed by the code license.
+## Visualization integrity, accessibility and limitations
 
-## Full-bundle additions
+This Atlas intentionally distinguishes **analytical patterns** from **independent scientific conclusions**.
 
-Mac helpers: `Setup_Mac.command`, `Launch_Mac.command`, and `Test_Mac.command`. These scripts are provided and shell-syntax checked; they have not been executed on your Mac. See `docs/DEPLOYMENT.md`.
+**Interpretation safeguards**
 
-The 2025 increase is investigated in `docs/2025_SPIKE_AUDIT.md`, with underlying source/type/month tables and query-variant evidence in `docs/spike_audit/`. Human relevance/topic evaluation follows `docs/REVIEW_PROTOCOL.md`. Use `python scripts/verify_bundle.py` to verify the packaged file hashes.
+- Search-based selection limits generalization to the entire clinical AI literature.
+- Eligibility requirements differ for text, network and total-paper views.
+- A publication result is not proof of peer review or clinical effectiveness.
+- NMF topics require human inspection before substantive interpretation.
+- Network communities and centrality are structural patterns, not validated influence scores.
+- Counts, filters and source papers must accompany any claim about trends.
+- Review sheets and independent coverage assessment remain part of the research validation workflow.
+
+**Accessibility considerations**
+
+Tables, visible labels, supplementary line styles, fixed visual alternatives and source links can reduce dependence on one graphical representation. Full keyboard, mobile, reduced-motion and screen-reader behavior still require systematic verification. Consult [`docs/QA.md`](docs/QA.md).
+
+**Current quality status**
+
+The app has been opened and interacted with in a deployed-browser review. That review also identified issues requiring verification or correction, including reset-state synchronization, some clipped labels, animation-control wording and network label crowding. These are tracked as review findings, **not** presented as completed fixes.
+
+<details>
+<summary><strong>▶ Known validation work before a stronger research claim</strong></summary>
+
+1. Complete human relevance screening and an independent literature-coverage benchmark.
+2. Review representative NMF topic documents and interpret the resulting labels.
+3. Reconcile the 2025 trend with indexing/source and eligibility checks.
+4. Verify linked paper and author evidence after filtering and reset interactions.
+5. Complete browser accessibility, small-screen and reduced-motion testing.
+6. Re-run clean-install and automated tests for the precise published commit.
+
+See [`docs/RELEASE_STATUS.md`](docs/RELEASE_STATUS.md), [`docs/REVIEW_PROTOCOL.md`](docs/REVIEW_PROTOCOL.md) and [`docs/QA.md`](docs/QA.md).
+
+</details>
+
+---
+
+## Built with
+
+| Technology | Role |
+|:--|:--|
+| **Python** | Processing and application logic |
+| **Streamlit** | Multi-tab web UI, filters, cached computation |
+| **Pandas / NumPy** | Data preparation and summary analysis |
+| **scikit-learn** | NMF text-topic modeling and related analysis |
+| **Plotly** | Interactive research and temporal charts |
+| **NetworkX** | Coauthorship graphs and structural analysis |
+| **PyVis** | Dynamic network exploration |
+| **OpenAlex** | Research metadata source |
+| **Pytest** | Automated regression tests |
+| **GitHub / Streamlit Community Cloud** | Version control and hosted application |
+
+---
+
+## Attribution, ethics and license
+
+**Research metadata:** [OpenAlex](https://openalex.org/). The data snapshot and retrieval scope are documented in the [manifest](data/processed/retrieval_manifest.json). OpenAlex metadata is generally released under CC0; third-party publication content, including some abstracts, can retain separate rights.
+
+**Responsible use:** This project is for studying research patterns, not making medical decisions or ranking researchers by scientific worth.
+
+**AI assistance:** AI tools assisted with code, documentation and checking workflows. The project author remains responsible for research design, inspection of evidence, conclusions and compliance with applicable course disclosure policies.
+
+**Code license:** [MIT](LICENSE). The code license does not relicense third-party research content.
+
+---
+
+## Author
+
+**Nazish Atta** · Data Science · Research Analytics · Interactive Visualization
+
+[GitHub Profile](https://github.com/nazishatta) · [Project Repository](https://github.com/nazishatta/clinical-ai-research-atlas) · [Live Atlas](https://clinical-ai-research-atlas.streamlit.app/)
+
+<div align="center">
+
+---
+
+### Explore the publications. Inspect the language. Follow the evidence.
+
+[![Open Clinical AI Research Atlas](https://img.shields.io/badge/OPEN-CLINICAL%20AI%20RESEARCH%20ATLAS-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://clinical-ai-research-atlas.streamlit.app/)
+
+<sub>Real OpenAlex data · Three modalities · Explicit research limitations</sub>
+
+</div>
