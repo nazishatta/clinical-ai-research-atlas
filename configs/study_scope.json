@@ -1,0 +1,14 @@
+{
+  "title": "Clinical AI Research Atlas",
+  "question": "Within a search-defined corpus of clinical prediction and decision-support research, how do trustworthiness-related language, publication activity, and coauthorship patterns vary across 2016–2025?",
+  "start_year": 2016,
+  "end_year": 2025,
+  "query": "(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+  "search_field": "title_and_abstract.search",
+  "language": "en",
+  "eligible_types": ["article", "review", "preprint"],
+  "seed": 42,
+  "topic_counts": [5, 8, 10],
+  "topic_seeds": [0, 7, 21, 42, 99],
+  "limitations": "Search terms select trustworthiness language by design. Counts and theme shares do not estimate all clinical AI. OpenAlex type does not establish peer review."
+}
