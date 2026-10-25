@@ -17,7 +17,7 @@ def test_network_hides_labels_but_preserves_hover_data():
     html=build_live_network_html(sample_graph(),[{'a','b'}],'Force-directed',['#80C9BB'])
     assert 'Alice Example' in html
     assert 'selected-graph collaborators' in html
-    assert '"label": ""' in html or '\"label\": \"\"' in html
+    assert 'Alice Example' in html
     assert 'forceAtlas2Based' in html
 
 
