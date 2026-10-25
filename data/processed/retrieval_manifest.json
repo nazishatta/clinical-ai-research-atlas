@@ -1,0 +1,94 @@
+{
+  "retrieved_at_utc": "2026-10-22T06:23:36.781569+00:00",
+  "endpoint": "https://api.openalex.org/works",
+  "filter": "from_publication_date:2016-01-01,to_publication_date:2025-12-31,title_and_abstract.search:(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+  "expected_count": 2100,
+  "retrieved_count": 2100,
+  "retrieval_complete": true,
+  "pagination": "basic pages (within OpenAlex 10,000-result limit)",
+  "pages": [
+    {
+      "file": "page_001.json",
+      "records": 200,
+      "sha256": "48099890148790a78261bf402bcff54af762f8e38caf24316d4ca349cbf80c7f"
+    },
+    {
+      "file": "page_002.json",
+      "records": 200,
+      "sha256": "1e7a542227a8a1ecdfab47f80e13f3294ade288361f94c383069b69fb4358872"
+    },
+    {
+      "file": "page_003.json",
+      "records": 200,
+      "sha256": "ae95b5ff6d1481b994da8a9cfb470792d29bb7a27ed38a1f61d527a06eae0e13"
+    },
+    {
+      "file": "page_004.json",
+      "records": 200,
+      "sha256": "d1f92b54c431519d2aaabbdb783c62a6226bdc46ea80509af501e8cef9f5cf50"
+    },
+    {
+      "file": "page_005.json",
+      "records": 200,
+      "sha256": "40bf5ad829e2fa30ddf3f3300086592e69aabf9f7680b8e752008cd6f9aecc24"
+    },
+    {
+      "file": "page_006.json",
+      "records": 200,
+      "sha256": "ea045472cd55dbaa5a53f52f97c4b185188691acda2b1de2f486a8caccca7203"
+    },
+    {
+      "file": "page_007.json",
+      "records": 200,
+      "sha256": "620c2da9267e1ba20fdfbc173e676584feeafc98dabae55add7c5fcfc1eef56c"
+    },
+    {
+      "file": "page_008.json",
+      "records": 200,
+      "sha256": "e7fd03bd7d403071e8ff280319ed14426eb77927819ed48702497edf201230fb"
+    },
+    {
+      "file": "page_009.json",
+      "records": 200,
+      "sha256": "2c80176cb4f4193b78b91140e1e995fc127c08c698a28d65d6009f5409b5b765"
+    },
+    {
+      "file": "page_010.json",
+      "records": 200,
+      "sha256": "7339fcb4f43eef84d794f88a4eb6975693cc05ac62e3abe203c967b36c901122"
+    },
+    {
+      "file": "page_011.json",
+      "records": 100,
+      "sha256": "74b5374c5940b5b7d981259eaf0df08076b26988c54afa5156c1e0df6dc511c3"
+    }
+  ],
+  "scope": {
+    "title": "Clinical AI Research Atlas",
+    "question": "Within a search-defined corpus of clinical prediction and decision-support research, how do trustworthiness-related language, publication activity, and coauthorship patterns vary across 2016\u20132025?",
+    "start_year": 2016,
+    "end_year": 2025,
+    "query": "(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "search_field": "title_and_abstract.search",
+    "language": "en",
+    "eligible_types": [
+      "article",
+      "review",
+      "preprint"
+    ],
+    "seed": 42,
+    "topic_counts": [
+      5,
+      8,
+      10
+    ],
+    "topic_seeds": [
+      0,
+      7,
+      21,
+      42,
+      99
+    ],
+    "limitations": "Search terms select trustworthiness language by design. Counts and theme shares do not estimate all clinical AI. OpenAlex type does not establish peer review."
+  }
+}

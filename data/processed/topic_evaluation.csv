@@ -1,0 +1,4 @@
+topics,mean_aligned_cosine,mean_top10_jaccard,mean_reconstruction_error,all_runs_converged
+5,0.999999999996556,1.0,33.103102701786995,True
+8,0.9999999995528246,1.0,32.88504951149246,True
+10,0.9999995093987767,1.0,32.77289019874279,False

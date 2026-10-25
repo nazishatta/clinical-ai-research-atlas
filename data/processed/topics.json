@@ -1,0 +1,132 @@
+[
+  {
+    "id": 0,
+    "label": "T1 \u00b7 care / health / patients",
+    "terms": [
+      "care",
+      "health",
+      "patients",
+      "information",
+      "patient",
+      "tools",
+      "time",
+      "example",
+      "et",
+      "risk",
+      "al",
+      "important"
+    ],
+    "representative_ids": [
+      "https://openalex.org/W3203350462",
+      "https://openalex.org/W4367047646",
+      "https://openalex.org/W4200168381",
+      "https://openalex.org/W4401153192",
+      "https://openalex.org/W4306901527"
+    ],
+    "label_status": "automatic_terms_not_expert_validated"
+  },
+  {
+    "id": 1,
+    "label": "T2 \u00b7 patients / prediction / curve",
+    "terms": [
+      "patients",
+      "prediction",
+      "curve",
+      "validation",
+      "auc",
+      "risk",
+      "regression",
+      "calibration",
+      "machine",
+      "machine learning",
+      "95",
+      "ci"
+    ],
+    "representative_ids": [
+      "https://openalex.org/W4410477942",
+      "https://openalex.org/W4407174768",
+      "https://openalex.org/W4412049062",
+      "https://openalex.org/W4411463016",
+      "https://openalex.org/W4416388403"
+    ],
+    "label_status": "automatic_terms_not_expert_validated"
+  },
+  {
+    "id": 2,
+    "label": "T3 \u00b7 feature / learning / accuracy",
+    "terms": [
+      "feature",
+      "learning",
+      "accuracy",
+      "framework",
+      "classification",
+      "deep",
+      "features",
+      "disease",
+      "interpretable",
+      "deep learning",
+      "dataset",
+      "machine"
+    ],
+    "representative_ids": [
+      "https://openalex.org/W4414888981",
+      "https://openalex.org/W7216038800",
+      "https://openalex.org/W7166559662",
+      "https://openalex.org/W7215703104",
+      "https://openalex.org/W4413410253"
+    ],
+    "label_status": "automatic_terms_not_expert_validated"
+  },
+  {
+    "id": 3,
+    "label": "T4 \u00b7 ai / challenges / healthcare",
+    "terms": [
+      "ai",
+      "challenges",
+      "healthcare",
+      "intelligence",
+      "artificial intelligence",
+      "ethical",
+      "review",
+      "artificial",
+      "applications",
+      "integration",
+      "medicine",
+      "privacy"
+    ],
+    "representative_ids": [
+      "https://openalex.org/W7219825120",
+      "https://openalex.org/W7219615042",
+      "https://openalex.org/W7219741977",
+      "https://openalex.org/W7219649477",
+      "https://openalex.org/W7218191144"
+    ],
+    "label_status": "automatic_terms_not_expert_validated"
+  },
+  {
+    "id": 4,
+    "label": "T5 \u00b7 ai / xai / cdss",
+    "terms": [
+      "ai",
+      "xai",
+      "cdss",
+      "trust",
+      "explainable",
+      "systems",
+      "decision",
+      "support systems",
+      "intelligence",
+      "artificial intelligence",
+      "artificial",
+      "decision making"
+    ],
+    "representative_ids": [
+      "https://openalex.org/W4415620636",
+      "https://openalex.org/W4303520777",
+      "https://openalex.org/W7219924872",
+      "https://openalex.org/W4410844459",
+      "https://openalex.org/W4414335309"
+    ],
+    "label_status": "automatic_terms_not_expert_validated"
+  }
+]

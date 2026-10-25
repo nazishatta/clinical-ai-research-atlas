@@ -1,0 +1,706 @@
+id,title,reason
+https://openalex.org/W4401863402,Explainable Artificial Intelligence on Biosignals for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4384157938,Explainable Artificial Intelligence in Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W4312492035,Towards interpretable machine learning for clinical decision support,ineligible_document_type
+https://openalex.org/W4404031256,Explainable Machine Learning Models for Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W7154732377,Explainable Artificial Intelligence for Clinical Decision Support in Precision Healthcare Systems,non_english_or_unknown_language
+https://openalex.org/W4414500387,Explainable AI for Diabetes Risk Assessment: Enhancing Clinical Decision Support with Interpretable Machine Learning Models,ineligible_document_type
+https://openalex.org/W4413447401,Explainable Artificial Intelligence for Clinical Decision Support in Cardiac Rhythm Device Programming,ineligible_document_type
+https://openalex.org/W7131433872,A Human-Centered Approach to Interpretable Machine Learning in Clinical Decision Support Systems,non_english_or_unknown_language
+https://openalex.org/W4405921873,Explaining Uncertainty in AI for Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W7160271573,Explainable AI in Healthcare: Interpretable Models for Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4281483766,Using Explainable Artificial Intelligence Models (ML) to Predict Suspected Diagnoses as Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7161628600,Explainable Artificial Intelligence For Predictive Healthcare Analytics : A Data-Driven Framework For Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4417517907,Explainable artificial intelligence models to improve clinical decision support in low resource healthcare settings,non_english_or_unknown_language
+https://openalex.org/W4407889140,Interpretable ('explainable') machine learning in osteoporosis case finding: using SHAP values in clinical decision-support for the FREMML fracture prediction algorithm,ineligible_document_type
+https://openalex.org/W4290805648,Embedding Explainable Artificial Intelligence in Clinical Decision Support Systems: The Brain Age Prediction Case Study,ineligible_document_type
+https://openalex.org/W7159960742,Knowledge Graph-Enhanced Artificial Intelligence for Intelligent Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W7112291284,Combating Infertility: Machine Learning for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W3200497587,HARNESSING MACHINE LEARNING IN CLINICAL DECISION SUPPORT: THEORY AND PRACTICE,ineligible_document_type
+https://openalex.org/W3212532165,Opening the black-box of artificial intelligence predictions on clinical decision support systems,ineligible_document_type
+https://openalex.org/W4401559641,Explainable artificial intelligence (EAI),ineligible_document_type
+https://openalex.org/W4309125756,Developing clinical prediction models for post-treatment substance use relapse with explainable artificial intelligence,ineligible_document_type
+https://openalex.org/W7118190767,Use of Artificial Intelligence in Breast Ultrasound Imaging: Diagnosis and Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4413061198,Real-time clinical decision support with explainable AI: Balancing accuracy and interpretability in high-stakes environments,non_english_or_unknown_language
+https://openalex.org/W4404788929,Leveraging AI and Machine Learning for Next-Generation Clinical Decision Support Systems (CDSS),ineligible_document_type
+https://openalex.org/W4384269398,Artificial Intelligence and Machine Learning in Medical Science,ineligible_document_type
+https://openalex.org/W4385374992,Artificial Intelligence and Machine Learning in Medical Industry,ineligible_document_type
+https://openalex.org/W4382769984,Artificial Intelligence and Machine Learning in Medical Industry,ineligible_document_type
+https://openalex.org/W4402475035,Efficient Machine Learning Model Deployment in Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W3170544780,A User-Centered Design of Explainable AI for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7162891256,Intelligent multi-modal cardiovascular disease detection framework using hybrid deep learning and explainable artificial intelligence: a clinical decision support perspective,non_english_or_unknown_language
+https://openalex.org/W7211940620,"Explainable Artificial Intelligence for Clinical Decision Support Systems: A Systematic Review of Explanation Methods, Clinician Evaluation Frameworks, and Impact on Diagnostic Accuracy",non_english_or_unknown_language
+https://openalex.org/W4415067913,Assessing and Quantifying Perceived Trust in Interpretable Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4234415584,Interpretability of Machine Intelligence in Medical Image Computing and Multimodal Learning for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4416970700,An intelligent clinical decision support for heart disease prediction using machine learning,ineligible_document_type
+https://openalex.org/W4411495721,Machine Learning Based Clinical Decision Support System for the Diagnosis of Knee Injuries,ineligible_document_type
+https://openalex.org/W7154004029,Explainable Deep Learning Models for Improved Clinical Decision Support Systems,non_english_or_unknown_language
+https://openalex.org/W4390542941,Integrating Machine Learning in Clinical Decision Support for Heart Failure Diagnosis: Case Study,ineligible_document_type
+https://openalex.org/W7151871487,Machine Learning in Clinical Decision Support Systems: Bridging Data and Decision-Making,ineligible_document_type
+https://openalex.org/W7160451418,Evaluating the explainability of AI-driven clinical decision support tools,non_english_or_unknown_language
+https://openalex.org/W7108480775,Artificial intelligence system for delivering interactive and verifiable guideline-based clinical decision support in hematology,ineligible_document_type
+https://openalex.org/W4415722199,The Impact of Artificial Intelligence in Clinical Decision Support Systems Tools on Patient Outcomes and Healthcare Delivery,ineligible_document_type
+https://openalex.org/W7125961575,Explainable Machine Learning for Clinical Prediction of High-Flow Nasal Cannula Therapy in Pediatric Bronchiolitis,non_english_or_unknown_language
+https://openalex.org/W4390992030,Employing Nudge Theory and Persuasive Principles with Explainable AI in Clinical Decision Support,ineligible_document_type
+https://openalex.org/W3209009742,Editorial: Explainable Artificial Intelligence (XAI) in Systems Neuroscience,ineligible_document_type
+https://openalex.org/W4360764660,Towards Fairness and Interpretability: Clinical Decision Support for Acute Coronary Syndrome,ineligible_document_type
+https://openalex.org/W4387006409,Explainable AI-Based Clinical Decision Support System for Obesity Comorbidity Analysis,ineligible_document_type
+https://openalex.org/W7163393066,Artificial intelligence clinical decision support systems for cardiovascular magnetic resonance imaging in aortic valve disease,non_english_or_unknown_language
+https://openalex.org/W3168381833,Using knowledge Graphs to Enhance the Interpretability of Clinical Decision Support Model,ineligible_document_type
+https://openalex.org/W7110950038,"Bayesian inference, machine learning in Cardiac Mechanics for real-time clinical decision support",non_english_or_unknown_language
+https://openalex.org/W7212297799,Adoption Barriers for Artificial Intelligence-Assisted Clinical Decision Support in Public Hospitals: A Policy and Management Perspective,non_english_or_unknown_language
+https://openalex.org/W3194445373,Machine Learning Frameworks for Data-Driven Personalized Clinical Decision Support and the Clinical Impact,ineligible_document_type
+https://openalex.org/W7115567756,Artificial Intelligence-Enhanced Clinical Decision Support Systems in Emergency Medical Services: A Framework for Implementation and Evaluation.,non_english_or_unknown_language
+https://openalex.org/W4410448004,Enhancing Clinical Decision Support: A Heuristic Evaluation of Explainable AI in Healthcare Dashboards,ineligible_document_type
+https://openalex.org/W4414459214,Towards Reliable and Transparent Diabetes Diagnosis with an Explainable Ensemble Framework for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7125603967,Machine Learning–Driven Clinical Decision Support Systems for Improving Patient Outcomes in US Healthcare,non_english_or_unknown_language
+https://openalex.org/W4389247899,Interpretable Artificial Intelligence (AI) Differentiates Prefibrotic Primary Myelofibrosis (prePMF) from Essential Thrombocythemia (ET): A Multi-Center Study of a New Clinical Decision Support Tool,ineligible_document_type
+https://openalex.org/W4396833139,Translating Human-Centred Artificial Intelligence for Clinical Decision Support Systems into Practice: A Medical Retina Case Study.,ineligible_document_type
+https://openalex.org/W4391100511,A Secure Remote Health Monitoring for Heart Disease Prediction Using Machine Learning and Deep Learning Techniques in Explainable Artificial Intelligence Framework,ineligible_document_type
+https://openalex.org/W4413456252,AXAI-CDSS: An Affective Explainable AI-Driven Clinical Decision Support System for Cannabis Use,ineligible_document_type
+https://openalex.org/W7219337623,Explainable Artificial Intelligence for Parkinson’s disease diagnosis model,ineligible_document_type
+https://openalex.org/W4413135939,Explainable Artificial Intelligence and Digital Transformation in Healthcare,ineligible_document_type
+https://openalex.org/W7124153909,Artificial Intelligence-Clinical Decision Support Systems: Integrating Intelligent Evidence Retrieval with Advanced AI for Personalized Healthcare,non_english_or_unknown_language
+https://openalex.org/W4412174774,Breast Cancer Detection Using Explainable Artificial Intelligence,ineligible_document_type
+https://openalex.org/W7128622780,MERIT: A Clinical Decision Support System Framework for Merging Multi-Perspective Machine Learning Model Insights,non_english_or_unknown_language
+https://openalex.org/W7117428318,"EXPLAINABLE ARTIFICIAL INTELLIGENCE (XAI) FOR MEDICAL DIAGNOSIS: A Comprehensive Review of Interpretability Frameworks, Clinical Integration, and Trust Metrics",non_english_or_unknown_language
+https://openalex.org/W4416905054,Demystifying Pulmonary Diagnostics: A Novel Explainable AI Framework for Transparent Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W7126901964,Federated Inductive Logic Programming for Explainable Artificial Intelligence,ineligible_document_type
+https://openalex.org/W4402199753,Exploring Algorithmic Explainability: Generating Explainable AI Insights for Personalized Clinical Decision Support Focused on Cannabis Intoxication in Young Adults,ineligible_document_type
+https://openalex.org/W7117297171,Explainable Systems Engineering: A Causal AI Approach to Audit-Ready Clinical Decision Support on the Cloud,non_english_or_unknown_language
+https://openalex.org/W7118133013,Real-world Barriers and Facilitators to Implementing Artificial Intelligence-based Clinical Decision Support Systems: Scoping Review (Preprint),non_english_or_unknown_language
+https://openalex.org/W7170032906,Artificial Intelligence-Driven Clinical Decision Support Systems for Improving Diagnostic Accuracy and Personalized Treatment Planning in Physical Therapy,non_english_or_unknown_language
+https://openalex.org/W7115028866,Development of a clinical decision support system module for intrauterine fetal hypoxia diagnosis using machine learning methods,non_english_or_unknown_language
+https://openalex.org/W4417421764,Towards Precision Nutrition: A Conceptual Framework for Implementing Clinical Decision Support Systems Leveraging Artificial Intelligence and Gut Microbiome Data,ineligible_document_type
+https://openalex.org/W4307694353,Introduction to XAI and Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7165533022,"Interpretable AI in EHR-Based Clinical Decision Support: A Scoping Review of Models, Methods, and Trends",non_english_or_unknown_language
+https://openalex.org/W4410324998,User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review,ineligible_document_type
+https://openalex.org/W7117501310,Advancements in AI and Machine Learning for Clinical Prediction Using Longitudinal Electronic Health Records,non_english_or_unknown_language
+https://openalex.org/W4415915602,"Human-Centered Explainable Artificial Intelligence: Concepts, Techniques, and Applications",non_english_or_unknown_language
+https://openalex.org/W7127046810,Explainable pattern recognition models for anomaly detection in safety-critical healthcare diagnostics and clinical decision-support systems,non_english_or_unknown_language
+https://openalex.org/W7172012813,"THE NEXT GENERATION OF COMPUTATIONAL ONCOLOGY: EXPLAINABLE, MULTIMODAL, AND FEDERATED ARTIFICIAL INTELLIGENCE",non_english_or_unknown_language
+https://openalex.org/W7165385726,Transparent Intelligence Explainability Frameworks for AI-Driven Clinical Decision Support in Healthcare Business Intelligence,non_english_or_unknown_language
+https://openalex.org/W7125601308,Caesarean Section Prediction Using Machine Learning with LIME Explainability,non_english_or_unknown_language
+https://openalex.org/W4386816045,Architecture of a Hybrid Clinical Decision Support System,ineligible_document_type
+https://openalex.org/W3215965354,Foundations of Machine Learning-Based Clinical Prediction Modeling: Part I—Introduction and General Principles,ineligible_document_type
+https://openalex.org/W4402981617,Optimizing Healthcare Delivery through CloudBased Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W4401157910,A Clinician-Centered Explainable Artificial Intelligence Framework for Decision Support in the Operating Theatre,ineligible_document_type
+https://openalex.org/W4415004200,Caesarean Section Classification Using Machine Learning with SHAP Explainability,ineligible_document_type
+https://openalex.org/W7141666585,AI-Driven Precision Medicine: From Genomic Variant Detection to Explainable and Ethical Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W7141724326,Caesarean Section Prediction Using Machine Learning with DALEX Explainability,non_english_or_unknown_language
+https://openalex.org/W4308114826,"Explainable Machine Learning, Patient Autonomy, and Clinical Reasoning",ineligible_document_type
+https://openalex.org/W7154463518,Adversarially Robust and Explainable AI Systems for High-Risk Clinical Decision Support with Iot-Integrated Health Monitoring,non_english_or_unknown_language
+https://openalex.org/W4416439712,Clinical Decision Support Systems in Pre-pregnancy Health,ineligible_document_type
+https://openalex.org/W7165527474,Privacy-Preserving and Explainable Federated Learning for Multi-Hospital Clinical Decision Support: A Narrative Review and Proposed Framework,non_english_or_unknown_language
+https://openalex.org/W7128798784,Uncertainty-Aware Ensemble Learning for Cardiovascular Risk Assessment: A Comparative Study with Clinical Decision Support Integration,non_english_or_unknown_language
+https://openalex.org/W4417016873,Temporal external validation of an individuals machine learning clinical decision support prediction tool for hematopoietic cell transplantation for sickle cell disease,ineligible_document_type
+https://openalex.org/W4413971694,[Interpretation of the Updated Guidance for Reporting Clinical Prediction Models that Use Regression or Machine Learning Methods].,ineligible_document_type
+https://openalex.org/W4410168164,Explainable artificial intelligence in medical research: A synopsis for clinical practitioners—Comprehensive XAI methodologies,ineligible_document_type
+https://openalex.org/W7166661254,Toward Trustworthy Healthcare AI: A Federated Explainable Deep Learning Framework for Secure and Privacy-Preserving Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4417479878,HTA323 The Landscape of the Use of Artificial Intelligence and Machine Learning (AIMI) Methods in Health Technology Assessment (HTA) Submissions,ineligible_document_type
+https://openalex.org/W4307867844,Development of Facial Recognition in Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4311594484,Examining Reproducibility of EEG Schizophrenia Biomarkers Across Explainable Machine Learning Models,ineligible_document_type
+https://openalex.org/W7218481587,An Intelligent Multimodal and Multilingual Clinical Decision Support System Using LLM and RAG with Explainable Medical Insights: A Survey,non_english_or_unknown_language
+https://openalex.org/W4392800976,Hybrid clinical decision support for cardiology: architectural foundations for integrations,ineligible_document_type
+https://openalex.org/W4225105010,Understanding the impact of explanations on advice-taking: a user study for AI-based clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W4409814055,Integrating Blockchain with Cognitive Module for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7171960178,CAUSAL ARTIFICIAL INTELLIGENCE IN ONCOLOGY: ENHANCING EXPLAINABILITY AND CLINICAL DECISION-MAKING IN PRECISION MEDICINE,non_english_or_unknown_language
+https://openalex.org/W4417012710,Machine learning-based cost prediction in pediatric allogeneic bone marrow transplantation: Development and validation of an interactive clinical decision support tool,ineligible_document_type
+https://openalex.org/W4411205314,Stroke Prediction on Healthcare Data Using SMOTE and Explainable Machine Learning,ineligible_document_type
+https://openalex.org/W7172025159,EXPLAINABLE MULTIMODAL ARTIFICIAL INTELLIGENCE IN PRECISION ONCOLOGY: FROM BIOMARKER DISCOVERY TO CLINICAL ADOPTION,non_english_or_unknown_language
+https://openalex.org/W3217627546,Foundations of Machine Learning-Based Clinical Prediction Modeling: Part III—Model Evaluation and Other Points of Significance,ineligible_document_type
+https://openalex.org/W7135723878,User-centered Development of a Clinical Decision Support System,ineligible_document_type
+https://openalex.org/W4408793995,AI-Driven Clinical Decision Support Systems: Revolutionizing Healthcare With Predictive Models,ineligible_document_type
+https://openalex.org/W7154482677,Explainable Ensemble Machine Learning Framework for Accurate Detection of Thyroid Disorders,non_english_or_unknown_language
+https://openalex.org/W7160289810,An Annotated Corpus of Textual Explanations for Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4413977364,AI/ML-Driven Clinical Decision Support and Medical Imagining,ineligible_document_type
+https://openalex.org/W3216919099,Foundations of Machine Learning-Based Clinical Prediction Modeling: Part V—A Practical Approach to Regression Problems,ineligible_document_type
+https://openalex.org/W4392431885,Artificial Intelligence in Healthcare,ineligible_document_type
+https://openalex.org/W7214187587,Hybrid CNN-Fuzzy Logic System for Type 2 Diabetes Mellitus Prediction: A Clinical Decision Support Tool with Interpretability Enhancement,non_english_or_unknown_language
+https://openalex.org/W4307867704,On Analyzing Complex Data Within Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W3207898604,Artificial intelligence: opportunities in lung cancer.,duplicate_doi
+https://openalex.org/W7128642516,Bridging Inference and Intelligence: Integrating Biostatistics and Machine Learning for Interpretable Biomedical Discovery,non_english_or_unknown_language
+https://openalex.org/W3202171670,Label Uncertainty and Learning Using Partially Available Privileged Information for Clinical Decision Support: Applications in Detection of Acute Respiratory Distress Syndrome,ineligible_document_type
+https://openalex.org/W7127569159,A Clinical Decision Support System for Sepsis Prediction Using Attention-LSTM,non_english_or_unknown_language
+https://openalex.org/W4292104167,An Empirical Comparison of Explainable Artificial Intelligence Methods for Clinical Data: A Case Study on Traumatic Brain Injury,ineligible_document_type
+https://openalex.org/W3217631888,Foundations of Machine Learning-Based Clinical Prediction Modeling: Part IV—A Practical Approach to Binary Classification Problems,ineligible_document_type
+https://openalex.org/W7170150993,Foundation Models for Clinical Decision Support: An Explainable Multimodal AI Framework for Disease Risk Prediction Using Medical Imaging and Electronic Health Records,non_english_or_unknown_language
+https://openalex.org/W7169594526,Data-driven multimodal learning towards safer clinical decision support,non_english_or_unknown_language
+https://openalex.org/W4414684628,Improving Automatic Clinical Decision Support System with Advanced Computational Methods,ineligible_document_type
+https://openalex.org/W2996431081,Discovering Data-Driven Actionable Intelligence for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7160232420,Early Detection of Diabetes Mellitus through Explainable Machine Learning and Feature Importance Analysis,non_english_or_unknown_language
+https://openalex.org/W4414604186,Enhancing Dengue Fever Diagnosis: A Machine Learning Framework with Stacking Ensemble and SHAP Explainability,ineligible_document_type
+https://openalex.org/W4416236451,EyeAgent: An Agentic AI System for Multimodal Clinical Decision Support in Ophthalmology,non_english_or_unknown_language
+https://openalex.org/W4389543619,The Need for the Human-Centred Explanation for ML-based Clinical Decision Support Systems,ineligible_document_type
+https://openalex.org/W4404622712,A Visual Analytics Framework for Assessing Interactive AI for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W3011682913,Use of artificial intelligence in precision nutrition and fitness,ineligible_document_type
+https://openalex.org/W7164178444,"Multimodal AI for Clinical Decision Support: Integrating Imaging, Text, and Patient Data",non_english_or_unknown_language
+https://openalex.org/W4417144392,Foundations of Artificial Intelligence in Ophthalmology,non_english_or_unknown_language
+https://openalex.org/W2540746324,Hybrid recommender framework for the design of intelligent clinical decision support tools,ineligible_document_type
+https://openalex.org/W7214996012,Enhancing Hospital Mortality Prediction: A Comprehensive Approach Through Machine Learning and Model Interpretability,non_english_or_unknown_language
+https://openalex.org/W7106331937,"Fusion of Deep Neural Networks, LLMs, and Traditional Machine Learning for Enhanced Clinical Prediction on Tabular and Multimodal Datasets",ineligible_document_type
+https://openalex.org/W7133349032,"AI-Driven Diagnostics: Bridging Medicine, Data Science, And Clinical Decision Support",non_english_or_unknown_language
+https://openalex.org/W4380684902,Artificial Intelligence as an Emerging Tool for Cardiologists,ineligible_document_type
+https://openalex.org/W7155209945,Comparative analysis of explainable machine learning models for cancer classification using cytological features,non_english_or_unknown_language
+https://openalex.org/W7111159961,Artificial Intelligence (AI) in Pharmacy,non_english_or_unknown_language
+https://openalex.org/W7106226046,Machine Learning for Complex Clinical Time Series: From Representation Learning to Interpretable Phenotyping,ineligible_document_type
+https://openalex.org/W4352981336,Explainable Machine Learning Models for Pneumonia Mortality Risk Prediction Using MIMIC-III Data,ineligible_document_type
+https://openalex.org/W7212090983,PulseGuard: A Two-Stage Explainable Machine Learning Framework for Heart Disease Detection and Severity Prediction,ineligible_document_type
+https://openalex.org/W4414401040,Artificial intelligence – new horizons in intensive care,ineligible_document_type
+https://openalex.org/W7161629250,An Explainable Machine Learning Framework for Heart Disease Risk Prediction Using Agentic RAG,non_english_or_unknown_language
+https://openalex.org/W4417132737,GenAI Integration in Clinical Decision Support Systems: Towards Responsible and Scalable AI in Healthcare,non_english_or_unknown_language
+https://openalex.org/W7131269427,Leveraging MySQL and AI Algorithms for Real-Time Clinical Decision Support in Healthcare Systems,non_english_or_unknown_language
+https://openalex.org/W4411763374,Clinical Decision Support for Skin Tumor Treatment: A Case-Based Reasoning Approach,ineligible_document_type
+https://openalex.org/W4408253987,Utilizing Explainable Artificial Intelligence for Parkinson's Disease Diagnosis through the Analysis of Spiral and Wave Drawings with Integrated Data Augmentation,ineligible_document_type
+https://openalex.org/W4410278714,P56 - Development of an AI-based clinical decision support system in breast cancer,ineligible_document_type
+https://openalex.org/W7132969133,Validation of accurate predictions on small data with a tabular foundation model for clinical decision support,ineligible_document_type
+https://openalex.org/W3139398553,Artificial Intelligence (AI) for IoHT – An Introduction,ineligible_document_type
+https://openalex.org/W7171993109,LARGE LANGUAGE MODELS IN PRECISION ONCOLOGY: TRANSFORMING CLINICAL DECISION SUPPORT AND CANCER CARE,non_english_or_unknown_language
+https://openalex.org/W4416963326,A Personalized and Evidence-Based Clinical Decision Support System Using Ensemble Learning,ineligible_document_type
+https://openalex.org/W4402522129,Artificial Intelligence Liability Theories in Medicine,ineligible_document_type
+https://openalex.org/W4415695024,The Role of Artificial Intelligence in Smart Healthcare System,ineligible_document_type
+https://openalex.org/W4413306080,Clinical decision-making and artificial intelligence,ineligible_document_type
+https://openalex.org/W4386978349,Leveraging Advanced Image Analysis and Learning Using Privileged Information for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4416557483,Machine Learning for Compositional Microbiome Data to Predict a Clinical Outcome: Are Interpretable Methods Up to the Task?,ineligible_document_type
+https://openalex.org/W7116300218,Clinical Decision-Making Using Artificial Intelligence,non_english_or_unknown_language
+https://openalex.org/W4411521356,Conformal Prediction for ECG Interpretation: A Study on Human-AI Collaboration in Clinical Decision Support,ineligible_document_type
+https://openalex.org/W7117630851,Use of Artificial Intelligence in Healthcare: A Comprehensive Review,non_english_or_unknown_language
+https://openalex.org/W4380301837,ARRHYTHMIC SUDDEN DEATH SURVIVAL PREDICTION MODEL FOR HYPERTROPHIC CARDIOMYOPATHY PATIENTS: AN INTERPRETABLE MACHINE LEARNING ANALYSIS,ineligible_document_type
+https://openalex.org/W4413018323,Enhancing Glaucoma Diagnosis: A Comparative Analysis of SVM and Logistic Regression for Clinical Decision Support,ineligible_document_type
+https://openalex.org/W4409797208,"AI-Powered Clinical Decision Support Systems (CDSS): Challenges, Benefits, Applications, and Future Directions",ineligible_document_type
+https://openalex.org/W7171989964,"FOUNDATION MODELS FOR CANCER INTELLIGENCE: INTEGRATING RADIOLOGY, PATHOLOGY, MULTI-OMICS, AND CLINICAL DECISION SUPPORT",non_english_or_unknown_language
+https://openalex.org/W7172263206,"Multimodal AI Agents in Clinical Decision Support: Integrating Imaging, Genomics, and EHR Data",non_english_or_unknown_language
+https://openalex.org/W4413050551,Enhancing AI Clinical Decision Support Trust: Design Workshop Insights from General Practitioners,ineligible_document_type
+https://openalex.org/W4416258191,Towards Accurate Diabetes Prediction: A Logistic Regression-Based Clinical Decision Support System,non_english_or_unknown_language
+https://openalex.org/W4416638782,"Evaluation of Artificial Intelligence Accuracy in Interpreting Pulmonary Function Tests: A Comparison of ChatGPT 4o, DeepSeek R1, and Claude 3.5 Sonnet",non_english_or_unknown_language
+https://openalex.org/W4407075366,Longitudinal healthcare analytics for early detection and progression of neurological diseases: A clinical decision support system.,ineligible_document_type
+https://openalex.org/W7161843510,FedGNCC: Federated Gradient Neighborhood Calibration on Clients for Clinical Prediction with Multi-Center Electronic Medical Records,non_english_or_unknown_language
+https://openalex.org/W7123845606,LungNet: An Interpretable Machine Learning Framework for Early Lung Cancer Detection Using Structured Clinical Data,non_english_or_unknown_language
+https://openalex.org/W4407075440,Explainable AI in healthcare: Factors influencing medical practitioners’ trust calibration in collaborative tasks,ineligible_document_type
+https://openalex.org/W7155154299,An Interpretable Hybrid Machine Learning Framework for Robust Type II Diabetes Prediction Using Electronic Health Records,non_english_or_unknown_language
+https://openalex.org/W2908659529,Applying Internet of Things and Machine-Learning for Personalized Healthcare: Issues and Challenges,ineligible_document_type
+https://openalex.org/W7124867375,"A Comprehensive Approach to Stroke Prediction using Machine Learning: Integrating Ensemble Learning, SHAP interpretability and Bias Assessment",non_english_or_unknown_language
+https://openalex.org/W4385192638,Artificial Intelligence Based Early Diagnosis of Sepsis,ineligible_document_type
+https://openalex.org/W4409928732,Editorial: Artificial intelligence in acute neurology,ineligible_document_type
+https://openalex.org/W7131423383,The Role of Artificial Intelligence in Identifying Hypertension Risk Factors,non_english_or_unknown_language
+https://openalex.org/W7108455289,Development and validation of a machine Learning–Based clinical prediction model for hemorrhagic cystitis after allogeneic hematopoietic stem cell transplantation in thalassemia major,ineligible_document_type
+https://openalex.org/W4408423835,Machine Learning in Medicine,ineligible_document_type
+https://openalex.org/W4399306278,Artificial Intelligence in Healthcare: Current State and Future Perspectives,ineligible_document_type
+https://openalex.org/W3174714087,Machine Learning-based Feature Selection and Optimisation for Clinical Decision Support Systems. Optimal Data-driven Feature Selection Methods for Binary and Multi-class Classification Problems: Towards a Minimum Viable Solution for Predicting Early Diagnosis and Prognosis,ineligible_document_type
+https://openalex.org/W7117134486,Artificial Intelligence in Healthcare Diagnostics: A Literature Review,non_english_or_unknown_language
+https://openalex.org/W7147692586,Harnessing Artificial Intelligence for the Diagnosis and Management of Oral Pathologies,non_english_or_unknown_language
+https://openalex.org/W7106022048,INTEGRATING DEEP NEURAL NETWORKS AND FUZZY LOGIC FOR A CLINICAL DECISION SUPPORT SYSTEM IN DIGITAL MAMMOGRAM,non_english_or_unknown_language
+https://openalex.org/W4403371914,Deep Learning in the Context of Artificial Intelligence: Advancements and Applications,ineligible_document_type
+https://openalex.org/W7108075795,INTEGRATING DEEP NEURAL NETWORKS AND FUZZY LOGIC FOR A CLINICAL DECISION SUPPORT SYSTEM IN DIGITAL MAMMOGRAM,non_english_or_unknown_language
+https://openalex.org/W3029992841,Non-user physician perspectives about an oncology clinical decision-support system: A qualitative study.,ineligible_document_type
+https://openalex.org/W2973458857,Machine Learning for Clinical Predictive Analytics,ineligible_document_type
+https://openalex.org/W7133342548,"Deep Reinforcement Learning in Healthcare: A Review of Adaptive Treatment Strategies, Clinical Decision Support, and Personalized Medicine",non_english_or_unknown_language
+https://openalex.org/W7140862027,Early Breast Cancer Detection Using Artificial Intelligence,non_english_or_unknown_language
+https://openalex.org/W4413080167,Artificial Intelligence in Biomarker Discovery and Disease Diagnosis-1,ineligible_document_type
+https://openalex.org/W7163750404,AI-driven context-aware drug recommendation: A strategic framework for healthcare management and clinical decision support,non_english_or_unknown_language
+https://openalex.org/W4392352744,Artificial intelligence in shoulder and elbow surgery: overview of current and future applications,ineligible_document_type
+https://openalex.org/W4226224046,Artificial Intelligence in Predicting Kidney Function and Acute Kidney Injury,ineligible_document_type
+https://openalex.org/W3192112986,Artificial Intelligence in Predicting Kidney Function and Acute Kidney Injury,ineligible_document_type
+https://openalex.org/W7116832387,The Role of Artificial Intelligence in Allergology and Immunology: from Diagnosis to Prediction,non_english_or_unknown_language
+https://openalex.org/W2948945808,A Clinical Decision Support System to Help the Interpretation of Laboratory Results and to Elaborate a Clinical Diagnosis in Blood Coagulation Domain,ineligible_document_type
+https://openalex.org/W2946816982,Artificial intelligence for reuse of free-text radiology reports,ineligible_document_type
+https://openalex.org/W7161536904,"ARTIFICIAL INTELLIGENCE IN PHARMACY – REVOLUTIONISING, DISCOVERY, DEVELOPMENT AND EDUCATION",non_english_or_unknown_language
+https://openalex.org/W7133321545,The Expanding Role of Artificial Intelligence in Clinical Medical Radiology Practice,non_english_or_unknown_language
+https://openalex.org/W7117533347,Use of Convolutional Neural Networks for Detection of Pathologies in Dental X-Ray Images in Clinical Decision Support Systems,non_english_or_unknown_language
+https://openalex.org/W4406935982,Editorial: Artificial intelligence applications for cancer diagnosis in radiology,ineligible_document_type
+https://openalex.org/W7118472775,AI-Powered Clinical Decision Support Systems Using Physiological Data From Connected Medical Devices,non_english_or_unknown_language
+https://openalex.org/W4406479480,Challenges and barriers to implementing artificial intelligence in healthcare IT,ineligible_document_type
+https://openalex.org/W4410271825,A Pilot Study of Pulmonologists’ Receptivity to Artificial Intelligence Use,ineligible_document_type
+https://openalex.org/W3216927528,Foundations of Feature Selection in Clinical Prediction Modeling,ineligible_document_type
+https://openalex.org/W7111943422,Artificial intelligence in radiology: a systematic investigation of technical implementation and medical application,ineligible_document_type
+https://openalex.org/W2743778505,Machine Learning Models for Multidimensional Clinical Data,ineligible_document_type
+https://openalex.org/W4416679509,Evaluating IBM Watson’s Role in Oncology Treatment Decisions: A Case Study on AI-Based Clinical Decision Support,non_english_or_unknown_language
+https://openalex.org/W4417018503,"Artificial Intelligence: Applications, Methodologies, and Case Study in Cancer Diagnostics",non_english_or_unknown_language
+https://openalex.org/W3204910162,Explainable Predictions of Renal Cell Carcinoma with Interpretable Tree Ensembles from Contrast-enhanced CT Images,ineligible_document_type
+https://openalex.org/W7123375454,Bridging the Gap: From Artificial Intelligence and Optimization Theory to Action,non_english_or_unknown_language
+https://openalex.org/W4387813779,Selected Artificial Intelligence Technologies in the Practice of the Clinician and Researcher in Physiotherapy,ineligible_document_type
+https://openalex.org/W4416819674,Artificial Intelligence for Green Pharmacy: Minimizing Waste and Environmental Impact,non_english_or_unknown_language
+https://openalex.org/W4406479501,"The future of artificial Intelligence in healthcare IT: Trends, opportunities, and predictions",ineligible_document_type
+https://openalex.org/W4406480390,Ethical challenges in artificial intelligence-driven healthcare systems,ineligible_document_type
+https://openalex.org/W4401754054,Visualizing Model Behaviors for Clinic Users: Explaining A Clinical Prediction Model for 30-day Readmission after Inpatient Alcohol Dependence Treatment,ineligible_document_type
+https://openalex.org/W4416958991,Challenges and Facilitation Approaches for the Participatory Design of AI-based clinical decision support systems – A scoping review (Preprint),non_english_or_unknown_language
+https://openalex.org/W4283756934,P-599 An expected benefit analysis of using an interpretable machine learning model for optimizing the day of trigger during ovarian stimulation,ineligible_document_type
+https://openalex.org/W7116856561,Transition from Digital Health Technologies to Artificial Intelligence–Driven Care,non_english_or_unknown_language
+https://openalex.org/W7129039145,Artificial Intelligence–Driven Models for Predicting Adolescent Obesity: A Comprehensive Review,non_english_or_unknown_language
+https://openalex.org/W7204672647,"Developing a symptom-based disease prediction system using Machine Learning and Explainable AI (XAI), with an AI agent for interactive diagnosis assistance",ineligible_document_type
+https://openalex.org/W4416869093,215Applications and Benefits of Machine Learning in Healthcare,non_english_or_unknown_language
+https://openalex.org/W7115039045,Artificial Intelligence in healthcare : improving patient diagnosis and reducing waiting times,ineligible_document_type
+https://openalex.org/W7135126782,"Artificial intelligence for acute appendicitis management: Implications, challenges, and recommendations for Nigeria",non_english_or_unknown_language
+https://openalex.org/W7201960110,A Framework for the Prediction of Parkinson’s Disease Using Agentic Artificial Intelligence,non_english_or_unknown_language
+https://openalex.org/W3092822836,Machine learning and Multi-criteria decision analysis in healthcare : A comparison of machine learning algorithms for medical diagnosis,ineligible_document_type
+https://openalex.org/W4400122254,Reply to Letter to the Editor: “Large Language Models: Could They Be the Next Generation of Clinical Decision Support Systems in Cardiovascular Diseases?”,ineligible_document_type
+https://openalex.org/W4404571403,[Interpretation of the prognosis of early results of nephron-sparing surgery with consideration of surgical learning curve using clinical decision support systems].,ineligible_document_type
+https://openalex.org/W4415473735,Advances and Challenges in Artificial Intelligence and Statistical Methods for the Early Diagnosis of Pancreatic Cancer,non_english_or_unknown_language
+https://openalex.org/W7135415370,"Arterial intelligence: laying the foundations for holistic, multi-modal, and ai-driven clinical decision support in peripheral arterial disease",non_english_or_unknown_language
+https://openalex.org/W4283721526,O-014 An expected benefit analysis of using an interpretable machine learning model for gonadotropin starting dose selection during ovarian stimulation,ineligible_document_type
+https://openalex.org/W4392255461,Breast Cancer Detection with Topological Machine Learning,ineligible_document_type
+https://openalex.org/W7118058015,Clinical decision support systems in rheumatic diseases: a scoping review /Sistemas de soporte a decisiones clínicas en enfermedades reumáticas: una revisión de alcance,non_english_or_unknown_language
+https://openalex.org/W4415050678,An Overview of Medical Diagnostics through Artificial Intelligence‐Powered Histopathological Imaging and Video Analysis,ineligible_document_type
+https://openalex.org/W7172006365,DIGITAL BIOMARKERS AND ARTIFICIAL INTELLIGENCE: THE FUTURE OF PRECISION ONCOLOGY AND PERSONALIZED THERAPEUTICS,non_english_or_unknown_language
+https://openalex.org/W4409747019,How a Clinical Decision Support System Changed the Diagnosis Process: Insights from an Experimental Mixed-Method Study in a Full-Scale Anesthesiology Simulation,ineligible_document_type
+https://openalex.org/W4416523672,"Artificial Intelligence in Healthcare: Present Utilization, Key Challenges, and Emerging Opportunities",non_english_or_unknown_language
+https://openalex.org/W7106007762,Data-Driven Anesthesiology: The Expanding Role of Artificial Intelligence in Predicting Perioperative Risks,non_english_or_unknown_language
+https://openalex.org/W4416984941,The Impact of Artificial Intelligence on the Daily Responsibilities of Family Doctors: A Comprehensive Review of Current Knowledge,non_english_or_unknown_language
+https://openalex.org/W4385269853,Research Challenges in Trustworthy Artificial Intelligence and Computing for Health: The Case of the PRE-ACT project,ineligible_document_type
+https://openalex.org/W7160873298,Comparative Analysis of Machine Learning Models for Clinical Risk Prediction,non_english_or_unknown_language
+https://openalex.org/W7171933604,MULTIMODAL DIGITAL BIOMARKERS IN ONCOLOGY: ARTIFICIAL INTELLIGENCE FOR EARLY DETECTION AND PERSONALIZED TREATMENT,non_english_or_unknown_language
+https://openalex.org/W4406482214,Artificial intelligence in medical diagnostics: Enhancing accuracy and speed in disease detection,ineligible_document_type
+https://openalex.org/W4413857435,Artificial Intelligence in Clinical Decision-Making: A Scoping Review of Rule-Based Systems and Their Applications in Medicine,duplicate_work_id
+https://openalex.org/W7116925982,Foundations of Data-Driven Healthcare Decision Support Prior to Clinical Artificial Intelligence,non_english_or_unknown_language
+https://openalex.org/W4415230984,Dengue Detection using Machine Learning Approach,ineligible_document_type
+https://openalex.org/W4413181862,Explainable Deep Learning for Breast Cancer Diagnosis Using NODE and FT-Transformer Models: A SHAP and LIME-Based Interpretability Study,ineligible_document_type
+https://openalex.org/W4400399003,Explainable AI in Disease Diagnosis,ineligible_document_type
+https://openalex.org/W7171962268,HUMAN–ARTIFICIAL INTELLIGENCE COLLABORATION IN ONCOLOGY: BUILDING TRUSTWORTHY CLINICAL INTELLIGENCE SYSTEMS,non_english_or_unknown_language
+https://openalex.org/W4389240790,ToFi-ML: Retinal Image Screening with Topological Machine Learning,ineligible_document_type
+https://openalex.org/W7171987842,"DIGITAL ONCOLOGY 5.0: THE CONVERGENCE OF ARTIFICIAL INTELLIGENCE, DIGITAL TWINS, AND PRECISION MEDICINE",non_english_or_unknown_language
+https://openalex.org/W4409177360,Editorial: The role of artificial intelligence technologies in revolutionizing and aiding cardiovascular medicine,ineligible_document_type
+https://openalex.org/W7171988196,ARTIFICIAL INTELLIGENCE–DRIVEN CANCER KNOWLEDGE GRAPHS FOR PRECISION DIAGNOSIS AND THERAPEUTIC DISCOVERY,non_english_or_unknown_language
+https://openalex.org/W7128472114,Integrating Electronic Health Records with Machine Learning for Decision Support,non_english_or_unknown_language
+https://openalex.org/W7164455617,Opening the black box of explainability:Trade-offs in the design of clinical prediction models,ineligible_document_type
+https://openalex.org/W7149889713,Towards Data-Driven Reconstructive Surgery: Artificial Intelligence for Risk Prediction and Personalized Care,ineligible_document_type
+https://openalex.org/W4416874082,Stroke Prediction using Advanced Machine Learning Algorithms,non_english_or_unknown_language
+https://openalex.org/W7214521845,"Interpretable Machine Learning Model for Predicting Laboratory Alert Fatigue Using Alert Frequency, Clinical Severity, Provider Specialty, Repeated Abnormal Results, Response Time, and Override Behavior",non_english_or_unknown_language
+https://openalex.org/W7171966768,"CROSS-MODAL ARTIFICIAL INTELLIGENCE FOR PRECISION ONCOLOGY: BRIDGING RADIOLOGY, HISTOPATHOLOGY, GENOMICS, AND CLINICAL RECORDS",non_english_or_unknown_language
+https://openalex.org/W7171939291,MULTIMODAL GENERATIVE ARTIFICIAL INTELLIGENCE FOR PRECISION ONCOLOGY: FROM CANCER DIAGNOSIS TO THERAPEUTIC DISCOVERY,non_english_or_unknown_language
+https://openalex.org/W4400811619,An Approach with Machine Learning for Heart Disease Risk Prediction,ineligible_document_type
+https://openalex.org/W7171951285,AGENTIC ARTIFICIAL INTELLIGENCE IN PRECISION ONCOLOGY: AUTONOMOUS MULTIMODAL SYSTEMS FOR PERSONALIZED CANCER CARE,non_english_or_unknown_language
+https://openalex.org/W7117881038,A Review on Personalized Treatment Recommendations using Machine Learning,non_english_or_unknown_language
+https://openalex.org/W4416183219,Artificial Intelligence-Driven ECG Signal Classification for Heart Disease Detection Using Decision Tree Algorithm,non_english_or_unknown_language
+https://openalex.org/W4408615401,"Will Health Experts Adopt a Clinical Decision Support System for Game-Based Digital Biomarkers? Investigating the Impact of Different Explanations on Perceived Ease-of-Use, Perceived Usefulness, and Trust",ineligible_document_type
+https://openalex.org/W4414287078,Machine Learning Methods for Functional Recovery Prediction and Prognosis,ineligible_document_type
+https://openalex.org/W4415263950,A03 Artificial intelligence-guided point-of-care ultrasound for combat casualty care,ineligible_document_type
+https://openalex.org/W4399371582,Explainable AI in Healthcare,ineligible_document_type
+https://openalex.org/W7139003969,Machine Learning Techniques in Healthcare Business Intelligence: A Comprehensive Review,non_english_or_unknown_language
+https://openalex.org/W7222961093,"Patient Access API as a Foundation for Predictive Healthcare: Regulatory Limitations, Data Governance, and Opportunities for Artificial Intelligence",non_english_or_unknown_language
+https://openalex.org/W4406482022,Machine learning algorithms in personalized treatment planning,ineligible_document_type
+https://openalex.org/W7143693837,Optimizing Healthcare Systems with Machine Learning-Based Decision Support,non_english_or_unknown_language
+https://openalex.org/W4406658511,Leveraging Machine Learning for Strategic Business Gains in the Healthcare Sector,ineligible_document_type
+https://openalex.org/W7114928278,Interpretable AI in Healthcare,ineligible_document_type
+https://openalex.org/W7172061993,EDGE ARTIFICIAL INTELLIGENCE IN ONCOLOGY: REAL-TIME CANCER DIAGNOSTICS AND INTELLIGENT CLINICAL MONITORING,non_english_or_unknown_language
+https://openalex.org/W7171972530,"ARTIFICIAL INTELLIGENCE FOR PRECISION CANCER PREVENTION: PREDICTIVE ANALYTICS, RISK STRATIFICATION, AND EARLY INTERVENTION",non_english_or_unknown_language
+https://openalex.org/W7220421260,Integrating Machine Learning with SAS for Effective Data Analysis in Neurology,non_english_or_unknown_language
+https://openalex.org/W2972428370,Optimization Methods for Resource Allocation and Machine Learning Applications,ineligible_document_type
+https://openalex.org/W7117968733,Machine Learning and Deep Learning for Healthcare Data Processing and Analyzing,ineligible_document_type
+https://openalex.org/W7172020423,ARTIFICIAL INTELLIGENCE–DRIVEN CLINICAL ONCOLOGY INTELLIGENCE: FROM EARLY CANCER DETECTION TO PRECISION THERAPEUTICS,non_english_or_unknown_language
+https://openalex.org/W4402075698,Socially Responsible Applications of Explainable AI,ineligible_document_type
+https://openalex.org/W7172064763,TOWARDS GENERALIST ARTIFICIAL INTELLIGENCE IN ONCOLOGY: FOUNDATION MODELS FOR INTEGRATED CANCER DIAGNOSIS AND PERSONALIZED CARE,non_english_or_unknown_language
+https://openalex.org/W4404295868,Development of tools to process and analyse precision oncology data in a clinical decision support framework for biomedical research projects in the scope of molecular tumour boards,ineligible_document_type
+https://openalex.org/W7128696216,A Comprehensive Review of Informed Machine Learning in Medical Decision Systems,non_english_or_unknown_language
+https://openalex.org/W2745673637,Interpretable Predictions of Clinical Outcomes with An Attention-based Recurrent Neural Network,ineligible_document_type
+https://openalex.org/W3168399288,Development of machine learning techniques for diabetic retinopathy risk estimation,ineligible_document_type
+https://openalex.org/W2786645280,Using Machine Learning Models to Predict In-Hospital Mortality for ST-Elevation Myocardial Infarction Patients,ineligible_document_type
+https://openalex.org/W7133328241,Early Prediction of Chronic Kidney Diseases Using Machine Learning,non_english_or_unknown_language
+https://openalex.org/W7133241670,Machine Learning for Predicting Cardiovascular Diseases Using EHR Data,non_english_or_unknown_language
+https://openalex.org/W4413979161,fMRI-Based ADHD Diagnosis and Sex Prediction: A Machine Learning Approach,ineligible_document_type
+https://openalex.org/W4416252186,Neuro-Fuzzy Machine Learning Model for Reliable Colorectal Cancer Screening,non_english_or_unknown_language
+https://openalex.org/W7138983497,Heart Disease Prediction with Severity Using Machine Learning and Flask,non_english_or_unknown_language
+https://openalex.org/W7124518394,"Supporting Clinical Decision-Making in Optometry: OCT Imaging, Artificial Intelligence, and the Integration of Technology in Practice",ineligible_document_type
+https://openalex.org/W7172031213,"ARTIFICIAL INTELLIGENCE–ENABLED TUMOR MICROENVIRONMENT MODELING: INTEGRATING SPATIAL BIOLOGY, MULTI-OMICS, AND DIGITAL TWINS",non_english_or_unknown_language
+https://openalex.org/W4416869222,367AGBO-CP: An Adaptive Gradient Boosted Optimization Framework for Enhanced Clinical Prediction Accuracy,non_english_or_unknown_language
+https://openalex.org/W3138453246,Development of an Explainable Prediction Model of Heart Failure Survival by Using Ensemble Trees,ineligible_document_type
+https://openalex.org/W4407485248,The Role of Explainable AI for Healthcare 5.0,ineligible_document_type
+https://openalex.org/W4377991009,Artificial Intelligence for Multiple Long-term conditions (AIM): A consensus statement from the NIHR AIM consortia,ineligible_document_type
+https://openalex.org/W3128021027,Heart Disease Risk Level Prediction: Knitting Machine Learning Classifiers,ineligible_document_type
+https://openalex.org/W4414230844,Machine Learning Decision Support for Elderly Healthcare Using MIMIC Dataset,ineligible_document_type
+https://openalex.org/W7117985923,EXPLAINABLE AI IN HEALTHCARE INDUSTRY: A BIBLIOMETRIC REVIEW,non_english_or_unknown_language
+https://openalex.org/W4402753469,Ensemble Machine Learning Models for Accurate Prediction of Acute Pancreatitis Risk,ineligible_document_type
+https://openalex.org/W7171983307,"DIGITAL TWIN–ENABLED PRECISION ONCOLOGY: INTEGRATING LONGITUDINAL PATIENT DATA, MULTI-OMICS, AND ARTIFICIAL INTELLIGENCE",non_english_or_unknown_language
+https://openalex.org/W4408383940,Real‐World Applications of Explainable AI in Healthcare,ineligible_document_type
+https://openalex.org/W4402635252,A Machine Learning Based Decision Support System for Healthcare Triage Applications,ineligible_document_type
+https://openalex.org/W7129233814,Prediction Modeling and Comparative Evaluation of Hypothyroidism using Machine Learning Techniques,non_english_or_unknown_language
+https://openalex.org/W7117357467,EXPLAINABLE AI IN HEALTHCARE INDUSTRY: A BIBLIOMETRIC REVIEW,ineligible_document_type
+https://openalex.org/W4416751275,Symptom Based Drug Recommendation System Using Machine Learning Algorithms,non_english_or_unknown_language
+https://openalex.org/W4413824821,"Health Tech Synergy: Real-Time Data Analytics, AI (Artificial Intelligence), and 5G Revolutionizing Healthcare",ineligible_document_type
+https://openalex.org/W7110358392,Machine Learning–Driven Drug Optimization for Typhoid Fever Based on Patient Profiles,non_english_or_unknown_language
+https://openalex.org/W7155076344,Explainability in AI-Driven Medical Diagnostics,non_english_or_unknown_language
+https://openalex.org/W4410169945,Explainable computational intelligence in bio and clinical medicine,ineligible_document_type
+https://openalex.org/W7127615541,SHAP Based Predictive Analysis of Diabetic Nephropathy Using Machine Learning Models,non_english_or_unknown_language
+https://openalex.org/W7155217935,Implementation of a Machine Learning Model to Predict Diabetes Status by Using Clinical Symptoms,ineligible_document_type
+https://openalex.org/W7127266114,Early Detection of Supraventricular Tachycardia Events Using Machine Learning and Wearable Biosignals,non_english_or_unknown_language
+https://openalex.org/W7124857987,Improving Diabetes Detection Accuracy Using Enhanced Tree Pruning and Machine Learning Models,non_english_or_unknown_language
+https://openalex.org/W4390190122,Topo-CXR: Chest X-ray TB and Pneumonia Screening with Topological Machine Learning,ineligible_document_type
+https://openalex.org/W4392945224,Development of Machine Learning Model for Detection and Diagnosis of Alzheimer's disease. A Comprehensive Review,ineligible_document_type
+https://openalex.org/W4411538727,Machine Learning in Healthcare: From Petri-dish AI to Reality-centric AI,ineligible_document_type
+https://openalex.org/W4416128127,"Editorial: Women pioneering neuroinformatics and neuroscience-related machine learning, 2024",ineligible_document_type
+https://openalex.org/W3163207789,Application of Machine Learning for Detection of Hypertrophic Cardiomyopathy Patients from Echocardiogram Measurements,ineligible_document_type
+https://openalex.org/W3130419776,Appropriate healthcare referrals of patients with chronic musculoskeletal pain? We can do better: a multimodal artificial intelligence approach,ineligible_document_type
+https://openalex.org/W7138147819,Predictive Modeling of Heart Failure Using Machine Learning Algorithms: An Empirical Study,non_english_or_unknown_language
+https://openalex.org/W4296957597,"SERF: Interpretable Sleep Staging using Embeddings, Rules, and Features",ineligible_document_type
+https://openalex.org/W4417509228,Integrating Machine Learning with Cloud Analytics for Data-Driven Healthcare and Optimized Patient Care,non_english_or_unknown_language
+https://openalex.org/W4312715396,Gauging the Gaps for Decision Support - Data integration in the Hospital Information Systems with Machine Learning,ineligible_document_type
+https://openalex.org/W7146967591,Lung Cancer Prediction Using Clinical Variables Based on Machine Learning Algorithms,non_english_or_unknown_language
+https://openalex.org/W4406139510,Integrating Artificial Intelligence and Clinical Guidelines to Enhance Heart Failure Recognition Using Electronic Health Records in Preoperative Care,ineligible_document_type
+https://openalex.org/W2991589424,Real-time electronic interpretation of digital chest images using artificial intelligence in emergency department patients suspected of pneumonia,ineligible_document_type
+https://openalex.org/W4412163733,Abstract A052: The S-RACE Platform: Empowering Healthcare Real-World Data with Artificial Intelligence (AI) Using a Cloud-Based Approach,ineligible_document_type
+https://openalex.org/W7112928356,Panacea: Making the World’s Biomedical Information Computable to Develop Data Platforms for Machine Learning,ineligible_document_type
+https://openalex.org/W4387435260,Towards Unraveling Calibration Biases in Medical Image Analysis,ineligible_document_type
+https://openalex.org/W4416133013,Types of Machine Learning Models by Purpose in Clinical Research -a very Brief Review,non_english_or_unknown_language
+https://openalex.org/W7106210569,Modelling Evolution of the Intracranial Aneurysm Disease by Applying Probabilistic Graphical and Machine Learning Models,ineligible_document_type
+https://openalex.org/W4410616690,An Explainable Ai Model for Diabetes Prediction Using Random Forest,ineligible_document_type
+https://openalex.org/W7117295011,The Equity Impact of Digital Health and Artificial Intelligence Tools on Health Outcomes in Underserved Populations: A Narrative Review and Conceptual Model,non_english_or_unknown_language
+https://openalex.org/W4411484926,Integrating Machine Learning with Clinical Practice: Advancements in Heart Disease Prediction Models,ineligible_document_type
+https://openalex.org/W4417499654,MATERNAL-PREDICT: A DUAL-PIPELINE MACHINE LEARNING MODEL FOR MATERNAL AND FETAL HEALTH MONITORING,non_english_or_unknown_language
+https://openalex.org/W4407568913,Evaluating the interpretability of prototype networks for medical image analysis,ineligible_document_type
+https://openalex.org/W4401820468,Applying Machine Learning for Prescriptive Support: A Use Case with Unfractionated Heparin in Intensive Care Units,ineligible_document_type
+https://openalex.org/W4416259568,A Non-invasive Diagnostic Approach to Orofacial Pain Using Infrared Thermography and Machine Learning,ineligible_document_type
+https://openalex.org/W4414381366,Advancing IMU-based Automated Balance Assessment and Rehabilitation through Applied Machine Learning,ineligible_document_type
+https://openalex.org/W7131434693,A Framework For Sequence Classification in Medical Diagnostics using Machine Learning Techniques: A Systematic Literature Review,non_english_or_unknown_language
+https://openalex.org/W4377094406,Explainable Graph Neural Networks for Atherosclerotic Cardiovascular Disease,ineligible_document_type
+https://openalex.org/W7115589856,Comparison of Machine Learning Algorithms for Personalized Healthcare: A Data-Driven Approach to Predicting Heart Attack,non_english_or_unknown_language
+https://openalex.org/W4417522221,PREDICTION OF TOXIC-METABOLIC DISORDERS AT EMERGENCY CONDITIONS USING MULTI-LABEL CLASSIFICATION IN MACHINE LEARNING,non_english_or_unknown_language
+https://openalex.org/W4415557296,Advancing Early Detection of Type 2 Diabetes: A Machine Learning Approach with Combined Clinical Datasets,ineligible_document_type
+https://openalex.org/W4406139896,Radiotherapy Treatment Plan Optimization and Decision Making using Advanced Machine Learning Approaches,ineligible_document_type
+https://openalex.org/W4406029655,"Explanation of Machine Learning Algorithms Used in Disease Detection, Such as Decision Trees and Neural Networks",ineligible_document_type
+https://openalex.org/W7119535723,A Fairness-Aware Comparative Analysis of Machine Learning Algorithms for Medical Diagnosis Across Diverse Patient Demographics,non_english_or_unknown_language
+https://openalex.org/W4414463559,Enhanced Diabetes Diagnosis Using Ensemble Classifiers with Explainable AI and Oversampling for Imbalanced Data,ineligible_document_type
+https://openalex.org/W3157349342,O08 Developing a DNA methylation signature for predicting rheumatoid arthritis using a machine learning pipeline,ineligible_document_type
+https://openalex.org/W4411359787,Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI,ineligible_document_type
+https://openalex.org/W4416961590,A REVIEW ON EXPLAINABLE CNN FOR EARLY DETECTION OF DIABETIC RETINOPATHY DIAGNOSIS,non_english_or_unknown_language
+https://openalex.org/W4410428661,Integrating Machine Learning and Electronic Medical Record(s) For Improved Predictive Analytics in Chronic Disease Management,ineligible_document_type
+https://openalex.org/W4415478880,Integrating sharpness overlays and deep ensembles for uncertainty signaling in clinical AI,non_english_or_unknown_language
+https://openalex.org/W3091802956,Machine learning to predict tamoxifen adherence among U.S. commercially insured breast cancer patients.,ineligible_document_type
+https://openalex.org/W4415930779,Comparing different types of machine learning models in diagnosing diabetes mellitus utilizing electrocardiography and clinical data,non_english_or_unknown_language
+https://openalex.org/W4294975117,Cross-Validation of Machine Learning Models for the Functional Outcome Prediction after Post-Stroke Robot-Assisted Rehabilitation,ineligible_document_type
+https://openalex.org/W7117466122,LungEEO: An Optimized Explainable Ensemble Framework for Lung Cancer Prediction,non_english_or_unknown_language
+https://openalex.org/W7128474489,DESIGN AND IMPLEMENTATION OF AN AI-BASED MEDICAL ANALYTICS FRAMEWORK EMPLOYING DEEP NEURAL NETWORKS AND ADVANCED MACHINE LEARNING MODELS FOR PRECISION HEALTHCARE,non_english_or_unknown_language
+https://openalex.org/W4412656739,Automated Epilepsy Detection Method of EEG Signal Based on Machine Learning and Fusions of Multi-modal Features,ineligible_document_type
+https://openalex.org/W4413918585,"A Hybrid Machine Learning Approach for Thyroid Cancer Recurrence Prediction: Stacked Ensembles, Voting Models, and Feature Reduction",ineligible_document_type
+https://openalex.org/W4416837051,ParkiDxAI: An Explainable AI System for Parkinson’s Disease Diagnosis,ineligible_document_type
+https://openalex.org/W7135275726,Mining for Health: Advancing trustworthy statistical and machine learning methods for complex electronic health records data,ineligible_document_type
+https://openalex.org/W3023546548,"End-to-End Machine Learning Frameworks for Medicine: Data Imputation, Model Interpretation and Synthetic Data Generation",ineligible_document_type
+https://openalex.org/W4391913801,An Interpretable Analysis of Inflammation Biomarkers to Improve Cardiovascular Risk Evaluation,ineligible_document_type
+https://openalex.org/W4416725399,Evaluating SHAP and LIME for Interpretable Diabetes Risk Prediction with Random Forest,non_english_or_unknown_language
+https://openalex.org/W4417280149,Predicting Postoperative Mortality in Type A Aortic Dissection Using Machine Learning: A Radiomics–Clinical Integration Framework,non_english_or_unknown_language
+https://openalex.org/W7155581501,Using Explainability to Improve Predictive Modeling Performance,ineligible_document_type
+https://openalex.org/W4388177723,Editorial: Systems biology and data-driven machine learning-based models in personalized cardiovascular medicine,ineligible_document_type
+https://openalex.org/W7147505385,Explainable AI for Cardiovascular Disease Prediction Using Electronic Health Records,non_english_or_unknown_language
+https://openalex.org/W7172034423,"NEXT-GENERATION AI IN ONCOLOGY: EXPLAINABLE FOUNDATION MODELS FOR PRECISION DIAGNOSIS, PROGNOSIS, AND TREATMENT OPTIMIZATION",non_english_or_unknown_language
+https://openalex.org/W4416223596,Interpretable ECG-Based Prediction of Myocardial Infarction Using the PRANALI Pipeline,non_english_or_unknown_language
+https://openalex.org/W4416223596,Interpretable ECG-Based Prediction of Myocardial Infarction Using the PRANALI Pipeline,non_english_or_unknown_language
+https://openalex.org/W7117631659,An Empirical Study of Machine Learning Robustness and Scalability for Imbalanced Tabular Clinical Data in Emergency and Critical Care,non_english_or_unknown_language
+https://openalex.org/W4408383970,"Explainable AI in Medical Imaging, Personalized Medicine, and Bias Reduction",ineligible_document_type
+https://openalex.org/W4413409379,Embracing Artificial Intelligence and Technological Adaptability in Medical Education in the Low-income South Asian Association for Regional Cooperation Region and Southeast Asian Countries,ineligible_document_type
+https://openalex.org/W7160932438,Engineering a Safe and Explainable ML-Based Insulin Recommender for Clinical Deployment,non_english_or_unknown_language
+https://openalex.org/W4416107494,Clinical prediction model for the risk of bleeding during hospitalization in patients with acute myocardial infarction: a retrospective cohort study from the MIMIC-IV database,non_english_or_unknown_language
+https://openalex.org/W4394208960,Supplementary Material for: Advanced Machine Learning Tools to Monitor Biomarkers of Dysphagia: A Wearable Sensor Proof-of-Concept Study,ineligible_document_type
+https://openalex.org/W7117777989,MRI-Based Early Detection and Classification of Alzheimer’s Disease with Grad-CAM Explainability,non_english_or_unknown_language
+https://openalex.org/W7160455698,Cross-Population Autism Spectrum Disorder Classification with Explainable Ensemble Learning,non_english_or_unknown_language
+https://openalex.org/W7106012327,DEVELOPING MACHINE LEARNING MODELS FOR THE DIAGNOSIS AND TREATMENT OF MENTAL HEALTH DISORDERS USING PATIENT SURVEYS AND ELECTRONIC HEALTH RECORDS,non_english_or_unknown_language
+https://openalex.org/W7131191168,AKI-Detector: A Multi-Agent Framework by Integrating Machine Learning and Large Language Models for Early Prediction of Acute Kidney Injury in ICU.,ineligible_document_type
+https://openalex.org/W4417467675,Explainable AI in Transplant Medicine: Transforming Kidney Donor Matching and Craft Outcome Prediction,non_english_or_unknown_language
+https://openalex.org/W4385404865,Saliency Maps as an Explainable AI Method in Medical Imaging: A Case Study on Brain Tumor Classification,ineligible_document_type
+https://openalex.org/W4415792906,Abstract 4366491: Machine Learning Analysis of EMS Data leads to Accurate and Timely Stroke and Severe Stroke Detection,ineligible_document_type
+https://openalex.org/W7117759136,Enhancing Interpretable Multiclass Lung Cancer Severity Classification using TabNet,non_english_or_unknown_language
+https://openalex.org/W4233383998,"Peer Review #2 of ""Interval Coded Scoring: a toolbox for interpretable scoring systems (v0.1)""",ineligible_document_type
+https://openalex.org/W4415462134,Machine Learning-Driven Decision-Support System for Nursing Risk Assessment in Post-Discharge Care: A Design Science Approach,non_english_or_unknown_language
+https://openalex.org/W4408521233,An Explainable AI-Based Decision Support Tool to Predict Preterm Birth,ineligible_document_type
+https://openalex.org/W4406338745,"Editorial: Community series in towards precision medicine for immune-mediated disorders: advances in using big data and artificial intelligence to understand heterogeneity in inflammatory responses, volume II",ineligible_document_type
+https://openalex.org/W4252647419,"Peer Review #1 of ""Interval Coded Scoring: a toolbox for interpretable scoring systems (v0.1)""",ineligible_document_type
+https://openalex.org/W4220830657,A fully convolutional neural network for explainable classification of attention deficit hyperactivity disorder,ineligible_document_type
+https://openalex.org/W4387306464,P217 Map the SMA protocol: a machine-learning based algorithm to predict therapeutic response in spinal muscular atrophy,ineligible_document_type
+https://openalex.org/W4417424006,Identification of Predisposing Risk Factors for Chronic Kidney Disease and Optimizing Disease Prediction Using a Stacking Machine Learning Algorithm,non_english_or_unknown_language
+https://openalex.org/W4414605173,Integration of Enhanced Feature Selection with Explainable Deep Learning Models for Predicting Breast Cancer,ineligible_document_type
+https://openalex.org/W4415368858,A Cross-Validated LBX Ensemble Framework for Reliable and Clinically Interpretable Heart Disease Prediction,non_english_or_unknown_language
+https://openalex.org/W4380763442,Abstract 15358: Comparative Performance of Recurrent Heart Failure Prediction Models: Incorporating Social Determinants and Applying Machine Learning,ineligible_document_type
+https://openalex.org/W7117573562,The Limits of Transparency: Racial Disparities in Breast Cancer Diagnosis Using an Intrinsically Explainable AI Model,non_english_or_unknown_language
+https://openalex.org/W4417180193,Comparative Evaluation of SHAP and LIME for Clinical Interpretability in Postoperative Cardiac Surgery Mortality Prediction Models,non_english_or_unknown_language
+https://openalex.org/W4408386501,Osteoporosis Risk Assessment and Individualized Feature Analysis Using Interpretable XAI and RAI Techniques,ineligible_document_type
+https://openalex.org/W7117485972,GenUni: An Interpretive Genomic System for Context-Sensitive Signal Integration Without Diagnostic or Predictive Claims,non_english_or_unknown_language
+https://openalex.org/W7133182811,Towards Personalized Healthcare: Explainable AI and Deep Learning for Lifestyle-Driven Health Classification,non_english_or_unknown_language
+https://openalex.org/W4415834336,From Embedded Ethics to Explainable AI: Advancing Interdisciplinary Collaboration in Medical AI Development,non_english_or_unknown_language
+https://openalex.org/W4287400318,"Machine Learning and Image Processing for Clinical Outcome Prediction: Applications in Medical Data from Patients with Traumatic Brain Injury, Ulcerative Colitis, and Heart Failure",ineligible_document_type
+https://openalex.org/W7130721991,Robust Early Breast Cancer Classification Using Optimized LightGBM with ADASYN and Calibration-Aware Evaluation,non_english_or_unknown_language
+https://openalex.org/W7131620432,Explainable Boosting Ensemble for Thyroid Cancer Classification Using Data Balancing with Local and Global Interpretation,non_english_or_unknown_language
+https://openalex.org/W7124681832,"Secure and Explainable AI for Precision Medicine: Big Data Integration of Genomics, Wearable Systems, and Predictive Health Outcomes",non_english_or_unknown_language
+https://openalex.org/W4393089252,Abstract 7352: ScanCT: A tree-based machine learning model to detect single-cell genomic features associated with clinical outcomes,ineligible_document_type
+https://openalex.org/W2949838334,External Validation of a “Black-Box” Clinical Predictive Model in Nephrology: Can Interpretability Methods Help Illuminate Performance Differences?,ineligible_document_type
+https://openalex.org/W4415779845,A Novel Explainable Hybrid Framework for Temporal Risk Prediction and Anomaly Detection in Diabetic Disease Using Multimodal Health Data,ineligible_document_type
+https://openalex.org/W2949982542,Re: A Prediction Model Using Machine Learning Algorithm for Assessing Stone-Free Status after Single Session Shock Wave Lithotripsy to Treat Ureteral Stones,ineligible_document_type
+https://openalex.org/W3213463825,Machine-Learning Based Early Warning System for Prediction for Disseminated Intravascular Coagulation after Allogeneic Hematopoietic Stem Cell Transplantation: A Nationwide Multicenter Study,ineligible_document_type
+https://openalex.org/W4226193037,Evaluating Explainable AI on a Multi-Modal Medical Imaging Task: Can Existing Algorithms Fulfill Clinical Requirements?,duplicate_doi
+https://openalex.org/W4416226114,Advancing Blood Sample Analysis: Incorporating Expert Opinions and Explainable AI in Multi-label Disease Prediction,ineligible_document_type
+https://openalex.org/W7135295220,"Applying Language Models To Patient Health Records: Acronym Expansion, Long Document Classification and Explainable Predictions",ineligible_document_type
+https://openalex.org/W4408521097,Uncertainty-Informed Active Learning Using Monte Carlo Dropout for Risk Stratification in Carotid Ultrasound Imaging,ineligible_document_type
+https://openalex.org/W7149211114,Overcoming Label Limitations: Leveraging Unlabelled Data and Label Uncertainty to Enhance Classification Models,ineligible_document_type
+https://openalex.org/W7211962448,Neural Network with Adaptive Conformal Prediction for Providing Calibrated Uncertainty Intervals around Individualized Chemotherapy Toxicity Risk Predictions,non_english_or_unknown_language
+https://openalex.org/W7117546893,"When external validation isn’t enough: Simpson’s paradox, direction asymmetry, and calibration collapse in cross-continental perioperative mortality prediction",non_english_or_unknown_language
+https://openalex.org/W4391229397,Elucidating Discrepancy in Explanations of Predictive Models Developed Using EMR,ineligible_document_type
+https://openalex.org/W4395681683,AI-Augmented Medicine,ineligible_document_type
+https://openalex.org/W7125538333,AI and Big Data for Predictive Healthcare Analytic,non_english_or_unknown_language
+https://openalex.org/W4404381396,18 Technological View,ineligible_document_type
+https://openalex.org/W4401811600,Understanding the Minimal Clinically Viable Solutions for Disease Diagnosis and Prognosis via the Integration of AI-Powered Intelligent Systems,ineligible_document_type
+https://openalex.org/W4415675792,Risk-informed credibility assessment for clinical AI/ML models: a practical methodology with an in silico trial case,non_english_or_unknown_language
+https://openalex.org/W7212454701,Computational Intelligence in Antimicrobial Resistance: From Reactive Treatment to Predictive Drug Discovery and Genomics,non_english_or_unknown_language
+https://openalex.org/W4392778283,Correspondence,non_english_or_unknown_language
+https://openalex.org/W4392778281,Correspondence,non_english_or_unknown_language
+https://openalex.org/W7161146660,Clinical AI Framework for Multi-Stage Alzheimer's Disease Classification,non_english_or_unknown_language
+https://openalex.org/W3106348796,Product Liability Suits for FDA-Regulated AI/ML Software,ineligible_document_type
+https://openalex.org/W4410202002,Diagnosis of rheumatic and autoimmune diseases dataset,ineligible_document_type
+https://openalex.org/W4401021534,Mapping the AI Landscape in Healthcare Quality,ineligible_document_type
+https://openalex.org/W7117115182,AI-Driven Optimization of Healthcare Databases for Intelligent Patient Data Management,non_english_or_unknown_language
+https://openalex.org/W7133040483,Human Factors in Data-Driven Healthcare,non_english_or_unknown_language
+https://openalex.org/W2885590674,Computer aided diagnostic tool for prostate cancer with rule extraction from Support Vector Machines,ineligible_document_type
+https://openalex.org/W7119486909,Tech for Life: AI-Driven Biotechnology and the Quest for Human Longevity,non_english_or_unknown_language
+https://openalex.org/W7131832351,Fuzzy-Enhanced Deep Learning Model for Robust Cardiac Disease Prediction using CFDLNet Algorithm,non_english_or_unknown_language
+https://openalex.org/W4415159922,Integrating AI Technology into Biomedical Research and Health Innovation,ineligible_document_type
+https://openalex.org/W4413414386,Survey of AI-Driven Advancements in Diagnosis and Clinical Decisions for Healthcare,ineligible_document_type
+https://openalex.org/W7171997688,"INTELLIGENT CANCER FOUNDATION MODELS: INTEGRATING MOLECULAR, IMAGING, AND CLINICAL INTELLIGENCE FOR PRECISION MEDICINE",non_english_or_unknown_language
+https://openalex.org/W7202389209,Keeping the Patient Visible when Pharmacy Services Become Data-Driven,non_english_or_unknown_language
+https://openalex.org/W4416458755,Deep Learning Architectures for Intelligent Image Analysis and Pattern Recognition in Healthcare,non_english_or_unknown_language
+https://openalex.org/W4379280061,Federated Learning to Improve Counterfactual Explanations for Sepsis Treatment Prediction,ineligible_document_type
+https://openalex.org/W7214092469,"AI-POWERED HEALTHCARE USING PYTHON: DATA ANALYTICS, PREDICTION, AND CLINICAL DECISION MAKING",ineligible_document_type
+https://openalex.org/W4416273491,From Correlation to Causation: The Foundations of Trustworthy Clinical AI,non_english_or_unknown_language
+https://openalex.org/W7109200482,A regulatory-aligned operational credibility toolkit and maturity model for AI/ML models in in silico clinical trials,non_english_or_unknown_language
+https://openalex.org/W4417281569,A regulatory-aligned operational credibility toolkit and maturity model for AI/ML models in in silico clinical trials,non_english_or_unknown_language
+https://openalex.org/W7171937448,ADAPTIVE FOUNDATION MODELS IN ONCOLOGY: CONTINUOUS LEARNING FOR PERSONALIZED CANCER MANAGEMENT,non_english_or_unknown_language
+https://openalex.org/W3084864205,The growing significance of smartphone apps in data-driven clinical decision-making: Challenges and pitfalls,ineligible_document_type
+https://openalex.org/W4414549220,Decision Trees as a Support Tool for the Early Diagnosis of Cardiovascular Diseases in Young Individuals,ineligible_document_type
+https://openalex.org/W4416384741,Design of an Intelligent Fuzzy System for Disease Prediction and Drug Dosage Control,non_english_or_unknown_language
+https://openalex.org/W4407362636,"Leveraging XAI for Discovering Crucial Demographic, Clinical and Pathological Diabetes Mellitus Biomarkers",ineligible_document_type
+https://openalex.org/W7123737750,AI-Augmented Medical Education: Transforming ICU Mortality * Length of Stay Prediction,non_english_or_unknown_language
+https://openalex.org/W7124930835,A Review on AI-Based Medical Report Analysis and Interpretation Systems,non_english_or_unknown_language
+https://openalex.org/W4400479920,Contributions à la segmentation d’images médicales par intelligence artificielle pour l’aide à la décision,ineligible_document_type
+https://openalex.org/W4417358076,Towards Trustworthy Explanations in Clinical AI: A Framework of Causal Screening and Clinical Constraints,ineligible_document_type
+https://openalex.org/W4413098756,Predictive Models for Chronic Cardiac Disease with LIME and SHAP,ineligible_document_type
+https://openalex.org/W4409917649,Advancing Predictive Modelling in Healthcare A Data Science Approach Utilizing AI-Driven Algorithms,ineligible_document_type
+https://openalex.org/W7212292397,Comparison of Support Vector Machine (SVM) and Decision Tree Methods in Lyme Disease Data Classification,non_english_or_unknown_language
+https://openalex.org/W3204099176,AIM in Medical Informatics,ineligible_document_type
+https://openalex.org/W7117898306,Optimized Amalgam CNN–LSTM–GRU Framework for Robust Stroke Recognition in IoT-based Clinical Environments,non_english_or_unknown_language
+https://openalex.org/W4403864197,Ensembled Deep Learning Technique for Cardiovascular Disease Detection: A CNN-GRU Approach,ineligible_document_type
+https://openalex.org/W4212884778,AIM in Medical Informatics,ineligible_document_type
+https://openalex.org/W3202108122,Le phénotypage digital pour une pratique clinique en santé mentale mieux informée,non_english_or_unknown_language
+https://openalex.org/W4389880139,Multi-Task Transformer Visualization to build Trust for Clinical Outcome Prediction,ineligible_document_type
+https://openalex.org/W7128797729,Comparative Ensemble Techniques for Chronic Kidney Disease Leveraging Clinical Intelligence,non_english_or_unknown_language
+https://openalex.org/W7171957201,AI-POWERED COMPUTATIONAL ONCOLOGY: ADVANCING PERSONALIZED CANCER MEDICINE THROUGH MULTIMODAL DATA FUSION,non_english_or_unknown_language
+https://openalex.org/W7171963203,"PRECISION CANCER INTELLIGENCE: LEVERAGING FOUNDATION MODELS, DIGITAL TWINS, AND MULTIMODAL LEARNING FOR CLINICAL TRANSLATION",non_english_or_unknown_language
+https://openalex.org/W7112508622,Deep learning-based prediction of malignancy of massive lesions in mammography and explanation insights,non_english_or_unknown_language
+https://openalex.org/W7198111366,Forecasting Survival Outcomes for Oncology Patients,ineligible_document_type
+https://openalex.org/W7114904381,Brain Stroke Prediction,non_english_or_unknown_language
+https://openalex.org/W4416875122,Transforming Lung Cancer Diagnosis and Therapy with AI and Deep Learning: Current Insights and Future Prospects,non_english_or_unknown_language
+https://openalex.org/W7207634218,"MULTIMODAL DEEP LEARNING INTEGRATING GENOMICS, IMAGING, AND ELECTRONIC HEALTH RECORDS FOR EARLY CANCER DIAGNOSIS: TRANSFORMER ARCHITECTURES, CROSS-MODAL ATTENTION, AND CLINICAL TRANSLATION",non_english_or_unknown_language
+https://openalex.org/W7171978140,"MULTIMODAL FOUNDATION MODELS FOR PREDICTIVE ONCOLOGY: UNIFYING RADIOMICS, PATHOMICS, GENOMICS, AND ELECTRONIC HEALTH RECORDS",non_english_or_unknown_language
+https://openalex.org/W7172018287,AI-DRIVEN PRECISION CANCER ECOSYSTEMS: FROM LIQUID BIOPSY AND RADIOMICS TO DIGITAL TWINS,non_english_or_unknown_language
+https://openalex.org/W7171964303,AUTONOMOUS ONCOLOGY SYSTEMS: FOUNDATION MODELS FOR REAL-TIME CLINICAL INTELLIGENCE AND PERSONALIZED CANCER CARE,non_english_or_unknown_language
+https://openalex.org/W4387430186,Semantic Enrichment of Explanations of AI Models for Healthcare,ineligible_document_type
+https://openalex.org/W7172027971,"FOUNDATION AI MODELS FOR SYSTEMS ONCOLOGY: INTEGRATING MULTI-OMICS, IMAGING, AND CLINICAL INTELLIGENCE FOR PRECISION CANCER CARE",non_english_or_unknown_language
+https://openalex.org/W7172030918,AI-AUGMENTED PRECISION THERAPEUTICS: FOUNDATION MODELS FOR BIOMARKER DISCOVERY AND PERSONALIZED CANCER TREATMENT,non_english_or_unknown_language
+https://openalex.org/W3091069996,Understanding Automatic Diagnosis and Classification Processes with Data Visualization,ineligible_document_type
+https://openalex.org/W4366549247,Harnessing Biomedical Literature to Calibrate Clinicians’ Trust in AI Decision Support Systems,ineligible_document_type
+https://openalex.org/W7203780256,Metaheuristic Optimization-Assisted LSTM-DBN Model for Predictive Healthcare Analytics and Biomedical Informatics,non_english_or_unknown_language
+https://openalex.org/W7160499661,AutoChemo: An Intelligent Deep Learning Pipeline for Personalized Chemotherapy Planning from Raw Clinical Features,non_english_or_unknown_language
+https://openalex.org/W7222651099,Dermal Check web application: architecture of a multimodular computer vision system for skin lesion diagnostics and user’s personal account.,non_english_or_unknown_language
+https://openalex.org/W4416199973,"Supervised, Unsupervised, and Reinforcement Learning: A Conceptual Guide for Clinical Researchers",non_english_or_unknown_language
+https://openalex.org/W4384209961,The SMART BEAR Project: An Overview of Its Infrastructure,ineligible_document_type
+https://openalex.org/W7134890542,Interactive XAI through Dialogue: Leveraging Approximate Inverse Model Explanations and LLM Agents,non_english_or_unknown_language
+https://openalex.org/W4394829088,Optimizing Healthcare Operations With Big Data and AI,ineligible_document_type
+https://openalex.org/W4415613724,"HEALTHCARE INFORMATICS WITH FUZZY LOGIC SMARTER DATA, SMARTER DECISIONS",non_english_or_unknown_language
+https://openalex.org/W4387878163,Challenges in the Exploitation of Historical Clinical Data for the Classification of Diabetic Retinopathy Patients,ineligible_document_type
+https://openalex.org/W7171965099,"AUTONOMOUS PRECISION ONCOLOGY: THE CONVERGENCE OF FOUNDATION AI MODELS, DIGITAL TWINS, AND COMPUTATIONAL CANCER INTELLIGENCE",non_english_or_unknown_language
+https://openalex.org/W4387588271,"Enhancing Precision Medicine and Wellness with Computing and AI across Clinical, Imaging, Environmental, Multi-Omics, Wearable Sensors, and Socio-Cognitive Data",ineligible_document_type
+https://openalex.org/W7172493307,"Multi-Agent AI Systems for Intelligent Healthcare Workflow Optimization: A Framework for Safety, Scalability, and Regulatory Compliance",non_english_or_unknown_language
+https://openalex.org/W7116653488,AI-Powered Clinical Decision Systems: Enhancing Diagnostics through Secure Interoperable Data Platforms,non_english_or_unknown_language
+https://openalex.org/W3192251958,Kunstmatige intelligentie in de psychiatrie,non_english_or_unknown_language
+https://openalex.org/W4400811449,"AI Doctors in Healthcare: A Comparative Journey through Diagnosis, Treatment, Care, Drug Development, and Health Analysis",ineligible_document_type
+https://openalex.org/W4243488765,Intelligent Techniques Inspired by Nature and Used in Biomedical Engineering,ineligible_document_type
+https://openalex.org/W4312414700,Feature Importance Measures as Explanation for Classification Applied to Hospital Readmission Prediction,ineligible_document_type
+https://openalex.org/W4416688087,From traditional ML to Advanced Neural Networks: A Multidimensional Analysis and Systematic Evaluation of Classification Models for Breast Cancer Detection,non_english_or_unknown_language
+https://openalex.org/W4311603019,Attention-based Automated Chest CT Image Segmentation Method of COVID-19 Lung Infection,ineligible_document_type
+https://openalex.org/W7126042984,Use of intelligent algorithms in virtual healthcare computer systems: From diagnosis to personalised treatment,non_english_or_unknown_language
+https://openalex.org/W4414463504,Classification of Heart Disease from Clinical Data Using Random Forest and Neural Networks,ineligible_document_type
+https://openalex.org/W2790363703,Intelligent Techniques Inspired by Nature and Used in Biomedical Engineering,ineligible_document_type
+https://openalex.org/W7217555296,Understanding automatic COVID-19 classification using chest X-ray images,ineligible_document_type
+https://openalex.org/W4405489035,Continuous Optimization of a Hierarchical Bayesian Network for Friedreich’s Ataxia Severity Classification,ineligible_document_type
+https://openalex.org/W4410917499,KI und Wir: Warum der Einsatz von Künstlicher Intelligenz das Prinzip der Multiakteursverantwortung braucht und forciert,non_english_or_unknown_language
+https://openalex.org/W7123340142,Symbolic AI in Critical Healthcare Setting : Towards Automated Governance of Spontaneous Breathing Trials for Streamlined Extubation,non_english_or_unknown_language
+https://openalex.org/W7155053332,A Multi-Layer AI-Driven Decision Intelligence Framework for Enterprise and Healthcare System,non_english_or_unknown_language
+https://openalex.org/W4414755044,Ethical implications for LLMs,ineligible_document_type
+https://openalex.org/W4416532971,AI-Powered Patient Care and Coordination Platform: A Literature Survey,non_english_or_unknown_language
+https://openalex.org/W4412847882,Bioinformatics Frontiers: Computational Innovations in Proteomics and Metabolomics,ineligible_document_type
+https://openalex.org/W7172029234,"FOUNDATION AI MODELS FOR PRECISION IMMUNOTHERAPY: PREDICTING RESPONSE, RESISTANCE, AND CLINICAL OUTCOMES",non_english_or_unknown_language
+https://openalex.org/W4414779112,"Towards an Analytical System for Supervising Fairness, Robustness, and Dataset Shifts in Health AI",ineligible_document_type
+https://openalex.org/W7119039870,Prof. Dr. Cahit Arf’ın Yapay Zeka Yaklaşımı Işığında Tıbbi Biyokimyada Yapay Zeka,non_english_or_unknown_language
+https://openalex.org/W7121577042,Antibiotic Resistance and Infectious Diseases,non_english_or_unknown_language
+https://openalex.org/W7115569944,Dynamic Temporal Cross-Modal Attention for Early Parkinson’s Disease Detection using Voice and Spiral Drawing Data,non_english_or_unknown_language
+https://openalex.org/W4416916748,Künstliche Intelligenz: Chancen und Grenzen,non_english_or_unknown_language
+https://openalex.org/W4416247620,AI in Clinical Neuroscience Practice,ineligible_document_type
+https://openalex.org/W7132105146,Analýza dat: výzvy a specifika v neurovědách a psychiatrii,non_english_or_unknown_language
+https://openalex.org/W7123270130,"An Integrated Cloud, IoT, and AI Framework for Smart Healthcare Monitoring and Decision Support",non_english_or_unknown_language
+https://openalex.org/W7172000061,TOWARDS AN INTELLIGENT CANCER LEARNING HEALTH SYSTEM: FOUNDATION AI MODELS FOR ADAPTIVE AND PERSONALIZED ONCOLOGY,non_english_or_unknown_language
+https://openalex.org/W4399528600,Risk Prediction of Heart Disease using Deep SHAP Techniques,ineligible_document_type
+https://openalex.org/W4408793239,Optimized Ensemble Learning for Chronic Kidney Disease Prognostication: A Stratified Cross-Validation Approach,ineligible_document_type
+https://openalex.org/W7154574920,Heart Disease Classification Using Tab Transformer: Attention-Enhanced Learning on Clinical Tabular Data,non_english_or_unknown_language
+https://openalex.org/W7154574920,Heart Disease Classification Using Tab Transformer: Attention-Enhanced Learning on Clinical Tabular Data,non_english_or_unknown_language
+https://openalex.org/W4410342951,"Optimization of Diabetics Diagnosis Using SVM, Random Forest and XGBoost",ineligible_document_type
+https://openalex.org/W4297198993,A Comparative Study: Classification Vs. Matrix Factorization for Therapeutics Recommendation,ineligible_document_type
+https://openalex.org/W4399266892,An Architecture to Support Graduated Levels of Trust for Cancer Diagnosis with AI,ineligible_document_type
+https://openalex.org/W7125710136,Breakthroughs in Genomic Medicine: Bioinformatics and Personalized Healthcare,non_english_or_unknown_language
+https://openalex.org/W4415974556,Med-Agent: A Hybrid AI Agent for Multimodal Cancer Diagnosis,ineligible_document_type
+https://openalex.org/W7155529029,Disease Prediction and Recommendation System: A Comprehensive Study with Multi-Model Comparison and Clustering Integrations,non_english_or_unknown_language
+https://openalex.org/W7131271499,"AI Agents in Healthcare: A Survey of Applications, Resources, and Challenges",non_english_or_unknown_language
+https://openalex.org/W7171919625,"INTEGRATIVE CANCER INTELLIGENCE: FOUNDATION MODELS FOR RADIOMICS, PATHOMICS, MULTI-OMICS, AND DIGITAL HEALTH",non_english_or_unknown_language
+https://openalex.org/W7171933438,"INTELLIGENT MULTIMODAL ONCOLOGY: INTEGRATING RADIOLOGY, PATHOLOGY, MULTI-OMICS, AND WEARABLE HEALTH DATA",non_english_or_unknown_language
+https://openalex.org/W7172010843,AI-DRIVEN PRECISION CLINICAL TRIALS: FOUNDATION MODELS FOR ADAPTIVE ONCOLOGY RESEARCH AND PERSONALIZED THERAPEUTICS,non_english_or_unknown_language
+https://openalex.org/W7171986532,"AI-ENABLED PRECISION RADIOPATHOMICS: INTEGRATING IMAGING, HISTOPATHOLOGY, AND GENOMICS FOR PERSONALIZED CANCER CARE",non_english_or_unknown_language
+https://openalex.org/W7151308048,Kişiye Özel Tıbbi Tedavi: Yapay Zeka ile Sağlık Hizmetlerinde Yeni Bir Dönem,non_english_or_unknown_language
+https://openalex.org/W7221485832,Development of a Predictive Model for Estimating the Probability of Success in Assisted Reproductive Technology,ineligible_document_type
+https://openalex.org/W3165093148,Understanding Automatic Pneumonia Classification Using Chest X-Ray Images,ineligible_document_type
+https://openalex.org/W3110468391,IDDF2020-ABS-0062 Exploratory data analysis of MIMIC-III database and predicting mortality of acute hepatic failure,ineligible_document_type
+https://openalex.org/W4405908991,Hybrid GCN-LSTM Framework for Enhanced Schizophrenia Diagnosis: Integrating Spatial and Temporal Insights from Brain Connectivity Data,ineligible_document_type
+https://openalex.org/W4410987104,"Feature Selection Using Ensemble Lasso Regression, Random Forest and Recursive Feature Elimination Methods in Breast Cancer Classification",ineligible_document_type
+https://openalex.org/W7106770444,Towards Robust and Fair Next Visit Diagnosis Prediction under Noisy Clinical Notes with Large Language Models,non_english_or_unknown_language
+https://openalex.org/W4297679122,Mortality Prediction in ICU Patients Suffering from Stroke,ineligible_document_type
+https://openalex.org/W7117304236,[Strategic key points and cases of study designs for prediction models in oncology].,non_english_or_unknown_language
+https://openalex.org/W4293094204,Self-Assessment and Robust Anomaly Detection with Bayesian Deep Learning,ineligible_document_type
+https://openalex.org/W4406417565,Leveraging XGBoost for Predictive Analytics in Healthcare: Enhancing Disease Diagnosis,ineligible_document_type
+https://openalex.org/W7171232211,Data Science Approaches to Personalized Healthcare,non_english_or_unknown_language
+https://openalex.org/W4417048753,Responsible AI Integration Framework for Psychotherapy,non_english_or_unknown_language
+https://openalex.org/W4200123295,Autopopulus: A Novel Framework for Autoencoder Imputation on Large Clinical Datasets,ineligible_document_type
+https://openalex.org/W7115014759,Video - Responsible AI Integration Framework for Psychotherapy,non_english_or_unknown_language
+https://openalex.org/W4415694965,Future Trends: Towards Autonomous AI-Powered Smart Hospitals and Precision Healthcare,non_english_or_unknown_language
+https://openalex.org/W4411746304,IoT Powered Wearable Medical Devices and Continuous Health Monitoring Systems for Personalized Patient Care,ineligible_document_type
+https://openalex.org/W4416163949,Collaborative Agentic AI for Personalized Treatment Protocol Optimization: Autonomous Clinical Decision Networks,ineligible_document_type
+https://openalex.org/W7171970226,INTELLIGENT DIGITAL TWINS IN ONCOLOGY: REAL-TIME VIRTUAL PATIENT MODELING FOR PERSONALIZED THERAPEUTIC DECISION-MAKING,non_english_or_unknown_language
+https://openalex.org/W7118549560,"Comparative Analysis of Computational Intelligence Techniques for Predicting Coronary Artery Heart Disease: A Study on Logistic Regression, Support Vector Machine, and K-Nearest Neighbor",non_english_or_unknown_language
+https://openalex.org/W7171956821,FOUNDATION MODELS FOR COMPUTATIONAL CANCER BIOLOGY: BRIDGING MOLECULAR MECHANISMS AND CLINICAL TRANSLATION,non_english_or_unknown_language
+https://openalex.org/W7171928766,"PREDICTIVE ONCOLOGY THROUGH FOUNDATION AI: INTEGRATING LONGITUDINAL CLINICAL DATA, MULTI-OMICS, AND DIGITAL TWINS",non_english_or_unknown_language
+https://openalex.org/W4414854953,Large Language Models,ineligible_document_type
+https://openalex.org/W7172019327,CANCER INTELLIGENCE NETWORKS: FEDERATED FOUNDATION MODELS FOR SECURE AND COLLABORATIVE PRECISION ONCOLOGY,non_english_or_unknown_language
+https://openalex.org/W4412795209,JoVE Video Dataset,non_english_or_unknown_language
+https://openalex.org/W4414648432,Enhancing Clinical Decision-Making: Integrating Multi-Agent Systems with Ethical AI Governance,ineligible_document_type
+https://openalex.org/W4394800338,Développement de méthodes d’intelligence artificielle pour l’analyse de données de réseaux sociaux et à des fins de recherche médicale : cas d’utilisation sur une étude mondiale sur le diabète,ineligible_document_type
+https://openalex.org/W4400770526,Human-Computer Interaction and Healthcare,ineligible_document_type
+https://openalex.org/W7162543017,Prediction and Classification Hepatitis C Disease Using Optimized Ensemble Learning,non_english_or_unknown_language
+https://openalex.org/W7118164019,Medical decision support model for diagnosing and rehabilitating patients with disabilities,non_english_or_unknown_language
+https://openalex.org/W7204486192,Evaluating the NURSAI CARES Maturity Model for Measuring Organizational Readiness in Clinical Risk Visibility AI-Assisted Prioritization Escalation Reliability Documentation Continuity and Patient Safety Verification,non_english_or_unknown_language
+https://openalex.org/W2990944862,Decision support systems in breast cancer,ineligible_document_type
+https://openalex.org/W7149339790,AI-ASSISTED DERMOSCOPY FOR EARLY DIAGNOSIS OF MALIGNANT MELANOMA: A CLINICAL VALIDATION,non_english_or_unknown_language
+https://openalex.org/W7116897585,Quantum and Classical Learning-Assisted Detection of Heart Diseases,non_english_or_unknown_language
+https://openalex.org/W7171924744,"NEXT-GENERATION INTELLIGENT ONCOLOGY: CONVERGING AGENTIC AI, FOUNDATION MODELS, AND PRECISION MEDICINE FOR PERSONALIZED CANCER CARE",non_english_or_unknown_language
+https://openalex.org/W4413679708,Mitigating Clinician Information Overload: Generative AI for Integrated EHR and RPM Data Analysis,ineligible_document_type
+https://openalex.org/W7124137126,Prediction of Monoclonal Gammopathy Undetermined Significance Disorder Occurrence,non_english_or_unknown_language
+https://openalex.org/W4417178768,Intelligent decision-making in the Intensive Care Unit,ineligible_document_type
+https://openalex.org/W7104282250,A novel cloud-deployed data pipeline for cervical spine fracture detection in 3D CT images,non_english_or_unknown_language
+https://openalex.org/W4417505778,AI‑Powered Wireless Stethoscope for Early Prediction of Cardiac and Pulmonary Diseases,non_english_or_unknown_language
+https://openalex.org/W4417350731,Enhancing Diagnostics with Logistic Regression,non_english_or_unknown_language
+https://openalex.org/W2615612963,Scalable Exact Parent Sets Identification in Bayesian Networks Learning with Apache Spark,ineligible_document_type
+https://openalex.org/W7131635394,EagleCare: Augmenting ICU Monitoring with LLMs and Knowledge Graph Reasoning,non_english_or_unknown_language
+https://openalex.org/W4410295688,A Semantic Approach to Clinical Risk Detection: Early Warning Systems with Knowledge Graphs,ineligible_document_type
+https://openalex.org/W4415974353,A Minimal Plasma Proteome-Based Biomarker Panel for Accurate Prostate Cancer Diagnosis,non_english_or_unknown_language
+https://openalex.org/W7104036596,"AI-Enhanced Intelligent Healthcare: Advancements in Remote Monitoring, Predictive Analytics and Disease Diagnosis",ineligible_document_type
+https://openalex.org/W4416734304,Reply to Matsubara,ineligible_document_type
+https://openalex.org/W4387740070,Journal of Population and Therapeutics and Clinical Pharmacology,ineligible_document_type
+https://openalex.org/W4403474033,A Context Aware Decision-Making Algorithm for Human-Centric Analytics: Algorithm Development and Use Cases for Health Informatics System,ineligible_document_type
+https://openalex.org/W4416799591,Efficacy of Tandem Haematopoietic Cell Transplantation in Refractory Primary Progressive Hodgkin Lymphoma using AI assisted Deep Learning Methodology,non_english_or_unknown_language
+https://openalex.org/W4411484153,AI and ML in Genomic Research: Unlocking the Potential of Precision Medicine,ineligible_document_type
+https://openalex.org/W4413208239,Towards Data-Driven Reconstructive Surgery,ineligible_document_type
+https://openalex.org/W7203743470,AI-Based Predictive Models in Ayurveda,non_english_or_unknown_language
+https://openalex.org/W4301852034,How to Reduce the Time Necessary for Evaluation of Tree-Based Models,ineligible_document_type
+https://openalex.org/W4416411426,Structural Injury Severity Predicts Poor Prognosis After Posterior Pedicle Screw Fixation for Thoracolumbar Burst Fractures: A Retrospective Modeling Study,non_english_or_unknown_language
+https://openalex.org/W3181926637,Automated Decision Support System for Traumatic Injuries,ineligible_document_type
+https://openalex.org/W4417078700,IOSA-Enhanced Feature Weighting for Lightweight Cardiovascular Risk Classification,non_english_or_unknown_language
+https://openalex.org/W7127048230,DIAGNOSTIC ACCURACY OF MULTIMODAL AI FRAMEWORKS VS. CLINICAL ASSESSMENT FOR EARLY-STAGE PARKINSON’S DISEASE: A SYSTEMATIC REVIEW AND META-ANALYSIS,non_english_or_unknown_language
+https://openalex.org/W7143406698,Transformer-GNN and Reinforcement Learning Framework for Autonomous Drug–Drug Interaction Optimization,non_english_or_unknown_language
+https://openalex.org/W4416948470,Advancing Neurodiagnostic with Generative AI: Synthetic Data-Driven Lesion Detection in MRI,non_english_or_unknown_language
+https://openalex.org/W7131067708,A Comprehensive Feature Extraction of Biomechanical Gait Parameters Using XSENS Inertial Motion Capture System Towards AI-Driven Clinical Gait Assessment,non_english_or_unknown_language
+https://openalex.org/W4416272774,A LIPSCHITZ-STABILITY-BASED HYBRID MODEL FOR CANCER SURVIVAL PREDICTION USING ENSEMBLE LEARNING ON THE PLCO DATASET.,non_english_or_unknown_language
+https://openalex.org/W4416455315,A LIPSCHITZ-STABILITY-BASED HYBRID MODEL FOR CANCER SURVIVAL PREDICTION USING ENSEMBLE LEARNING ON THE PLCO DATASET.,non_english_or_unknown_language
+https://openalex.org/W7106768536,Health system learning achieves generalist neuroimaging models,non_english_or_unknown_language
+https://openalex.org/W4416921613,"Abstract 431: Enhancing Intracranial Aneurysm Rupture Risk Prediction Through Integrated AI Analysis of Morphology, Hemodynamics, and Clinical Data",ineligible_document_type
+https://openalex.org/W7116059359,AI-Based Healthcare Diagnostics Using CNN and Reinforcement Learning,non_english_or_unknown_language
+https://openalex.org/W7106783881,Health system learning achieves generalist neuroimaging models,non_english_or_unknown_language
+https://openalex.org/W7123336742,Deciphering Molecular Subtypes and Histological Patterns in Uterine Corpus Endometrial Carcinoma,non_english_or_unknown_language
+https://openalex.org/W7134076605,Annotated dataset of clinical notes for predicting social determinants of mental health in opioid use disorder using a Human-in-the-Loop Large Language Model Interaction for Annotation (HLLIA) framework,ineligible_document_type
+https://openalex.org/W4409623469,Digital Solutions for Pollen Allergy and Allergen Immunotherapy: The AllergyMonitor Experience,ineligible_document_type
+https://openalex.org/W7160652893,A Novel Hybrid RF-GA-SNN Algorithm for Accurate Heart Disease Prediction,non_english_or_unknown_language
+https://openalex.org/W7137892227,Agentic AI Solutions: The Future for Intelligent and Secure Healthcare,non_english_or_unknown_language
+https://openalex.org/W7160532253,,non_english_or_unknown_language
+https://openalex.org/W4415913130,Accelerating Innovation in Healthcare Through High-Performance Computing: Applications and Future Perspectives,non_english_or_unknown_language
+https://openalex.org/W7128412121,IMPLEMENTASI METODE KECERDASAN BUATAN (ARTIFICIAL INTELLEGENCE) PADA PENYAKIT KANKER PROSTAT,non_english_or_unknown_language
+https://openalex.org/W7112232901,Mapping Free-Text Symptoms to Medical Concepts Using Knowledge Graph Embeddings and Natural Language Inference,ineligible_document_type
+https://openalex.org/W4410164194,Journal of Survey in Fisheries Sciences,ineligible_document_type
+https://openalex.org/W4413917375,A LightGBM-Based Diagnostic Model for Skin Cancer Classification Using Dermoscopic Images,ineligible_document_type
+https://openalex.org/W4416270245,Heart Disease Prediction: A Logistic Regression Approach,non_english_or_unknown_language
+https://openalex.org/W4415990893,Shaping AI-Based Decision Support in Kidney Cancer: Multidisciplinary Consensus from the IKCSEU25 ART Think Tank,ineligible_document_type
+https://openalex.org/W4409627047,Abstract 4913: PREDICT Breast v4: Advancing equity in breast cancer prognosis for diverse populations,ineligible_document_type
+https://openalex.org/W7116139668,A Privacy-Preserving Health Monitoring Framework Using Federated Learning on Wearable Sensor Data,ineligible_document_type
+https://openalex.org/W7116885527,Smart Deprescribing Algorithms as a Strategy to Optimize Medication Safety and Reduce Drug–Drug Interactions,non_english_or_unknown_language
+https://openalex.org/W4412587894,Leveraging Large Language Models for Early Diagnosis of Inherited Metabolic Diseases Evaluation and Optimization,ineligible_document_type
+https://openalex.org/W7168895259,A Hybrid CNN XG Boost Framework for Early Stage Disease Diagnosis Using Multimodal Clinical and Imaging Data,non_english_or_unknown_language
+https://openalex.org/W4404688816,Early Prediction of Invasive Mechanical Ventilation Needs in Patients Admitted to Intensive Care Units: A Novel Ensemble Learning Approach,ineligible_document_type
+https://openalex.org/W7112063281,Learning Optimal Summaries of Clinical Time-series with Concept Bottleneck Models,ineligible_document_type
+https://openalex.org/W4396999886,Prediction of Atrial Fibrillation Using Clinical and Cardiac Biomarker Data: The CRIC Study,ineligible_document_type
+https://openalex.org/W3193259175,"COVID-Net US: A Tailored, Highly Efficient, Self-attention Deep Convolutional Neural Network Design for Detection of COVID-19 Patient Cases from Point-of-Care Ultrasound Imaging",ineligible_document_type
+https://openalex.org/W7130707179,Inaugural Editorial of the Inspire Intelligence First Issue Publication,non_english_or_unknown_language
+https://openalex.org/W4412232379,Predictive Risk Modeling in child and family welfare,ineligible_document_type
+https://openalex.org/W7171321154,Large Language Models in Healthcare: Opportunities and Ethical Challenges,non_english_or_unknown_language
+https://openalex.org/W7211911824,Graph Neural Networks for Drug-Drug Interaction Prediction in Polypharmacy Patients: A Conceptual Framework Using Prescription Sequences and Molecular Structures,non_english_or_unknown_language
+https://openalex.org/W7213463564,Data-Driven Predictive Modeling for Early Diagnosis and Risk Stratification of Chronic Diseases,non_english_or_unknown_language
+https://openalex.org/W4416045559,A hybrid DMO-CNN-LSTM framework for feature selection and diabetes prediction: a deep learning perspective,non_english_or_unknown_language
+https://openalex.org/W4417509903,Enhanced Breast Cancer Detection Through Conven-tional and Modern Algorithms,non_english_or_unknown_language
+https://openalex.org/W7117463503,AI-based Chatbot for Healthcare,non_english_or_unknown_language
+https://openalex.org/W4415694984,ML and IoT Approaches for Early Diagnosis and Prediction of Alzheimer’s Disease,non_english_or_unknown_language
+https://openalex.org/W4416255925,Ensemble Deep Learning Approach for Stroke Prediction Using Healthcare Data,non_english_or_unknown_language
+https://openalex.org/W4241847437,EDITORIAL,non_english_or_unknown_language
+https://openalex.org/W7117254287,Systematic Review Protocol: Exploring Bias in Medical Applications of Large Language Models,non_english_or_unknown_language
+https://openalex.org/W7220409713,AI and SQL: A Powerful Combination For Managing Clinical Data in Neurology,non_english_or_unknown_language
+https://openalex.org/W7108229074,251Reinforcement-Driven Graph Neural Framework for Personalized and Proactive Patient Care in Digital Health Systems,non_english_or_unknown_language
+https://openalex.org/W4416193931,Deep Learning Approaches for Real-Time Medical Image Segmentation,non_english_or_unknown_language
+https://openalex.org/W4313413336,Local Naïve Bayes for Predicting Evolution of COVID-19 Patients on Self Organizing Maps,ineligible_document_type
+https://openalex.org/W7110827937,S1425 Enhancing Gastrointestinal Bleeding Detection in Wireless Capsule Endoscopy Using Convolutional Autoencoders,ineligible_document_type
+https://openalex.org/W7152423230,RBXRT++: A New Data-Driven Approach for Detecting Alzheimer's and Cognitive Decline,non_english_or_unknown_language
+https://openalex.org/W3112761824,Advancing Temporal Modeling and Heterogeneous Data Analysis for Digital Health,ineligible_document_type
+https://openalex.org/W4416501131,Application of KNN Voting Classification and Naive Bayes for Classification of Type II Diabetes Mellitus,non_english_or_unknown_language
+https://openalex.org/W7106312012,Investigating Ensemble Methods to Improve Risk Estimates for Chronic Disease in Canadian Primary Care: A Case Study with Prediction Models for Chronic Kidney Disease in People with Diabetes,ineligible_document_type
+https://openalex.org/W2926822460,Gaussian Process-Based Models for Clinical Time Series in Healthcare,ineligible_document_type
+https://openalex.org/W7133224966,MediDT: Digital TwinBased Predictive Analytics for Personalized Patient Recovery,non_english_or_unknown_language
+https://openalex.org/W4417403618,Ensemble Feature Selection: A Hybrid Approach for Pediatric Type 1 Diabetes Risk Factors,non_english_or_unknown_language
+https://openalex.org/W4412891269,Editorial: Unleashing the power of large data: models to improve individual health outcomes,ineligible_document_type
+https://openalex.org/W7117690020,Epileptic Seizure Prediction Using Deep Learning,non_english_or_unknown_language
+https://openalex.org/W7164031140,Federated Learning and Differential Privacy Preserve for Precise Disease Prediction,non_english_or_unknown_language
+https://openalex.org/W4415355296,Hybrid VLM-LLM Collaborative Reasoning via Multimodal Enhanced Chain-of-Thought for Sleep Apnea Diagnosis,non_english_or_unknown_language
+https://openalex.org/W3211911048,Prognosis and Therapeutic Response Transfer Learning Model for Multiple Myeloma,ineligible_document_type
+https://openalex.org/W4409753695,Overcoming Label Limitations,ineligible_document_type
+https://openalex.org/W3001095921,Prognostic models in first-episode psychosis – Authors' reply,ineligible_document_type
+https://openalex.org/W7114765751,Multi-View Autoencoder Framework with Feature Recalibration and Ensemble Learning for Predicting Heart Disease,non_english_or_unknown_language
+https://openalex.org/W4411851097,Re: Does chatGPT-4.0’s awareness of conversing with a urologist affect the accuracy of responses to questions about “sexually transmitted urethritis in men”?,ineligible_document_type
+https://openalex.org/W7105698305,A Comparative Analysis of Autism Spectrum Disorder Evaluation,non_english_or_unknown_language
+https://openalex.org/W7171761148,A Secure ML-Assisted Framework for Resilient and Efficient Prediction of Physiotherapy Sequence in Bilateral Carpal Tunnel Syndrome,non_english_or_unknown_language
+https://openalex.org/W4205879186,Preparing for a New World: Making Friends with Digital Health,ineligible_document_type
+https://openalex.org/W7128476651,Ensembled Tabnet-Based Model Approach for Diabetes Disease Classification,non_english_or_unknown_language
+https://openalex.org/W2922215461,Big data analytics in adult congenital heart disease: why coding matters,ineligible_document_type
+https://openalex.org/W7117128044,SKIMS-ECG: A Clinically Validated ECG Feature Dataset for Multi-Class Cardiovascular Disease Detection,non_english_or_unknown_language
+https://openalex.org/W2759516734,Accuracy estimation after model selection using bootstrapping: An application to clinical data,ineligible_document_type
+https://openalex.org/W3216309685,Editorial: Respecting Human Autonomy through Human-Centered AI,ineligible_document_type
+https://openalex.org/W7106707575,Tempora-CVD: Transformer-Based 10-Year Cardiovascular Disease Risk Prediction from Longitudinal Electronic Health Records,ineligible_document_type
+https://openalex.org/W7130934932,AI Factories as Enterprise Intelligence Infrastructure: How GPU-Powered Systems Are Redefining Value Creation across Industries,non_english_or_unknown_language
+https://openalex.org/W3034886669,Abstract IA04: Clinical challenges in oncologic imaging: AI support from image analysis to integrated diagnostics,ineligible_document_type
+https://openalex.org/W7211890561,Deep Learning Integration in Clinical Decision Infrastructure: A Systems-Oriented Review,non_english_or_unknown_language
+https://openalex.org/W4407793677,Index,ineligible_document_type
+https://openalex.org/W4393685212,Deep Representation Learning of Physical Activity and Sleep Patterns During Pregnancy Identifies post-hoc Inferences Associated with Prematurity,ineligible_document_type
+https://openalex.org/W7159853788,Использование гибридной модели на основе BPNN-BC для диагностики рака молочной железы,non_english_or_unknown_language
+https://openalex.org/W4411421184,POS0301 DEVELOPING AND EXTERNALLY VALIDATING A MULTIVARIABLE PREDICTION MODEL TO PREDICT THE RISK OF DEVELOPING PSORIATIC ARTHRITIS IN ADULTS NEWLY DIAGNOSED WITH PSORIASIS IN PRIMARY CARE: AN OBSERVATIONAL COHORT STUDY,ineligible_document_type
+https://openalex.org/W4417241083,S2684 Fibro-GPT: A Large Language Model for Accurate Prediction of Advanced Fibrosis and Hepatic Decompensation in MASLD,ineligible_document_type
+https://openalex.org/W2894184587,Editorial,ineligible_document_type
+https://openalex.org/W7124727615,AI-Driven Workflows Integrating Strain Diversity and Host Metabolic-Genetic Variation for Tuberculosis Treatment Prioritization,ineligible_document_type
+https://openalex.org/W4405002894,Analisis Perbandingan Algoritma Pembelajaran Mesin untuk Meningkatkan Akurasi dan Klasifikasi Tumor Otak,non_english_or_unknown_language
+https://openalex.org/W7116940248,Predicting Motor Trajectories and Mapping Progression Subtypes in Parkinson’s Disease via Structure–Function Neural Field Encoding and Multi-View Representation,non_english_or_unknown_language
+https://openalex.org/W3043864482,Deep Learning Techniques for Electronic Health Record (EHR) Analysis,ineligible_document_type
+https://openalex.org/W4410902500,Editorial: Large Language Models for medical applications,ineligible_document_type
+https://openalex.org/W4414717486,"Editorial: Navigating the nexus of big data, AI, and public health: transformations, triumphs, and trials in multiple sclerosis care access",ineligible_document_type
+https://openalex.org/W4415263952,A10 An AI-enabled software as a medical device cleared by the FDA for assessing hemorrhage risk in trauma casualties,ineligible_document_type
+https://openalex.org/W4200401699,Predictive models: important problems and innovative methods,ineligible_document_type
+https://openalex.org/W2946259229,The journal of knowledge engineering special issue on WorldCist'17—fifth world conference on information systems and technologies,ineligible_document_type
+https://openalex.org/W4411834585,"Clinical Practice Guidelines: Present, Past, and Future",ineligible_document_type
+https://openalex.org/W4406481138,Natural language processing in healthcare: Unlocking insights from clinical data,ineligible_document_type
+https://openalex.org/W4410526216,Editorial: Innovations in teaching and learning for Health Professions Educators,ineligible_document_type
+https://openalex.org/W4414551308,Editorial: Women in psychiatry 2024: computational psychiatry,ineligible_document_type
+https://openalex.org/W4388763471,"Abstracts Presented at the 2023 Advancing Healthcare Innovation Summit: Nov 11, 2023 (Virtual)",ineligible_document_type
+https://openalex.org/W4407181529,Editorial: Markers of clinical significance and treatment-seeking of psychotic experiences in non-clinical populations: potential resilience & risk factors,ineligible_document_type
+https://openalex.org/W4415376271,Editorial: Genetic insights and diagnostic innovations in cerebrovascular and cerebrospinal fluid disorders,ineligible_document_type
+https://openalex.org/W4404504845,Editorial: Cell death in cancer immunology,ineligible_document_type
+https://openalex.org/W2979478251,Pretest Probability: Cornerstone of Testing in Suspected Ischemic Heart Disease,ineligible_document_type

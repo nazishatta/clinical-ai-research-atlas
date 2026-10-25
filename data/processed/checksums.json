@@ -1,0 +1,10 @@
+{
+  "topic_review.csv": "b4cc128c7bab34f67ee8da10feac275a9799e84e817110b21835ca7c09030cf2",
+  "works.jsonl": "fb7edeac3a0d68825bf360df83d190d14fed7320d5da876fcb81537b5f097f39",
+  "topic_evaluation.csv": "7560fb7034a03663ccf5d441539e347cb2ba5c3cc200a586137e48796097b8dd",
+  "manual_review.csv": "f88853bb8f3401e5c6a2a2197560ff0737380d18f8bad93b4496a1e055783dfa",
+  "audit.json": "626f967480e58bda3c645f0294d3521b3f57c6329facbda4e505c2b503e64178",
+  "topics.json": "8a8621af9ee6f616ec8aa414a52a84f073d22638feb0e725b09ea9dc8f3ef543",
+  "exclusions.csv": "97a35c1341b01ade0be9a49bd328034c06a5979dd86eea32816ef65c96b7b5a3",
+  "retrieval_manifest.json": "26c9c0da5cf507359c6d9f4b5a8ab6c9489f02d24f5dde7ace74a1fe2a7f4ed1"
+}
