@@ -1,0 +1,34 @@
+{
+  "source_record_count": 1395,
+  "unique_work_ids": 1395,
+  "abstract_available_count": 1210,
+  "text_eligible_count": 1209,
+  "relevance": {
+    "reviewed": 0,
+    "sample_total": 95,
+    "unresolved": 95,
+    "all_strata_complete": false,
+    "year_weighted_precision": null,
+    "precision_status": "NOT ESTIMATED: incomplete review"
+  },
+  "topic_review": {
+    "completed_rows": 0,
+    "total_rows": 25,
+    "interpretation_approved": false
+  },
+  "benchmark": {
+    "rows": 0,
+    "retrieved_yes": 0,
+    "completed": false
+  },
+  "denominator_invariants_pass": true,
+  "not_automatically_verified": [
+    "independent human screening",
+    "NMF semantic interpretation",
+    "search recall",
+    "2025 spike cause",
+    "author identity correctness",
+    "browser accessibility",
+    "deployment"
+  ]
+}

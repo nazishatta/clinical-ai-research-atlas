@@ -1,0 +1,11 @@
+year,population,sample,include,exclude,uncertain,pending,complete,precision
+2016,5,5,0,0,0,5,False,
+2017,10,10,0,0,0,10,False,
+2018,15,10,0,0,0,10,False,
+2019,28,10,0,0,0,10,False,
+2020,72,10,0,0,0,10,False,
+2021,104,10,0,0,0,10,False,
+2022,129,10,0,0,0,10,False,
+2023,172,10,0,0,0,10,False,
+2024,216,10,0,0,0,10,False,
+2025,644,10,0,0,0,10,False,

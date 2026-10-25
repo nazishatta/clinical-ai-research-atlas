@@ -1,0 +1,1 @@
+Place your completed relevance and topic-review worksheets here. Keep the generated originals in data/processed untouched, or copy your annotations here before rerunning the build script. No completed human labels are bundled.

@@ -1,0 +1,175 @@
+{
+  "created_at_utc": "2026-10-22T06:31:23.837732+00:00",
+  "candidate_records": 2100,
+  "eligible_works": 1395,
+  "excluded_records": 705,
+  "exclusion_reasons": {
+    "ineligible_document_type": 375,
+    "non_english_or_unknown_language": 327,
+    "duplicate_doi": 2,
+    "duplicate_work_id": 1
+  },
+  "abstract_available_pct": 86.73835125448028,
+  "text_eligible_count": 1209,
+  "network_nodes": 6464,
+  "network_edges": 30067,
+  "network_isolates": 160,
+  "network_components": 1093,
+  "largest_component_authors": 134,
+  "repeated_collaboration_edges": 1400,
+  "max_team_size": 78,
+  "selected_topic_count": 5,
+  "topic_evaluation": [
+    {
+      "topics": 5,
+      "mean_aligned_cosine": 0.999999999996556,
+      "mean_top10_jaccard": 1.0,
+      "mean_reconstruction_error": 33.103102701786995,
+      "all_runs_converged": true
+    },
+    {
+      "topics": 8,
+      "mean_aligned_cosine": 0.9999999995528246,
+      "mean_top10_jaccard": 1.0,
+      "mean_reconstruction_error": 32.88504951149246,
+      "all_runs_converged": true
+    },
+    {
+      "topics": 10,
+      "mean_aligned_cosine": 0.9999995093987767,
+      "mean_top10_jaccard": 1.0,
+      "mean_reconstruction_error": 32.77289019874279,
+      "all_runs_converged": false
+    }
+  ],
+  "topic_selection_status": "provisional_numeric_selection_pending_human_interpretability_review",
+  "bootstrap_stability_fixed_vocabulary": [
+    {
+      "seed": 0,
+      "mean_aligned_cosine": 0.9682238119797614
+    },
+    {
+      "seed": 7,
+      "mean_aligned_cosine": 0.9590111838727523
+    },
+    {
+      "seed": 21,
+      "mean_aligned_cosine": 0.9568122567013815
+    },
+    {
+      "seed": 42,
+      "mean_aligned_cosine": 0.9634650011969486
+    },
+    {
+      "seed": 99,
+      "mean_aligned_cosine": 0.9601216464039668
+    }
+  ],
+  "preprocessing": {
+    "min_df": 3,
+    "max_df": 0.95,
+    "max_features": 7000,
+    "ngrams": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "extra_stopwords": [
+      "approach",
+      "based",
+      "data",
+      "method",
+      "methods",
+      "model",
+      "models",
+      "new",
+      "paper",
+      "proposed",
+      "results",
+      "study",
+      "use",
+      "used",
+      "using"
+    ]
+  },
+  "manual_relevance_review": "PENDING; no human labels fabricated",
+  "known_paper_retrieval_review": "PENDING; independent benchmark not supplied",
+  "by_year": [
+    {
+      "year": 2016,
+      "works": 5,
+      "abstract_available_pct": 60.0,
+      "text_eligible_pct": 60.0,
+      "valid_author_record_pct": 100.0
+    },
+    {
+      "year": 2017,
+      "works": 10,
+      "abstract_available_pct": 80.0,
+      "text_eligible_pct": 80.0,
+      "valid_author_record_pct": 100.0
+    },
+    {
+      "year": 2018,
+      "works": 15,
+      "abstract_available_pct": 73.33,
+      "text_eligible_pct": 73.33,
+      "valid_author_record_pct": 100.0
+    },
+    {
+      "year": 2019,
+      "works": 28,
+      "abstract_available_pct": 71.43,
+      "text_eligible_pct": 71.43,
+      "valid_author_record_pct": 100.0
+    },
+    {
+      "year": 2020,
+      "works": 72,
+      "abstract_available_pct": 83.33,
+      "text_eligible_pct": 83.33,
+      "valid_author_record_pct": 98.61
+    },
+    {
+      "year": 2021,
+      "works": 104,
+      "abstract_available_pct": 85.58,
+      "text_eligible_pct": 85.58,
+      "valid_author_record_pct": 100.0
+    },
+    {
+      "year": 2022,
+      "works": 129,
+      "abstract_available_pct": 86.05,
+      "text_eligible_pct": 86.05,
+      "valid_author_record_pct": 99.22
+    },
+    {
+      "year": 2023,
+      "works": 172,
+      "abstract_available_pct": 83.72,
+      "text_eligible_pct": 83.72,
+      "valid_author_record_pct": 99.42
+    },
+    {
+      "year": 2024,
+      "works": 216,
+      "abstract_available_pct": 91.2,
+      "text_eligible_pct": 91.2,
+      "valid_author_record_pct": 94.91
+    },
+    {
+      "year": 2025,
+      "works": 644,
+      "abstract_available_pct": 88.04,
+      "text_eligible_pct": 87.89,
+      "valid_author_record_pct": 95.5
+    }
+  ],
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "networkx": "3.7"
+  }
+}

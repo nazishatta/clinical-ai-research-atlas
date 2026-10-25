@@ -1,0 +1,43 @@
+id,title,year,doi
+https://openalex.org/W3124700666,A Systematic Review of Machine Learning Models for Predicting Outcomes of Stroke with Structured Data,2020,https://doi.org/10.2139/ssrn.3520073
+https://openalex.org/W3098769624,A scoping review of causal methods enabling predictions under hypothetical interventions,2020,https://doi.org/10.48550/arxiv.2011.09815
+https://openalex.org/W3128511017,A scoping review of causal methods enabling predictions under hypothetical interventions,2021,https://doi.org/10.1186/s41512-021-00092-9
+https://openalex.org/W3034655770,A systematic review of machine learning models for predicting outcomes of stroke with structured data,2020,https://doi.org/10.1371/journal.pone.0234722
+https://openalex.org/W7166466600,AI Meets Multiomics Sequencing: The Technology Ecosystem for Precision Medicine,2025,https://doi.org/10.5281/zenodo.21010634
+https://openalex.org/W7166470265,AI Meets Multiomics Sequencing: The Technology Ecosystem for Precision Medicine,2025,https://doi.org/10.5281/zenodo.21010174
+https://openalex.org/W3133650345,Bidirectional Representation Learning From Transformers Using Multimodal Electronic Health Record Data to Predict Depression,2021,
+https://openalex.org/W3089168780,Bidirectional Representation Learning From Transformers Using Multimodal Electronic Health Record Data to Predict Depression,2021,https://doi.org/10.1109/jbhi.2021.3063721
+https://openalex.org/W4309923034,CLARUS: An Interactive Explainable AI Platform for Manual Counterfactuals in Graph Neural Networks,2022,https://doi.org/10.1101/2022.11.21.517358
+https://openalex.org/W4391345489,CLARUS: An interactive explainable AI platform for manual counterfactuals in graph neural networks,2024,https://doi.org/10.1016/j.jbi.2024.104600
+https://openalex.org/W4402773736,Crowd-sourced machine learning prediction of long COVID using data from the National COVID Cohort Collaborative,2024,https://doi.org/10.1016/j.ebiom.2024.105333
+https://openalex.org/W4403085400,Crowd-sourced machine learning prediction of long COVID using data from the National COVID Cohort Collaborative,2024,https://doi.org/10.17615/xhdk-h129
+https://openalex.org/W4415987764,Data-Driven Bifurcation Handling in Physics-Based Reduced-Order Vascular Hemodynamic Models,2025,https://doi.org/10.48550/arxiv.2508.21165
+https://openalex.org/W4413850946,Data-Driven Bifurcation Handling in Physics-Based Reduced-Order Vascular Hemodynamic Models,2025,https://doi.org/10.2139/ssrn.5415296
+https://openalex.org/W7117571937,Data-driven bifurcation handling in physics-based reduced-order vascular hemodynamic models,2025,https://doi.org/10.1016/j.cmpb.2025.109230
+https://openalex.org/W4221148037,Evaluating Explainable AI on a Multi-Modal Medical Imaging Task: Can Existing Algorithms Fulfill Clinical Requirements?,2022,https://doi.org/10.48550/arxiv.2203.06487
+https://openalex.org/W4283800998,Evaluating Explainable AI on a Multi-Modal Medical Imaging Task: Can Existing Algorithms Fulfill Clinical Requirements?,2022,https://doi.org/10.1609/aaai.v36i11.21452
+https://openalex.org/W4283369407,Explainable Artificial Intelligence Methods in Combating Pandemics: A Systematic Review,2022,https://doi.org/10.1109/rbme.2022.3185953
+https://openalex.org/W4226293412,Explainable Artificial Intelligence Methods in Combating Pandemics: A Systematic Review,2021,https://doi.org/10.48550/arxiv.2112.12705
+https://openalex.org/W4206890181,Explainable Deep Learning in Healthcare: A Methodological Survey from an Attribution View,2021,https://doi.org/10.48550/arxiv.2112.02625
+https://openalex.org/W4205332171,Explainable deep learning in healthcare: A methodological survey from an attribution view,2022,https://doi.org/10.1002/wsbm.1548
+https://openalex.org/W4225593384,Explainable deep learning in healthcare: A methodological survey from an attribution view,2022,
+https://openalex.org/W4415102324,GPT-4o and the quest for machine learning interpretability in ICU risk of death prediction,2025,https://doi.org/10.1186/s12911-025-03224-z
+https://openalex.org/W7107969025,GPT-4o and the quest for machine learning interpretability in ICU risk of death prediction,2025,https://doi.org/10.34734/fzj-2025-04148
+https://openalex.org/W4361006743,Human and machine learning pipelines for responsible clinical prediction using high-dimensional data,2023,https://doi.org/10.21203/rs.3.pex-1655/v2
+https://openalex.org/W3216587530,Human and machine learning pipelines for responsible clinical prediction using high-dimensional data,2021,https://doi.org/10.21203/rs.3.pex-1655/v1
+https://openalex.org/W4385276712,Machine Learning Algorithms to Predict Outcomes in Children and Adolescents with Covid-19: A Systematic Review,2023,https://doi.org/10.2139/ssrn.4510948
+https://openalex.org/W4403424970,"Machine Learning In Clinical Decision Support: Applications, Challenges, And Future Directions",2024,https://doi.org/10.2139/ssrn.4985006
+https://openalex.org/W4402622711,"Machine Learning in Clinical Decision Support: Applications, Challenges, and Future Directions",2024,https://doi.org/10.56726/irjmets16993
+https://openalex.org/W4392133482,Machine learning algorithms to predict outcomes in children and adolescents with COVID-19: A systematic review,2024,https://doi.org/10.1016/j.artmed.2024.102824
+https://openalex.org/W3109046922,Machine learning approaches classify clinical malaria outcomes based on haematological parameters,2020,https://doi.org/10.1186/s12916-020-01823-3
+https://openalex.org/W3088288165,Machine learning approaches classify clinical malaria outcomes based on haematological parameters,2020,https://doi.org/10.1101/2020.09.23.20200220
+https://openalex.org/W4396725136,Personalizing Deep Brain Stimulation Therapy for Parkinson’s Disease With Whole-Brain MRI Radiomics and Machine Learning,2024,https://doi.org/10.7759/cureus.59915
+https://openalex.org/W4402972744,Personalizing Deep Brain Stimulation Therapy for Parkinson’s Disease With Whole-Brain MRI Radiomics and Machine Learning,2024,https://doi.org/10.7759/cureus.c195
+https://openalex.org/W7118082184,Prediction of Delirium in ICU Patients and Development of a CDSS Model Using Clinical Data Warehouse,2025,https://doi.org/10.1093/geroni/igaf122.3997
+https://openalex.org/W7118090036,Prediction of Delirium in ICU Patients and Development of a CDSS Model Using Clinical Data Warehouse,2025,https://doi.org/10.1093/geroni/igaf122.2321
+https://openalex.org/W4372285043,Systematic human learning by literature and data mining for feature selection in machine learning,2023,https://doi.org/10.21203/rs.3.pex-1634/v2
+https://openalex.org/W3207440631,Systematic human learning by literature and data mining for feature selection in machine learning,2021,https://doi.org/10.21203/rs.3.pex-1634/v1
+https://openalex.org/W4404042571,The hype of artificial intelligence in neonatology: How close are we to real AI?,2024,https://doi.org/10.37897/newborn.2024.3.5
+https://openalex.org/W4408333094,The hype of artificial intelligence in neonatology: How close are we to real AI?,2024,https://doi.org/10.37897/newborn.2024.4.4
+https://openalex.org/W4391872811,Topo-Net: Retinal Image Analysis with Topological Deep Learning,2024,https://doi.org/10.1101/2024.02.03.24302291
+https://openalex.org/W4392124517,Topo-Net: Retinal Image Analysis with Topological Deep Learning,2024,https://doi.org/10.2139/ssrn.4725148

@@ -1,0 +1,977 @@
+year,source_id,source,Works
+2016,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,2
+2016,https://openalex.org/S138959710,Computer Methods and Programs in Biomedicine,1
+2016,https://openalex.org/S15871148,American Journal of Clinical Pathology,1
+2016,https://openalex.org/S2480581173,Progress in Artificial Intelligence,1
+2017,https://openalex.org/S127437062,Journal of Thoracic and Cardiovascular Surgery,1
+2017,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,1
+2017,https://openalex.org/S170704854,Surgical Neurology International,1
+2017,https://openalex.org/S172125442,The American Journal of Emergency Medicine,1
+2017,https://openalex.org/S187216704,AJN American Journal of Nursing,1
+2017,https://openalex.org/S19032547,BMC Bioinformatics,1
+2017,https://openalex.org/S196734849,Scientific Reports,1
+2017,https://openalex.org/S2502047498,Journal of Medical Imaging and Health Informatics,1
+2017,https://openalex.org/S2738898797,International Journal of Interactive Multimedia and Artificial Intelligence,1
+2017,https://openalex.org/S4210170078,Oncology Times,1
+2018,https://openalex.org/S131800149,Abdominal Radiology,1
+2018,https://openalex.org/S138959710,Computer Methods and Programs in Biomedicine,1
+2018,https://openalex.org/S139212996,Clinical Chemistry,1
+2018,https://openalex.org/S163289574,Journal of Clinical Monitoring and Computing,1
+2018,https://openalex.org/S19032547,BMC Bioinformatics,1
+2018,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,1
+2018,https://openalex.org/S3444786,Neuroinformatics,1
+2018,https://openalex.org/S4210178049,PeerJ Computer Science,1
+2018,https://openalex.org/S4306400194,arXiv (Cornell University),2
+2018,https://openalex.org/S45696439,Optometry and Vision Science,1
+2018,https://openalex.org/S52395412,Bioinformatics,1
+2018,https://openalex.org/S65364685,JAMA Internal Medicine,1
+2018,https://openalex.org/S76904441,American Journal of Critical Care,1
+2018,unknown,Unknown,1
+2019,https://openalex.org/S126162762,Canadian Journal of Cardiology,1
+2019,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,1
+2019,https://openalex.org/S163345920,Translational Psychiatry,1
+2019,https://openalex.org/S172573765,JAMA,1
+2019,https://openalex.org/S181568219,European Heart Journal,1
+2019,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,2
+2019,https://openalex.org/S19793444,Academic Medicine,1
+2019,https://openalex.org/S203251273,AACN Advanced Critical Care,1
+2019,https://openalex.org/S203256638,Nature Medicine,1
+2019,https://openalex.org/S2713501,Journal of Evaluation in Clinical Practice,1
+2019,https://openalex.org/S2898558041,Chronic Diseases and Translational Medicine,1
+2019,https://openalex.org/S31167473,Trends in Pharmacological Sciences,1
+2019,https://openalex.org/S32220745,European Journal of General Practice,1
+2019,https://openalex.org/S4210172589,SSRN Electronic Journal,1
+2019,https://openalex.org/S4210173111,BJOG An International Journal of Obstetrics & Gynaecology,1
+2019,https://openalex.org/S4210231870,Yearbook of Medical Informatics,1
+2019,https://openalex.org/S4210238310,The Journal of Applied Laboratory Medicine,1
+2019,https://openalex.org/S42468263,Artificial Intelligence in Medicine,1
+2019,https://openalex.org/S4306525036,PubMed,1
+2019,https://openalex.org/S43311275,Journal of Korean Medical Association,1
+2019,https://openalex.org/S48878068,Journal of Clinical Sleep Medicine,1
+2019,https://openalex.org/S52939411,Medical Engineering & Physics,1
+2019,https://openalex.org/S64418186,Journal of Clinical Epidemiology,1
+2019,https://openalex.org/S8481965,Journal of the American College of Radiology,1
+2019,https://openalex.org/S86924810,JAMA Surgery,1
+2019,https://openalex.org/S87609158,European Journal of Heart Failure,1
+2019,https://openalex.org/S97567770,Annals of Pediatric Cardiology,1
+2020,https://openalex.org/S100736837,Plastic & Reconstructive Surgery,1
+2020,https://openalex.org/S1010394304,BioMed Research International,1
+2020,https://openalex.org/S10169007,Knowledge-Based Systems,1
+2020,https://openalex.org/S104698359,Anesthesia & Analgesia,1
+2020,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,4
+2020,https://openalex.org/S11622463,Journal of Biomedical Informatics,2
+2020,https://openalex.org/S119722071,Annals of Internal Medicine,3
+2020,https://openalex.org/S131037608,Journal of Gastroenterology and Hepatology,1
+2020,https://openalex.org/S135560524,BMC Medicine,1
+2020,https://openalex.org/S13842274,British Journal of Clinical Pharmacology,1
+2020,https://openalex.org/S147243735,Journal of Occupational Rehabilitation,1
+2020,https://openalex.org/S157664895,Annals of Surgery,1
+2020,https://openalex.org/S159852663,Clinical Pharmacology & Therapeutics,2
+2020,https://openalex.org/S160879026,Journal of Psychiatric Research,1
+2020,https://openalex.org/S17147534,Journal of Medical Internet Research,1
+2020,https://openalex.org/S171705774,Academic Emergency Medicine,2
+2020,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,2
+2020,https://openalex.org/S191932905,Pediatric Allergy and Immunology,1
+2020,https://openalex.org/S196734849,Scientific Reports,1
+2020,https://openalex.org/S1995308,Journal of neurosurgery,1
+2020,https://openalex.org/S202381698,PLoS ONE,3
+2020,https://openalex.org/S204777700,Psychotherapy Research,1
+2020,https://openalex.org/S2485537415,IEEE Access,1
+2020,https://openalex.org/S2734699278,Journal of Law and the Biosciences,1
+2020,https://openalex.org/S2737205702,Journal of Bioresource Management,1
+2020,https://openalex.org/S2764591444,Translational Vision Science & Technology,1
+2020,https://openalex.org/S2764758398,Journal of the International Society for Telemedicine and eHealth,1
+2020,https://openalex.org/S2764949224,Hospital Pediatrics,1
+2020,https://openalex.org/S2898194095,NeuroImage Clinical,1
+2020,https://openalex.org/S29972171,Journal of Applied Clinical Medical Physics,1
+2020,https://openalex.org/S3005729997,medRxiv,2
+2020,https://openalex.org/S33418846,British Journal of Anaesthesia,1
+2020,https://openalex.org/S3774022,The Journal of Pediatrics,1
+2020,https://openalex.org/S41211651,Current Opinion in Gastroenterology,1
+2020,https://openalex.org/S4210170078,Oncology Times,2
+2020,https://openalex.org/S4210170686,Frontiers in Digital Health,1
+2020,https://openalex.org/S4210172589,SSRN Electronic Journal,5
+2020,https://openalex.org/S4210176815,Proceedings of the Human Factors and Ergonomics Society Annual Meeting,1
+2020,https://openalex.org/S4210233309,Annals of the American Thoracic Society,1
+2020,https://openalex.org/S4210237014,The Lancet Digital Health,1
+2020,https://openalex.org/S42468263,Artificial Intelligence in Medicine,2
+2020,https://openalex.org/S4306400194,arXiv (Cornell University),1
+2020,https://openalex.org/S4306525865,Research outreach,1
+2020,https://openalex.org/S4377196400,Open Scholarship Institutional Repository (Washington University in St. Louis),1
+2020,https://openalex.org/S64187185,Nature Communications,1
+2020,https://openalex.org/S69446739,Nursing Management,1
+2020,https://openalex.org/S73539393,Methods,1
+2020,https://openalex.org/S8481965,Journal of the American College of Radiology,1
+2020,https://openalex.org/S91767247,Briefings in Bioinformatics,1
+2020,unknown,Unknown,5
+2021,https://openalex.org/S101949793,Sensors,1
+2021,https://openalex.org/S104698359,Anesthesia & Analgesia,1
+2021,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,1
+2021,https://openalex.org/S111727011,Neurosurgery,1
+2021,https://openalex.org/S112262039,Multimedia Systems,1
+2021,https://openalex.org/S126162762,Canadian Journal of Cardiology,1
+2021,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,1
+2021,https://openalex.org/S131037608,Journal of Gastroenterology and Hepatology,1
+2021,https://openalex.org/S132598247,Tijdschrift voor Geneeskunde,1
+2021,https://openalex.org/S137309422,Journal of Applied Biomedicine,1
+2021,https://openalex.org/S138998826,Physica Medica,1
+2021,https://openalex.org/S157664895,Annals of Surgery,1
+2021,https://openalex.org/S168415115,Cancers,1
+2021,https://openalex.org/S17147534,Journal of Medical Internet Research,2
+2021,https://openalex.org/S178916657,Computer,1
+2021,https://openalex.org/S179395531,Current Opinion in Oncology,1
+2021,https://openalex.org/S181568219,European Heart Journal,3
+2021,https://openalex.org/S184267533,Clinical Journal of the American Society of Nephrology,1
+2021,https://openalex.org/S191417626,Critical Care,1
+2021,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,1
+2021,https://openalex.org/S194842327,Endocrine,1
+2021,https://openalex.org/S195182175,Endoscopy,1
+2021,https://openalex.org/S203153751,Epilepsia,1
+2021,https://openalex.org/S205775358,The Journal of Clinical Endocrinology & Metabolism,2
+2021,https://openalex.org/S2485537415,IEEE Access,1
+2021,https://openalex.org/S2489920150,Journal of the American Heart Association,1
+2021,https://openalex.org/S2495854775,IEEE Journal of Biomedical and Health Informatics,2
+2021,https://openalex.org/S2595292759,Frontiers in Immunology,1
+2021,https://openalex.org/S2596117549,Frontiers in Pediatrics,1
+2021,https://openalex.org/S2713501,Journal of Evaluation in Clinical Practice,1
+2021,https://openalex.org/S2735747656,Journal of the Endocrine Society,1
+2021,https://openalex.org/S2735811053,European Heart Journal - Quality of Care and Clinical Outcomes,1
+2021,https://openalex.org/S2737969411,Journal of Clinical Medicine,1
+2021,https://openalex.org/S2739058702,JMIR Research Protocols,1
+2021,https://openalex.org/S2764493120,JMIR mhealth and uhealth,1
+2021,https://openalex.org/S2764650051,JMIR Medical Informatics,4
+2021,https://openalex.org/S2764881414,The Hearing Journal,1
+2021,https://openalex.org/S2765045337,International Journal of Current Research and Review,1
+2021,https://openalex.org/S2898297225,Clinical and Translational Radiation Oncology,1
+2021,https://openalex.org/S2912241403,Nature Machine Intelligence,1
+2021,https://openalex.org/S3005729997,medRxiv,3
+2021,https://openalex.org/S30879505,Journal of the Association for Information Systems,1
+2021,https://openalex.org/S32190847,Geriatric Orthopaedic Surgery & Rehabilitation,1
+2021,https://openalex.org/S33418846,British Journal of Anaesthesia,1
+2021,https://openalex.org/S4210170546,Emerging Topics in Life Sciences,1
+2021,https://openalex.org/S4210172589,SSRN Electronic Journal,1
+2021,https://openalex.org/S4210181501,JCO Clinical Cancer Informatics,1
+2021,https://openalex.org/S4210181690,ACI Open,1
+2021,https://openalex.org/S4210182064,Health and Technology,1
+2021,https://openalex.org/S4210183223,Educational Administration Theory and Practice journal,1
+2021,https://openalex.org/S4210190811,International Journal of Human-Computer Studies,1
+2021,https://openalex.org/S4210195431,npj Digital Medicine,2
+2021,https://openalex.org/S4210205812,Applied Sciences,3
+2021,https://openalex.org/S4210217782,Kidney360,1
+2021,https://openalex.org/S4210217848,JAMA Network Open,1
+2021,https://openalex.org/S4210219431,Digital Biomarkers,1
+2021,https://openalex.org/S4210219855,Journal of Emergency Medicine,1
+2021,https://openalex.org/S4210221562,Voices in Bioethics,1
+2021,https://openalex.org/S4210223301,Healthcare Analytics,1
+2021,https://openalex.org/S4210227620,Diagnostic and Prognostic Research,1
+2021,https://openalex.org/S4210229011,Journal of Biostatistics and Epidemiology,1
+2021,https://openalex.org/S4210231731,CPT Pharmacometrics & Systems Pharmacology,1
+2021,https://openalex.org/S4210231916,Journal of Medical Artificial Intelligence,1
+2021,https://openalex.org/S42468263,Artificial Intelligence in Medicine,1
+2021,https://openalex.org/S4306400115,eScholarship (California Digital Library),1
+2021,https://openalex.org/S4306400194,arXiv (Cornell University),6
+2021,https://openalex.org/S4306400562,Zenodo (CERN European Organization for Nuclear Research),1
+2021,https://openalex.org/S4306525036,PubMed,2
+2021,https://openalex.org/S4306525896,Research Square,3
+2021,https://openalex.org/S43893605,Postgraduate Medical Journal,1
+2021,https://openalex.org/S45161156,Journal of Surgical Research,1
+2021,https://openalex.org/S4583965,Seminars in Spine Surgery,1
+2021,https://openalex.org/S53142634,International Journal of Medical Informatics,2
+2021,https://openalex.org/S5407000720,Iconic Research and Engineering Journals,1
+2021,https://openalex.org/S58634475,Acta Orthopaedica,1
+2021,https://openalex.org/S60318618,World Journal of Surgery,1
+2021,https://openalex.org/S76900504,CHEST Journal,1
+2021,https://openalex.org/S84775595,IEEE Transactions on Visualization and Computer Graphics,1
+2021,https://openalex.org/S91767247,Briefings in Bioinformatics,1
+2021,https://openalex.org/S96975567,Frontiers in Neurology,1
+2021,unknown,Unknown,2
+2022,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,1
+2022,https://openalex.org/S110006991,Journal of Neurogastroenterology and Motility,1
+2022,https://openalex.org/S110533041,International Journal of Radiation Oncology*Biology*Physics,1
+2022,https://openalex.org/S115201632,Frontiers in Neuroscience,1
+2022,https://openalex.org/S11622463,Journal of Biomedical Informatics,1
+2022,https://openalex.org/S117485531,Schizophrenia Bulletin,1
+2022,https://openalex.org/S121920818,Data Mining and Knowledge Discovery,1
+2022,https://openalex.org/S124035732,Anesthesiology,1
+2022,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,1
+2022,https://openalex.org/S13144211,Expert Systems with Applications,1
+2022,https://openalex.org/S137994755,Sports Medicine,1
+2022,https://openalex.org/S13842274,British Journal of Clinical Pharmacology,1
+2022,https://openalex.org/S139212996,Clinical Chemistry,1
+2022,https://openalex.org/S141855577,Academic Pediatrics,1
+2022,https://openalex.org/S142774597,Pituitary,1
+2022,https://openalex.org/S157664895,Annals of Surgery,1
+2022,https://openalex.org/S163289574,Journal of Clinical Monitoring and Computing,1
+2022,https://openalex.org/S17147534,Journal of Medical Internet Research,1
+2022,https://openalex.org/S174695746,Journal of Glaucoma,1
+2022,https://openalex.org/S174847851,Information Processing & Management,1
+2022,https://openalex.org/S17537316,BMC Medical Ethics,1
+2022,https://openalex.org/S179157397,Journal of Intelligent & Fuzzy Systems,1
+2022,https://openalex.org/S179816892,Frontiers in Neuroinformatics,1
+2022,https://openalex.org/S181568219,European Heart Journal,2
+2022,https://openalex.org/S182625382,American Journal of Transplantation,1
+2022,https://openalex.org/S185874209,BMC Medical Research Methodology,3
+2022,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,3
+2022,https://openalex.org/S192926780,BMC Cancer,1
+2022,https://openalex.org/S195231649,Entropy,1
+2022,https://openalex.org/S196139623,Artificial Intelligence,1
+2022,https://openalex.org/S196734849,Scientific Reports,5
+2022,https://openalex.org/S199832308,Human Genetics,1
+2022,https://openalex.org/S200071133,Blood,1
+2022,https://openalex.org/S203619773,IEEE Reviews in Biomedical Engineering,1
+2022,https://openalex.org/S2299478,Journal of NeuroEngineering and Rehabilitation,1
+2022,https://openalex.org/S2495854775,IEEE Journal of Biomedical and Health Informatics,1
+2022,https://openalex.org/S2496326734,IEEE Transactions on Emerging Topics in Computing,1
+2022,https://openalex.org/S2501039776,IEEE Systems Man and Cybernetics Magazine,1
+2022,https://openalex.org/S2595413687,Frontiers in Cardiovascular Medicine,1
+2022,https://openalex.org/S2596394214,Frontiers in Oncology,1
+2022,https://openalex.org/S2597340651,Frontiers in Genetics,1
+2022,https://openalex.org/S2737465529,JOURNAL OF CLINICAL AND DIAGNOSTIC RESEARCH,1
+2022,https://openalex.org/S2739058702,JMIR Research Protocols,1
+2022,https://openalex.org/S2764650051,JMIR Medical Informatics,1
+2022,https://openalex.org/S2898224164,Informatics in Medicine Unlocked,3
+2022,https://openalex.org/S29157290,Journal of Internal Medicine,1
+2022,https://openalex.org/S3005729997,medRxiv,4
+2022,https://openalex.org/S36980176,Computational and Mathematical Methods in Medicine,2
+2022,https://openalex.org/S4210170078,Oncology Times,1
+2022,https://openalex.org/S4210172076,Diagnostics,2
+2022,https://openalex.org/S4210172589,SSRN Electronic Journal,5
+2022,https://openalex.org/S4210186158,Arthritis & Rheumatology,1
+2022,https://openalex.org/S4210190517,AI & Society,1
+2022,https://openalex.org/S4210190811,International Journal of Human-Computer Studies,1
+2022,https://openalex.org/S4210195431,npj Digital Medicine,1
+2022,https://openalex.org/S4210196546,Journal of Healthcare Informatics Research,1
+2022,https://openalex.org/S4210197006,Frontiers in Artificial Intelligence,1
+2022,https://openalex.org/S4210199000,Annals of Clinical Epidemiology,1
+2022,https://openalex.org/S4210199510,JMIR Human Factors,1
+2022,https://openalex.org/S4210205812,Applied Sciences,3
+2022,https://openalex.org/S4210206143,Kidney Medicine,1
+2022,https://openalex.org/S4210211592,HemaSphere,1
+2022,https://openalex.org/S4210212996,Cardiovascular Digital Health Journal,1
+2022,https://openalex.org/S4210215109,American Society of Clinical Oncology Educational Book,1
+2022,https://openalex.org/S4210217848,JAMA Network Open,1
+2022,https://openalex.org/S4210221150,PLOS Digital Health,2
+2022,https://openalex.org/S4210227372,Intelligence-Based Medicine,1
+2022,https://openalex.org/S4210227620,Diagnostic and Prognostic Research,1
+2022,https://openalex.org/S4210228075,Computers,1
+2022,https://openalex.org/S4210234749,JMIR Formative Research,1
+2022,https://openalex.org/S4210236759,BMJ Military Health,1
+2022,https://openalex.org/S4210240188,Revista de Psicoterapia,1
+2022,https://openalex.org/S42468263,Artificial Intelligence in Medicine,2
+2022,https://openalex.org/S4306400155,AAAI Publications (The Association for the Advancement of Artificial Intelligence (AAAI)),1
+2022,https://openalex.org/S4306400194,arXiv (Cornell University),2
+2022,https://openalex.org/S4306400425,DSpace@MIT (Massachusetts Institute of Technology),1
+2022,https://openalex.org/S4306402567,bioRxiv (Cold Spring Harbor Laboratory),1
+2022,https://openalex.org/S4306525036,PubMed,3
+2022,https://openalex.org/S4306525896,Research Square,3
+2022,https://openalex.org/S4393919100,WIREs Mechanisms of Disease,1
+2022,https://openalex.org/S52165136,Family Practice,1
+2022,https://openalex.org/S5406945286,Communications on Applied Nonlinear Analysis,1
+2022,https://openalex.org/S5407047514,International Journal of Emerging Trends in Computer Science and Information Technology,1
+2022,https://openalex.org/S5407047521,Journal of Frontiers in Multidisciplinary Research,1
+2022,https://openalex.org/S54222852,International Ophthalmology Clinics,1
+2022,https://openalex.org/S60716783,Internal Medicine Journal,1
+2022,https://openalex.org/S61446325,Computación y Sistemas,1
+2022,https://openalex.org/S61740008,British journal of surgery,1
+2022,https://openalex.org/S62275304,Journal of Imaging Informatics in Medicine,1
+2022,https://openalex.org/S64418186,Journal of Clinical Epidemiology,1
+2022,https://openalex.org/S69446739,Nursing Management,1
+2022,https://openalex.org/S7407075719,International journal of applied biology and forensic,1
+2022,https://openalex.org/S7407082304,International Journal of Drug and Medical Device Research,1
+2022,https://openalex.org/S81394012,The Thoracic and Cardiovascular Surgeon,1
+2022,https://openalex.org/S86124554,IEEE Latin America Transactions,1
+2022,https://openalex.org/S90626604,European Journal of Trauma and Emergency Surgery,1
+2022,https://openalex.org/S91067379,Cardiovascular Research,1
+2022,https://openalex.org/S96975567,Frontiers in Neurology,1
+2022,unknown,Unknown,2
+2023,https://openalex.org/S101949793,Sensors,1
+2023,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,7
+2023,https://openalex.org/S108525051,Journal of Allergy and Clinical Immunology,1
+2023,https://openalex.org/S108732581,Critical Care Medicine,1
+2023,https://openalex.org/S113871862,Journal of Affective Disorders,1
+2023,https://openalex.org/S115201632,Frontiers in Neuroscience,1
+2023,https://openalex.org/S11622463,Journal of Biomedical Informatics,1
+2023,https://openalex.org/S116571295,Medical Image Analysis,1
+2023,https://openalex.org/S116608325,Journal of General Internal Medicine,1
+2023,https://openalex.org/S116712389,European Journal of Information Systems,1
+2023,https://openalex.org/S118780703,International Wound Journal,1
+2023,https://openalex.org/S119722071,Annals of Internal Medicine,1
+2023,https://openalex.org/S124948411,Clinical Chemistry and Laboratory Medicine (CCLM),1
+2023,https://openalex.org/S126457381,Biometrical Journal,1
+2023,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,1
+2023,https://openalex.org/S13389975,International Journal of Epidemiology,1
+2023,https://openalex.org/S135560524,BMC Medicine,2
+2023,https://openalex.org/S138959710,Computer Methods and Programs in Biomedicine,2
+2023,https://openalex.org/S139212996,Clinical Chemistry,2
+2023,https://openalex.org/S147444837,The Journal of the American Board of Family Medicine,1
+2023,https://openalex.org/S149215848,Neurosurgical FOCUS,1
+2023,https://openalex.org/S17147534,Journal of Medical Internet Research,2
+2023,https://openalex.org/S173874250,Indian Pediatrics,1
+2023,https://openalex.org/S176204532,BDJ,1
+2023,https://openalex.org/S179157397,Journal of Intelligent & Fuzzy Systems,1
+2023,https://openalex.org/S181568219,European Heart Journal,2
+2023,https://openalex.org/S184267533,Clinical Journal of the American Society of Nephrology,1
+2023,https://openalex.org/S185874209,BMC Medical Research Methodology,3
+2023,https://openalex.org/S187139995,Applied Clinical Informatics,1
+2023,https://openalex.org/S194656152,Digestive Diseases and Sciences,1
+2023,https://openalex.org/S196734849,Scientific Reports,4
+2023,https://openalex.org/S1983995261,PeerJ,1
+2023,https://openalex.org/S202381698,PLoS ONE,1
+2023,https://openalex.org/S2485537415,IEEE Access,2
+2023,https://openalex.org/S2506667490,Frontiers in Cellular and Infection Microbiology,1
+2023,https://openalex.org/S2595413687,Frontiers in Cardiovascular Medicine,1
+2023,https://openalex.org/S2597052008,Frontiers in Medicine,3
+2023,https://openalex.org/S2597340651,Frontiers in Genetics,1
+2023,https://openalex.org/S2597401208,Frontiers in Endocrinology,1
+2023,https://openalex.org/S2735126445,Open Forum Infectious Diseases,1
+2023,https://openalex.org/S2736481244,Clinical Epidemiology,1
+2023,https://openalex.org/S2736780684,Journal of Personalized Medicine,1
+2023,https://openalex.org/S2737005842,Biomedicines,2
+2023,https://openalex.org/S2738219336,Journal of Experimental Orthopaedics,1
+2023,https://openalex.org/S2738950867,Cureus,1
+2023,https://openalex.org/S2739194844,Pakistan Armed Forces Medical Journal,1
+2023,https://openalex.org/S2754097677,Indian Dermatology Online Journal,1
+2023,https://openalex.org/S2764591444,Translational Vision Science & Technology,2
+2023,https://openalex.org/S2764762859,Journal of orthopaedic surgery,1
+2023,https://openalex.org/S2765071679,Clinical and Translational Medicine,1
+2023,https://openalex.org/S2898194095,NeuroImage Clinical,1
+2023,https://openalex.org/S2898224164,Informatics in Medicine Unlocked,1
+2023,https://openalex.org/S2898612692,Heliyon,2
+2023,https://openalex.org/S3005729997,medRxiv,3
+2023,https://openalex.org/S30879505,Journal of the Association for Information Systems,1
+2023,https://openalex.org/S31768639,Age and Ageing,1
+2023,https://openalex.org/S36625193,Journal of Healthcare Engineering,1
+2023,https://openalex.org/S39307421,Technological Forecasting and Social Change,1
+2023,https://openalex.org/S4210169955,Emergency Medicine News,1
+2023,https://openalex.org/S4210170686,Frontiers in Digital Health,1
+2023,https://openalex.org/S4210172076,Diagnostics,1
+2023,https://openalex.org/S4210172589,SSRN Electronic Journal,6
+2023,https://openalex.org/S4210173306,Surgery,1
+2023,https://openalex.org/S4210178532,Network Modeling Analysis in Health Informatics and Bioinformatics,1
+2023,https://openalex.org/S4210178723,International Journal of Software Computing and Testing,1
+2023,https://openalex.org/S4210181942,mSystems,1
+2023,https://openalex.org/S4210182064,Health and Technology,1
+2023,https://openalex.org/S4210188408,Digital Health,1
+2023,https://openalex.org/S4210189069,JMIR Perioperative Medicine,1
+2023,https://openalex.org/S4210189277,Lex localis - Journal of Local Self-Government,1
+2023,https://openalex.org/S4210193017,Fertility & Reproduction,1
+2023,https://openalex.org/S4210195431,npj Digital Medicine,4
+2023,https://openalex.org/S4210199510,JMIR Human Factors,1
+2023,https://openalex.org/S4210200511,AI,1
+2023,https://openalex.org/S4210203548,Revista Portuguesa de Cardiologia,1
+2023,https://openalex.org/S4210205812,Applied Sciences,1
+2023,https://openalex.org/S4210209730,Interactive Journal of Medical Research,1
+2023,https://openalex.org/S4210211460,Delhi Journal of Ophthalmology,1
+2023,https://openalex.org/S4210216094,Journal for ReAttach Therapy and Developmental Diversities,2
+2023,https://openalex.org/S4210221150,PLOS Digital Health,1
+2023,https://openalex.org/S4210224245,Current Challenges in Thoracic Surgery,1
+2023,https://openalex.org/S4210226177,Annals of Medicine and Surgery,1
+2023,https://openalex.org/S4210227620,Diagnostic and Prognostic Research,1
+2023,https://openalex.org/S4210228550,Hepatology Communications,1
+2023,https://openalex.org/S4210229634,Journal of Survey in Fisheries Sciences,1
+2023,https://openalex.org/S4210230988,Learning Health Systems,1
+2023,https://openalex.org/S4210233096,International Journal of Genetics and Genomics,1
+2023,https://openalex.org/S4210234749,JMIR Formative Research,2
+2023,https://openalex.org/S4210237014,The Lancet Digital Health,1
+2023,https://openalex.org/S4210238310,The Journal of Applied Laboratory Medicine,1
+2023,https://openalex.org/S4210239591,Annals of Military and Health Sciences Research,1
+2023,https://openalex.org/S4210240073,Herald of Pancreatic Club,1
+2023,https://openalex.org/S4306400194,arXiv (Cornell University),5
+2023,https://openalex.org/S4306402567,bioRxiv (Cold Spring Harbor Laboratory),1
+2023,https://openalex.org/S4306525036,PubMed,3
+2023,https://openalex.org/S4306525896,Research Square,6
+2023,https://openalex.org/S4387283707,World Scientific Annual Review of Artificial Intelligence,1
+2023,https://openalex.org/S4387286577,JMIR AI,1
+2023,https://openalex.org/S4387287143,Mayo Clinic Proceedings Digital Health,1
+2023,https://openalex.org/S4387288508,Frontiers in Medical Engineering,1
+2023,https://openalex.org/S4387291603,West Science Law and Human Rights,1
+2023,https://openalex.org/S53142634,International Journal of Medical Informatics,1
+2023,https://openalex.org/S5406990484,International Journal of Engineering Research and Science & Technology,1
+2023,https://openalex.org/S5407047514,International Journal of Emerging Trends in Computer Science and Information Technology,1
+2023,https://openalex.org/S5407047521,Journal of Frontiers in Multidisciplinary Research,1
+2023,https://openalex.org/S5407048865,American Journal of Scholarly Research and Innovation,1
+2023,https://openalex.org/S5407051256,International Journal of Data Science and IoT Management System,1
+2023,https://openalex.org/S5407054138,International Journal on Advanced Computer Engineering and Communication Technology,1
+2023,https://openalex.org/S57293258,MIS Quarterly,1
+2023,https://openalex.org/S58241369,Mayo Clinic Proceedings,1
+2023,https://openalex.org/S67902008,Hypertension Research,1
+2023,https://openalex.org/S7407075613,CPS Digital Library - Series of Conferences,1
+2023,https://openalex.org/S7407076320,Global Journal of Multidisciplinary and Applied Sciences,1
+2023,https://openalex.org/S75480959,Neurological Sciences,1
+2023,https://openalex.org/S79054089,BMJ Open,2
+2023,https://openalex.org/S8427965,Biomedical Signal Processing and Control,2
+2023,https://openalex.org/S8481965,Journal of the American College of Radiology,1
+2023,https://openalex.org/S84837402,Neurogastroenterology & Motility,1
+2023,https://openalex.org/S87161179,Journal of Hospital Infection,1
+2023,https://openalex.org/S90745127,Journal of Thoracic Oncology,1
+2023,https://openalex.org/S91767247,Briefings in Bioinformatics,1
+2023,https://openalex.org/S969433497,The Journals of Gerontology Series A,1
+2023,unknown,Unknown,3
+2024,https://openalex.org/S101949793,Sensors,2
+2024,https://openalex.org/S104949663,Nanotechnology Perceptions,1
+2024,https://openalex.org/S105513329,Clinical ophthalmology,1
+2024,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,3
+2024,https://openalex.org/S108732581,Critical Care Medicine,1
+2024,https://openalex.org/S108768312,European Journal of Anaesthesiology,1
+2024,https://openalex.org/S110206669,Multimedia Tools and Applications,1
+2024,https://openalex.org/S110757056,The Journal of Laryngology & Otology,1
+2024,https://openalex.org/S113871862,Journal of Affective Disorders,1
+2024,https://openalex.org/S11622463,Journal of Biomedical Informatics,1
+2024,https://openalex.org/S116608325,Journal of General Internal Medicine,1
+2024,https://openalex.org/S121541055,Medicine Health Care and Philosophy,1
+2024,https://openalex.org/S126162762,Canadian Journal of Cardiology,1
+2024,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,7
+2024,https://openalex.org/S132108250,Frontiers in Pharmacology,1
+2024,https://openalex.org/S138959710,Computer Methods and Programs in Biomedicine,1
+2024,https://openalex.org/S145244763,Current Opinion in Ophthalmology,1
+2024,https://openalex.org/S147897268,Neural Computing and Applications,2
+2024,https://openalex.org/S163740676,European Archives of Oto-Rhino-Laryngology,1
+2024,https://openalex.org/S17147534,Journal of Medical Internet Research,4
+2024,https://openalex.org/S174819509,Shock,1
+2024,https://openalex.org/S17537316,BMC Medical Ethics,1
+2024,https://openalex.org/S179395531,Current Opinion in Oncology,1
+2024,https://openalex.org/S180106345,Journal of Clinical Nursing,1
+2024,https://openalex.org/S180811554,BMC Gastroenterology,1
+2024,https://openalex.org/S180821644,Pediatric Critical Care Medicine,1
+2024,https://openalex.org/S181568219,European Heart Journal,1
+2024,https://openalex.org/S181659395,Information Systems Frontiers,1
+2024,https://openalex.org/S186746772,Transfusion,1
+2024,https://openalex.org/S192650101,Information Sciences,1
+2024,https://openalex.org/S192926780,BMC Cancer,1
+2024,https://openalex.org/S196734849,Scientific Reports,3
+2024,https://openalex.org/S20241394,Physics in Medicine and Biology,1
+2024,https://openalex.org/S207393940,Bangladesh Journal of Medical Science,1
+2024,https://openalex.org/S207859457,Military Medicine,1
+2024,https://openalex.org/S22240167,Chinese Medical Journal,2
+2024,https://openalex.org/S23629721,International Journal of Advanced Computer Science and Applications,1
+2024,https://openalex.org/S2477164297,IEEE Journal of Translational Engineering in Health and Medicine,1
+2024,https://openalex.org/S2495854775,IEEE Journal of Biomedical and Health Informatics,2
+2024,https://openalex.org/S2498492389,Brain Informatics,1
+2024,https://openalex.org/S2501230301,Technology and Health Care,1
+2024,https://openalex.org/S25288002,Indian Journal of Psychiatry,1
+2024,https://openalex.org/S2531685872,EBioMedicine,1
+2024,https://openalex.org/S2595292759,Frontiers in Immunology,1
+2024,https://openalex.org/S2595931848,Frontiers in Public Health,1
+2024,https://openalex.org/S2596117549,Frontiers in Pediatrics,1
+2024,https://openalex.org/S2596394214,Frontiers in Oncology,1
+2024,https://openalex.org/S26751084,Journal of the Pakistan Medical Association,1
+2024,https://openalex.org/S2713501,Journal of Evaluation in Clinical Practice,1
+2024,https://openalex.org/S2737005842,Biomedicines,1
+2024,https://openalex.org/S2737606590,Antimicrobial Resistance and Infection Control,1
+2024,https://openalex.org/S2738219336,Journal of Experimental Orthopaedics,1
+2024,https://openalex.org/S2738950867,Cureus,6
+2024,https://openalex.org/S2739058702,JMIR Research Protocols,1
+2024,https://openalex.org/S2754193772,Journal of Thoracic Disease,1
+2024,https://openalex.org/S2754843627,Cancer Medicine,1
+2024,https://openalex.org/S2764499610,Journal of chemical health risks,1
+2024,https://openalex.org/S2764501950,European Heart Journal Acute Cardiovascular Care,1
+2024,https://openalex.org/S2764507459,Pakistan Heart Journal,1
+2024,https://openalex.org/S2764513175,Cogent Engineering,1
+2024,https://openalex.org/S2764537351,Journal of Vascular Surgery Venous and Lymphatic Disorders,1
+2024,https://openalex.org/S2764539591,Computational and Structural Biotechnology Journal,1
+2024,https://openalex.org/S2764566388,International Journal for Research in Applied Science and Engineering Technology,1
+2024,https://openalex.org/S2764567295,JBJS Reviews,1
+2024,https://openalex.org/S2764650051,JMIR Medical Informatics,1
+2024,https://openalex.org/S2764661345,Medical Research Archives,1
+2024,https://openalex.org/S2764702794,United European Gastroenterology Journal,1
+2024,https://openalex.org/S2764706862,Journal of Statistics and Management Systems,1
+2024,https://openalex.org/S2764810254,ESC Heart Failure,1
+2024,https://openalex.org/S2764855249,Indonesian Journal of Electrical Engineering and Computer Science,1
+2024,https://openalex.org/S2764860341,Dental Research Journal,1
+2024,https://openalex.org/S2764949224,Hospital Pediatrics,1
+2024,https://openalex.org/S2765028195,Infection and Drug Resistance,1
+2024,https://openalex.org/S28527816,Gastrointestinal Endoscopy,1
+2024,https://openalex.org/S2898612692,Heliyon,4
+2024,https://openalex.org/S3005729997,medRxiv,8
+2024,https://openalex.org/S3035668652,European Radiology Experimental,1
+2024,https://openalex.org/S31768639,Age and Ageing,1
+2024,https://openalex.org/S33606366,Modern Pathology,1
+2024,https://openalex.org/S37151855,Journal of Medical Systems,1
+2024,https://openalex.org/S41026820,International Journal of Gynecological Cancer,1
+2024,https://openalex.org/S4210167893,Communications Medicine,1
+2024,https://openalex.org/S4210169448,IEEE Transactions on Artificial Intelligence,1
+2024,https://openalex.org/S4210169955,Emergency Medicine News,1
+2024,https://openalex.org/S4210170121,Italian Journal of Dermatology and Venereology,1
+2024,https://openalex.org/S4210172589,SSRN Electronic Journal,5
+2024,https://openalex.org/S4210178016,Economics Law Innovaion,1
+2024,https://openalex.org/S4210179004,Digital Diagnostics,1
+2024,https://openalex.org/S4210179027,International Journal of Health Sciences,1
+2024,https://openalex.org/S4210181739,International Journal of Multidisciplinary Research and Growth Evaluation,1
+2024,https://openalex.org/S4210184936,Journal of Posthumanism,1
+2024,https://openalex.org/S4210185354,Physical Therapy,1
+2024,https://openalex.org/S4210186607,Frontiers in Health Informatics,1
+2024,https://openalex.org/S4210187448,International Journal of Computational and Experimental Science and Engineering,1
+2024,https://openalex.org/S4210188010,Bioelectronic Medicine,1
+2024,https://openalex.org/S4210188408,Digital Health,1
+2024,https://openalex.org/S4210191235,Computer Methods and Programs in Biomedicine Update,1
+2024,https://openalex.org/S4210193554,The Journal of Pediatric Pharmacology and Therapeutics,1
+2024,https://openalex.org/S4210195431,npj Digital Medicine,1
+2024,https://openalex.org/S4210197244,IEEE Open Journal of Engineering in Medicine and Biology,1
+2024,https://openalex.org/S4210198761,Trauma Surgery & Acute Care Open,1
+2024,https://openalex.org/S4210199510,JMIR Human Factors,1
+2024,https://openalex.org/S4210203502,AIMS bioengineering,1
+2024,https://openalex.org/S4210205812,Applied Sciences,1
+2024,https://openalex.org/S4210206556,Musculoskeletal Science and Practice,1
+2024,https://openalex.org/S4210207214,International Journal For Multidisciplinary Research,1
+2024,https://openalex.org/S4210208841,Psychiatric News,1
+2024,https://openalex.org/S4210212035,Clinical Liver Disease,1
+2024,https://openalex.org/S4210213531,JMIR Cancer,1
+2024,https://openalex.org/S4210214001,IJIIS International Journal of Informatics and Information Systems,1
+2024,https://openalex.org/S4210216094,Journal for ReAttach Therapy and Developmental Diversities,1
+2024,https://openalex.org/S4210218761,Journal of Spine Surgery,1
+2024,https://openalex.org/S4210219523,Radiology Artificial Intelligence,1
+2024,https://openalex.org/S4210219720,The American Journal of Engineering And Technology,1
+2024,https://openalex.org/S4210229914,Clinical Medicine Research,1
+2024,https://openalex.org/S4210231514,Journal of Quality in Health Care & Economics,1
+2024,https://openalex.org/S4210234749,JMIR Formative Research,1
+2024,https://openalex.org/S4210238184,"Revista Ibero-Americana de Humanidades, Ciências e Educação",1
+2024,https://openalex.org/S4210240841,INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT,1
+2024,https://openalex.org/S42468263,Artificial Intelligence in Medicine,3
+2024,https://openalex.org/S4306400194,arXiv (Cornell University),6
+2024,https://openalex.org/S4306400562,Zenodo (CERN European Organization for Nuclear Research),1
+2024,https://openalex.org/S4306401075,Carolina Digital Repository (University of North Carolina at Chapel Hill),1
+2024,https://openalex.org/S4306525036,PubMed,1
+2024,https://openalex.org/S4306525896,Research Square,2
+2024,https://openalex.org/S4387277866,SLAS TECHNOLOGY,1
+2024,https://openalex.org/S4387282513,International Research Journal of Modernization in Engineering Technology and Science,1
+2024,https://openalex.org/S4387288264,Journal of Integrative Medicine and Research,1
+2024,https://openalex.org/S4387288420,Journal of the International Society of Physical and Rehabilitation Medicine,1
+2024,https://openalex.org/S4387290804,International Journal of Management and Organizational Research,1
+2024,https://openalex.org/S4387997776,AI in Precision Oncology,1
+2024,https://openalex.org/S4389157821,NEJM AI,1
+2024,https://openalex.org/S4819472,European Radiology,1
+2024,https://openalex.org/S51654951,Knee Surgery Sports Traumatology Arthroscopy,1
+2024,https://openalex.org/S5240358,IEEE Transactions on Biomedical Engineering,1
+2024,https://openalex.org/S53142634,International Journal of Medical Informatics,2
+2024,https://openalex.org/S5406946370,Journal of Electrical Systems,1
+2024,https://openalex.org/S5406984696,International Journal of Environmental Sciences,1
+2024,https://openalex.org/S5407000720,Iconic Research and Engineering Journals,1
+2024,https://openalex.org/S5407036520,Journal of AI Law and Regulation,1
+2024,https://openalex.org/S5407043178,Journal of Artificial Intelligence General science (JAIGS),1
+2024,https://openalex.org/S5407043517,The Newborn Reviews & Research,2
+2024,https://openalex.org/S5407043524,Seminars in Medical Writing and Education,1
+2024,https://openalex.org/S5407044875,International Journal of African Research Sustainability Studies,1
+2024,https://openalex.org/S5407047143,International Journal of Science Architecture Technology and Environment,1
+2024,https://openalex.org/S5407047514,International Journal of Emerging Trends in Computer Science and Information Technology,1
+2024,https://openalex.org/S5407047521,Journal of Frontiers in Multidisciplinary Research,1
+2024,https://openalex.org/S5407048990,Journal of Science Technology and Engineering Research,1
+2024,https://openalex.org/S5407054138,International Journal on Advanced Computer Engineering and Communication Technology,1
+2024,https://openalex.org/S57025993,Advances in Medical Sciences,1
+2024,https://openalex.org/S59987174,Transplantation and Cellular Therapy,1
+2024,https://openalex.org/S62966998,British Journal of Cancer,1
+2024,https://openalex.org/S6309402219,Preprints.org,1
+2024,https://openalex.org/S64418186,Journal of Clinical Epidemiology,1
+2024,https://openalex.org/S67965910,International Journal of Surgery,1
+2024,https://openalex.org/S70185877,Journal of Medical Ethics,1
+2024,https://openalex.org/S7407080575,Journal of Digital Health & Human-Centered AI,2
+2024,https://openalex.org/S7407082192,Biotechnology and Regenerative Sciences E: 3117-6445 P: 3117-6453,1
+2024,https://openalex.org/S7560371,Information Fusion,1
+2024,https://openalex.org/S79054089,BMJ Open,1
+2024,https://openalex.org/S94610253,BMC Psychiatry,1
+2024,https://openalex.org/S94851452,Singapore Medical Journal,1
+2024,https://openalex.org/S96975567,Frontiers in Neurology,1
+2024,unknown,Unknown,6
+2025,https://openalex.org/S100736837,Plastic & Reconstructive Surgery,1
+2025,https://openalex.org/S10075937,Journal of Cancer Research and Clinical Oncology,1
+2025,https://openalex.org/S1008817457,Medicina,2
+2025,https://openalex.org/S10169007,Knowledge-Based Systems,1
+2025,https://openalex.org/S102336391,Expert Opinion on Drug Metabolism & Toxicology,1
+2025,https://openalex.org/S102962966,Expert Review of Clinical Pharmacology,1
+2025,https://openalex.org/S103976430,Chinese Medicine,1
+2025,https://openalex.org/S105051383,American Journal of Health-System Pharmacy,2
+2025,https://openalex.org/S107309357,Aging Clinical and Experimental Research,1
+2025,https://openalex.org/S107516304,BMC Medical Informatics and Decision Making,14
+2025,https://openalex.org/S108732581,Critical Care Medicine,1
+2025,https://openalex.org/S109016753,Oral Radiology,1
+2025,https://openalex.org/S110206669,Multimedia Tools and Applications,1
+2025,https://openalex.org/S110533041,International Journal of Radiation Oncology*Biology*Physics,1
+2025,https://openalex.org/S11065456,Concurrency and Computation Practice and Experience,1
+2025,https://openalex.org/S111727011,Neurosurgery,1
+2025,https://openalex.org/S112141509,Advanced Engineering Informatics,1
+2025,https://openalex.org/S116012647,Annals of Emergency Medicine,1
+2025,https://openalex.org/S11622463,Journal of Biomedical Informatics,5
+2025,https://openalex.org/S117485531,Schizophrenia Bulletin,1
+2025,https://openalex.org/S12098962,Obesity Surgery,1
+2025,https://openalex.org/S121125331,Cancer Investigation,1
+2025,https://openalex.org/S121725775,Bone,1
+2025,https://openalex.org/S122042528,Pediatric Cardiology,1
+2025,https://openalex.org/S122591147,Experimental Gerontology,1
+2025,https://openalex.org/S123732490,BMC Pregnancy and Childbirth,1
+2025,https://openalex.org/S124035732,Anesthesiology,1
+2025,https://openalex.org/S124275759,Journal of Antimicrobial Chemotherapy,1
+2025,https://openalex.org/S124550236,Utilitas Mathematica,1
+2025,https://openalex.org/S124600697,Current Psychiatry Reports,1
+2025,https://openalex.org/S1255940,Clinical and Experimental Medicine,1
+2025,https://openalex.org/S127437062,Journal of Thoracic and Cardiovascular Surgery,1
+2025,https://openalex.org/S128199769,Journal of Bone and Mineral Research,1
+2025,https://openalex.org/S128848949,Journal of Bone and Joint Surgery,1
+2025,https://openalex.org/S129839026,Journal of the American Medical Informatics Association,5
+2025,https://openalex.org/S130127385,European Journal of Clinical Microbiology & Infectious Diseases,1
+2025,https://openalex.org/S132108250,Frontiers in Pharmacology,1
+2025,https://openalex.org/S132829192,Molecular Cancer,1
+2025,https://openalex.org/S132854162,The Journal of Cardiovascular Nursing,1
+2025,https://openalex.org/S133324295,Langenbeck s Archives of Surgery,1
+2025,https://openalex.org/S134316426,Journal of the American College of Surgeons,1
+2025,https://openalex.org/S134535697,BMC Pediatrics,1
+2025,https://openalex.org/S134892809,International Journal of Urology,1
+2025,https://openalex.org/S138062970,The European Physical Journal Special Topics,1
+2025,https://openalex.org/S138391592,Therapeutic Advances in Musculoskeletal Disease,1
+2025,https://openalex.org/S138959710,Computer Methods and Programs in Biomedicine,6
+2025,https://openalex.org/S140556538,Applied Soft Computing,1
+2025,https://openalex.org/S140884253,Current Drug Targets,1
+2025,https://openalex.org/S142026636,Journal of Translational Medicine,2
+2025,https://openalex.org/S143937555,International Dental Journal,1
+2025,https://openalex.org/S148394532,Diabetes Obesity and Metabolism,1
+2025,https://openalex.org/S150263959,Statistical Methods in Medical Research,1
+2025,https://openalex.org/S150671403,Computers & Chemical Engineering,1
+2025,https://openalex.org/S153378518,Archives of Gerontology and Geriatrics,1
+2025,https://openalex.org/S153867169,Angiology,1
+2025,https://openalex.org/S15523509,The Oncologist,1
+2025,https://openalex.org/S156174673,Hepatology,1
+2025,https://openalex.org/S157154877,Orthodontics and Craniofacial Research,1
+2025,https://openalex.org/S159051371,Renal Failure,2
+2025,https://openalex.org/S159852663,Clinical Pharmacology & Therapeutics,1
+2025,https://openalex.org/S164311417,Dental Clinics of North America,1
+2025,https://openalex.org/S164699263,International Journal of Colorectal Disease,1
+2025,https://openalex.org/S165559636,International Journal of Human-Computer Interaction,1
+2025,https://openalex.org/S167664057,Pediatric Research,2
+2025,https://openalex.org/S168415115,Cancers,1
+2025,https://openalex.org/S170171939,Diseases of the Esophagus,1
+2025,https://openalex.org/S171015910,BMC Infectious Diseases,1
+2025,https://openalex.org/S17147534,Journal of Medical Internet Research,8
+2025,https://openalex.org/S174489444,Archives of cardiovascular diseases,1
+2025,https://openalex.org/S175033026,World Journal of Radiology,1
+2025,https://openalex.org/S175683280,International Journal of Mental Health Nursing,1
+2025,https://openalex.org/S177430994,Image and Vision Computing,2
+2025,https://openalex.org/S178548257,European Journal of Cardiovascular Nursing,1
+2025,https://openalex.org/S178916657,Computer,1
+2025,https://openalex.org/S180811554,BMC Gastroenterology,1
+2025,https://openalex.org/S180821644,Pediatric Critical Care Medicine,1
+2025,https://openalex.org/S181459644,World Journal of Gastroenterology,2
+2025,https://openalex.org/S181568219,European Heart Journal,2
+2025,https://openalex.org/S186153782,Respiratory Research,1
+2025,https://openalex.org/S188748365,Lipids in Health and Disease,1
+2025,https://openalex.org/S190629608,Algorithms,1
+2025,https://openalex.org/S190680769,International Journal of Computational Intelligence Systems,1
+2025,https://openalex.org/S191421250,Clinical Orthopaedics and Related Research,1
+2025,https://openalex.org/S191726168,Journal of Dentistry,1
+2025,https://openalex.org/S192926780,BMC Cancer,1
+2025,https://openalex.org/S196734849,Scientific Reports,21
+2025,https://openalex.org/S197311665,La radiologia medica,1
+2025,https://openalex.org/S198823948,Computerized Medical Imaging and Graphics,1
+2025,https://openalex.org/S199738284,Journal of Visualized Experiments,1
+2025,https://openalex.org/S199972112,The International Journal of Neuropsychopharmacology,1
+2025,https://openalex.org/S200673814,Veterinary and Comparative Oncology,1
+2025,https://openalex.org/S200893805,Molecular Systems Biology,1
+2025,https://openalex.org/S201800618,Health Informatics Journal,1
+2025,https://openalex.org/S202381698,PLoS ONE,4
+2025,https://openalex.org/S206719219,Reproductive BioMedicine Online,1
+2025,https://openalex.org/S207859457,Military Medicine,1
+2025,https://openalex.org/S22240167,Chinese Medical Journal,1
+2025,https://openalex.org/S22285447,European Journal of Radiology,1
+2025,https://openalex.org/S22797964,Neurourology and Urodynamics,1
+2025,https://openalex.org/S23481971,Therapeutic Advances in Gastroenterology,1
+2025,https://openalex.org/S23579880,Journal of Food Science,1
+2025,https://openalex.org/S23629721,International Journal of Advanced Computer Science and Applications,1
+2025,https://openalex.org/S2476582842,Journal of Pure and Applied Microbiology,1
+2025,https://openalex.org/S2485537415,IEEE Access,4
+2025,https://openalex.org/S2495854775,IEEE Journal of Biomedical and Health Informatics,3
+2025,https://openalex.org/S2496126384,Drug Design Development and Therapy,1
+2025,https://openalex.org/S2498751418,International Journal of Clinical Pharmacy,1
+2025,https://openalex.org/S2505707916,Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery,1
+2025,https://openalex.org/S25155249,Journal of Alzheimer s Disease,1
+2025,https://openalex.org/S25178087,Pediatric Nephrology,1
+2025,https://openalex.org/S2595365928,Frontiers in Surgery,1
+2025,https://openalex.org/S2595413687,Frontiers in Cardiovascular Medicine,1
+2025,https://openalex.org/S2595931848,Frontiers in Public Health,1
+2025,https://openalex.org/S2596117549,Frontiers in Pediatrics,1
+2025,https://openalex.org/S2596394214,Frontiers in Oncology,4
+2025,https://openalex.org/S2597052008,Frontiers in Medicine,9
+2025,https://openalex.org/S2713501,Journal of Evaluation in Clinical Practice,1
+2025,https://openalex.org/S27247405,Journal of Intensive Care Medicine,1
+2025,https://openalex.org/S2735557189,Innovation in Aging,2
+2025,https://openalex.org/S2736895435,Children,1
+2025,https://openalex.org/S2737005842,Biomedicines,1
+2025,https://openalex.org/S2737791640,Journal of Information Systems Engineering & Management,1
+2025,https://openalex.org/S2737969411,Journal of Clinical Medicine,4
+2025,https://openalex.org/S2738238905,Informatics,1
+2025,https://openalex.org/S2738607712,Journal of Cardiovascular Development and Disease,1
+2025,https://openalex.org/S2738950867,Cureus,9
+2025,https://openalex.org/S2739160569,Military Medical Research,1
+2025,https://openalex.org/S2754281505,Plastic & Reconstructive Surgery Global Open,1
+2025,https://openalex.org/S2754457614,International Journal of Women s Health,1
+2025,https://openalex.org/S2754573933,International Journal of Palliative Nursing,1
+2025,https://openalex.org/S2754735317,European Journal of Dentistry,1
+2025,https://openalex.org/S2764347112,Biomedical Engineering Letters,1
+2025,https://openalex.org/S2764394213,World Journal of Critical Care Medicine,1
+2025,https://openalex.org/S2764444712,Clinics and Practice,1
+2025,https://openalex.org/S2764482045,Endoscopic Ultrasound,1
+2025,https://openalex.org/S2764498497,The Journal of Clinical and Scientific Research,1
+2025,https://openalex.org/S2764499610,Journal of chemical health risks,1
+2025,https://openalex.org/S2764549079,Journal of Neonatal Surgery,3
+2025,https://openalex.org/S2764554612,Cancer Management and Research,2
+2025,https://openalex.org/S2764587262,Journal of Drug Discovery and Therapeutics,1
+2025,https://openalex.org/S2764640729,Biochemistry and Biophysics Reports,1
+2025,https://openalex.org/S2764650051,JMIR Medical Informatics,6
+2025,https://openalex.org/S2764663065,Kidney Research and Clinical Practice,1
+2025,https://openalex.org/S2764688253,Journal of Tianjin University Science and Technology,1
+2025,https://openalex.org/S2764707789,Healthcare Technology Letters,1
+2025,https://openalex.org/S2764760482,Advances in Integrative Medicine,1
+2025,https://openalex.org/S2764761496,Journal of Diabetes Metabolic Disorders & Control,1
+2025,https://openalex.org/S2764778298,Gynecology and Minimally Invasive Therapy,1
+2025,https://openalex.org/S2764816760,International Journal of Engineering,1
+2025,https://openalex.org/S2764831659,BJPsych Open,1
+2025,https://openalex.org/S2764861395,Taiwan Journal of Ophthalmology,1
+2025,https://openalex.org/S2764863491,Translational Pediatrics,1
+2025,https://openalex.org/S2764956401,Lupus Science & Medicine,1
+2025,https://openalex.org/S2764962170,International Journal of Hematology and Oncology,1
+2025,https://openalex.org/S2764962273,Risk Management and Healthcare Policy,1
+2025,https://openalex.org/S2764965054,Translational Cancer Research,1
+2025,https://openalex.org/S2764998920,Asian Bioethics Review,1
+2025,https://openalex.org/S2765018237,American Journal of Nursing Science,1
+2025,https://openalex.org/S28366517,International Journal of Ayurveda Research,1
+2025,https://openalex.org/S2898168182,JACC. Clinical electrophysiology,1
+2025,https://openalex.org/S2898347799,EClinicalMedicine,2
+2025,https://openalex.org/S2898482455,Alzheimer s & Dementia Diagnosis Assessment & Disease Monitoring,1
+2025,https://openalex.org/S2898508902,Bioactive Materials,1
+2025,https://openalex.org/S2898598332,Hematology Transfusion and Cell Therapy,1
+2025,https://openalex.org/S3005729997,medRxiv,9
+2025,https://openalex.org/S32326811,The Journal of Supercomputing,1
+2025,https://openalex.org/S35439863,BMC Musculoskeletal Disorders,2
+2025,https://openalex.org/S37879656,Journal of Systems and Software,1
+2025,https://openalex.org/S40489520,ANZ Journal of Surgery,1
+2025,https://openalex.org/S40844199,Annals of Epidemiology,2
+2025,https://openalex.org/S414566,Pattern Recognition,1
+2025,https://openalex.org/S41599636,Cancer Nursing,1
+2025,https://openalex.org/S4210167893,Communications Medicine,2
+2025,https://openalex.org/S4210169061,Scientific Journal of King Faisal University Basic and Applied Sciences,1
+2025,https://openalex.org/S4210169955,Emergency Medicine News,1
+2025,https://openalex.org/S4210170410,Port Said Scientific Journal of Nursing,1
+2025,https://openalex.org/S4210170686,Frontiers in Digital Health,3
+2025,https://openalex.org/S4210171543,JMIR Diabetes,1
+2025,https://openalex.org/S4210172076,Diagnostics,8
+2025,https://openalex.org/S4210172589,SSRN Electronic Journal,8
+2025,https://openalex.org/S4210173311,Informatica,2
+2025,https://openalex.org/S4210174461,International Journal of Clinical Inventions and Medical Sciences (IJCIMS),1
+2025,https://openalex.org/S4210176328,Nursing in Critical Care,1
+2025,https://openalex.org/S4210176459,IEEE Open Journal of the Computer Society,1
+2025,https://openalex.org/S4210177186,"The Journal of Trauma: Injury, Infection, and Critical Care",1
+2025,https://openalex.org/S4210178532,Network Modeling Analysis in Health Informatics and Bioinformatics,1
+2025,https://openalex.org/S4210178611,Scholars Journal of Medical Case Reports,1
+2025,https://openalex.org/S4210178793,Health Information Science and Systems,2
+2025,https://openalex.org/S4210179121,Bioengineering,2
+2025,https://openalex.org/S4210181501,JCO Clinical Cancer Informatics,1
+2025,https://openalex.org/S4210181739,International Journal of Multidisciplinary Research and Growth Evaluation,1
+2025,https://openalex.org/S4210182064,Health and Technology,1
+2025,https://openalex.org/S4210183148,DÜMF Mühendislik Dergisi,1
+2025,https://openalex.org/S4210183255,Proceedings of the Indian National Science Academy,1
+2025,https://openalex.org/S4210183703,Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi),3
+2025,https://openalex.org/S4210183846,JMIR Bioinformatics and Biotechnology,1
+2025,https://openalex.org/S4210184559,Forbes Journal of Medicine,1
+2025,https://openalex.org/S4210187589,Archives of Women s Mental Health,1
+2025,https://openalex.org/S4210188408,Digital Health,4
+2025,https://openalex.org/S4210188766,Anaesthesia Pain & Intensive Care,1
+2025,https://openalex.org/S4210190239,3 Biotech,1
+2025,https://openalex.org/S4210190517,AI & Society,1
+2025,https://openalex.org/S4210190811,International Journal of Human-Computer Studies,1
+2025,https://openalex.org/S4210194039,Array,1
+2025,https://openalex.org/S4210195272,International Medical Science Research Journal,1
+2025,https://openalex.org/S4210196074,OALib,2
+2025,https://openalex.org/S4210196808,Medical Visualization,1
+2025,https://openalex.org/S4210197006,Frontiers in Artificial Intelligence,1
+2025,https://openalex.org/S4210199257,Engineering Reports,2
+2025,https://openalex.org/S4210199930,OJIN The Online Journal of Issues in Nursing,1
+2025,https://openalex.org/S4210200847,International Journal of Scientific Research in Computer Science Engineering and Information Technology,2
+2025,https://openalex.org/S4210201735,Frontiers in Oral Health,1
+2025,https://openalex.org/S4210201993,Sakarya University Journal of Computer and Information Sciences,1
+2025,https://openalex.org/S4210202501,SSM - Qualitative Research in Health,1
+2025,https://openalex.org/S4210202897,Journal of College of Physicians And Surgeons Pakistan,1
+2025,https://openalex.org/S4210204839,International Journal of Science and Research Archive,2
+2025,https://openalex.org/S4210204847,JSES International,1
+2025,https://openalex.org/S4210204950,CJC Open,1
+2025,https://openalex.org/S4210205142,Vrach i informacionnye tehnologii,1
+2025,https://openalex.org/S4210205812,Applied Sciences,3
+2025,https://openalex.org/S4210206754,International Journal of Innovative Technologies in Social Science,1
+2025,https://openalex.org/S4210207214,International Journal For Multidisciplinary Research,2
+2025,https://openalex.org/S4210208162,Medical Journal of the Islamic Republic of Iran,1
+2025,https://openalex.org/S4210209509,Computer Science & IT Research Journal,1
+2025,https://openalex.org/S4210210302,Critical Care Explorations,1
+2025,https://openalex.org/S4210211460,Delhi Journal of Ophthalmology,1
+2025,https://openalex.org/S4210212004,Transplantology,1
+2025,https://openalex.org/S4210213696,Discover Oncology,3
+2025,https://openalex.org/S4210214101,Healthcare,6
+2025,https://openalex.org/S4210214141,British Journal of Nursing Studies,1
+2025,https://openalex.org/S4210214343,International Journal of 3D Printing Technologies and Digital Industry,1
+2025,https://openalex.org/S4210218516,Research,1
+2025,https://openalex.org/S4210219070,Journal of Surgery and Medicine,1
+2025,https://openalex.org/S4210219445,Adıyaman Üniversitesi Sağlık Bilimleri Dergisi,1
+2025,https://openalex.org/S4210219720,The American Journal of Engineering And Technology,1
+2025,https://openalex.org/S4210219776,Information,1
+2025,https://openalex.org/S4210221150,PLOS Digital Health,2
+2025,https://openalex.org/S4210222459,Acta Infologica,1
+2025,https://openalex.org/S4210223102,General medicine and Clinical Practice,1
+2025,https://openalex.org/S4210223273,International Journal of Information Technology,1
+2025,https://openalex.org/S4210223301,Healthcare Analytics,1
+2025,https://openalex.org/S4210224818,ETHICS IN PROGRESS,1
+2025,https://openalex.org/S4210226208,The Journal of Pathology Clinical Research,1
+2025,https://openalex.org/S4210226253,Results in Engineering,1
+2025,https://openalex.org/S4210226397,Multidisciplinary Reviews,1
+2025,https://openalex.org/S4210227372,Intelligence-Based Medicine,1
+2025,https://openalex.org/S4210227620,Diagnostic and Prognostic Research,1
+2025,https://openalex.org/S4210227674,Artificial Intelligence Studies,1
+2025,https://openalex.org/S4210228075,Computers,1
+2025,https://openalex.org/S4210228335,Research Journal of Pharmacy and Technology,1
+2025,https://openalex.org/S4210229914,Clinical Medicine Research,1
+2025,https://openalex.org/S4210230359,International Journal of Current Research in Medical Sciences,1
+2025,https://openalex.org/S4210231916,Journal of Medical Artificial Intelligence,1
+2025,https://openalex.org/S4210232080,Annual Review of Biomedical Data Science,1
+2025,https://openalex.org/S4210234069,Bioinformatics Advances,1
+2025,https://openalex.org/S4210234749,JMIR Formative Research,2
+2025,https://openalex.org/S4210234811,Arthroscopy Sports Medicine and Rehabilitation,1
+2025,https://openalex.org/S4210236562,Nature Cancer,1
+2025,https://openalex.org/S4210237014,The Lancet Digital Health,4
+2025,https://openalex.org/S4210237468,JAMIA Open,4
+2025,https://openalex.org/S4210239011,World Journal of Advanced Engineering Technology and Sciences,1
+2025,https://openalex.org/S4210239291,Frontiers in Medical Technology,1
+2025,https://openalex.org/S4210239881,Journal of Neurosonology and Neuroimaging,1
+2025,https://openalex.org/S4210240683,International Journal of Innovative Research and Scientific Studies,1
+2025,https://openalex.org/S4210240841,INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT,8
+2025,https://openalex.org/S4210240921,Nanoscale Advances,1
+2025,https://openalex.org/S4220651630,International Journal of Research Publication and Reviews,4
+2025,https://openalex.org/S42468263,Artificial Intelligence in Medicine,1
+2025,https://openalex.org/S4306400194,arXiv (Cornell University),9
+2025,https://openalex.org/S4306400423,University of Southern Denmark Research Portal (University of Southern Denmark),1
+2025,https://openalex.org/S4306400562,Zenodo (CERN European Organization for Nuclear Research),6
+2025,https://openalex.org/S4306400662,Research Explorer (The University of Manchester),1
+2025,https://openalex.org/S4306400744,Springer Link (Chiba Institute of Technology),1
+2025,https://openalex.org/S4306402130,PhilPapers (PhilPapers Foundation),1
+2025,https://openalex.org/S4306402302,Repository for Publications and Research Data (ETH Zurich),1
+2025,https://openalex.org/S4306402567,bioRxiv (Cold Spring Harbor Laboratory),1
+2025,https://openalex.org/S4306525036,PubMed,3
+2025,https://openalex.org/S4306525896,Research Square,10
+2025,https://openalex.org/S4306541546,Chinese Medical Sciences Journal,1
+2025,https://openalex.org/S4377196354,Scholar Commons (University of South Carolina),1
+2025,https://openalex.org/S4377196512,Repository of Futwangen University of Applied Sciences (Furtwangen University),1
+2025,https://openalex.org/S4387278899,International Journal of Advance Scientific Research,1
+2025,https://openalex.org/S4387280301,Journal of Hunan University Natural Sciences,1
+2025,https://openalex.org/S4387280677,International Journal of Emerging Multidisciplinaries Computer Science & Artificial Intelligence,1
+2025,https://openalex.org/S4387281889,Applied and Computational Engineering,1
+2025,https://openalex.org/S4387281946,Santosh University Journal of Health Sciences,1
+2025,https://openalex.org/S4387283303,Theoretical and Natural Science,2
+2025,https://openalex.org/S4387283377,Journal of Pediatric Pulmonology,1
+2025,https://openalex.org/S4387283984,Neurology Education,1
+2025,https://openalex.org/S4387285659,BMJ Oncology,1
+2025,https://openalex.org/S4387286577,JMIR AI,1
+2025,https://openalex.org/S4387287924,International Journal of Diabetes and Technology,1
+2025,https://openalex.org/S4387288395,International Journal of Advanced Natural Sciences and Engineering Researches,1
+2025,https://openalex.org/S4387288692,Epidemiology Biostatistics and Public Health,1
+2025,https://openalex.org/S4387289262,Intelligent Pharmacy,1
+2025,https://openalex.org/S4387290608,Journal of Artificial Intelligence and Engineering Applications (JAIEA),1
+2025,https://openalex.org/S4387291706,International Journal of Aging,1
+2025,https://openalex.org/S4387292043,European Journal of Medical and Health Research,1
+2025,https://openalex.org/S4387292227,Journal of Advance Electrical Engineering and Devices,1
+2025,https://openalex.org/S4387292527,MATRIX Academic International Online Journal Of Engineering And Technology,1
+2025,https://openalex.org/S4387292627,National Journal of Pharmacology and Therapeutics,1
+2025,https://openalex.org/S4387292774,Advances in Engineering Innovation,1
+2025,https://openalex.org/S4387997776,AI in Precision Oncology,1
+2025,https://openalex.org/S4389157713,Journal Global Technology Computer,1
+2025,https://openalex.org/S43893605,Postgraduate Medical Journal,1
+2025,https://openalex.org/S4390297104,Transactions on Materials Biotechnology and Life Sciences,1
+2025,https://openalex.org/S4393917997,"TPM Testing, psychometrics, methodology in applied psychology",1
+2025,https://openalex.org/S4393919735,iRadiology,1
+2025,https://openalex.org/S4404669363,LatIA,1
+2025,https://openalex.org/S4404669727,Research Output Journal of Public Health and Medicine,1
+2025,https://openalex.org/S4404669927,Premier journal of science.,1
+2025,https://openalex.org/S4404677308,Cureus Journal of Computer Science.,1
+2025,https://openalex.org/S4404677421,Review journal of neurological & medical sciences review.,1
+2025,https://openalex.org/S4404678033,International Journal of Nature and Science Advance Research,1
+2025,https://openalex.org/S44278595,Computers in Biology and Medicine,4
+2025,https://openalex.org/S45693802,Neurocomputing,1
+2025,https://openalex.org/S50094856,International Endodontic Journal,1
+2025,https://openalex.org/S50602745,The Journal of Rheumatology,1
+2025,https://openalex.org/S51047553,Microsurgery,1
+2025,https://openalex.org/S5240358,IEEE Transactions on Biomedical Engineering,1
+2025,https://openalex.org/S524341,International Health,1
+2025,https://openalex.org/S52732750,Frontiers in Physiology,1
+2025,https://openalex.org/S52939411,Medical Engineering & Physics,1
+2025,https://openalex.org/S53142634,International Journal of Medical Informatics,4
+2025,https://openalex.org/S5406945286,Communications on Applied Nonlinear Analysis,1
+2025,https://openalex.org/S5406984640,Anusandhanvallari,3
+2025,https://openalex.org/S5406984696,International Journal of Environmental Sciences,5
+2025,https://openalex.org/S5406990484,International Journal of Engineering Research and Science & Technology,3
+2025,https://openalex.org/S5407011694,CIPEEX,1
+2025,https://openalex.org/S5407016509,Communication in Physical Sciences,1
+2025,https://openalex.org/S5407036381,Exploration of Asthma & Allergy,1
+2025,https://openalex.org/S5407037001,Intelligent Oncology,1
+2025,https://openalex.org/S5407037232,La Prensa Medica,1
+2025,https://openalex.org/S5407040460,Health Nexus,1
+2025,https://openalex.org/S5407042868,Discover Applied Sciences,2
+2025,https://openalex.org/S5407042911,Discover Neuroscience,1
+2025,https://openalex.org/S5407043348,Annual Methodological Archive Research Review,2
+2025,https://openalex.org/S5407045065,Artificial Intelligence in Health,1
+2025,https://openalex.org/S5407047216,Journal of Science Engineering Technology and Management Sciences,1
+2025,https://openalex.org/S5407047289,BMJ Digital Health & AI,1
+2025,https://openalex.org/S5407047486,Journal of Advanced Trends in Medical Research,1
+2025,https://openalex.org/S5407048941,INNOVAPATH,1
+2025,https://openalex.org/S5407049547,Epidemiology and Health Data Insights,1
+2025,https://openalex.org/S5407051732,International Journal of Research & Technology,1
+2025,https://openalex.org/S5407051827,CompSci & AI Advances,1
+2025,https://openalex.org/S5407051830,International Journal of Technology & Emerging Research,1
+2025,https://openalex.org/S5407054138,International Journal on Advanced Computer Engineering and Communication Technology,1
+2025,https://openalex.org/S5407055975,REST Journal on Data Analytics and Artificial Intelligence,1
+2025,https://openalex.org/S55189604,Statistics in Medicine,1
+2025,https://openalex.org/S57607125,Journal of Advanced Research,1
+2025,https://openalex.org/S58389884,Interdisciplinary Description of Complex Systems,1
+2025,https://openalex.org/S61153829,BMC Endocrine Disorders,1
+2025,https://openalex.org/S61740008,British journal of surgery,1
+2025,https://openalex.org/S62966998,British Journal of Cancer,1
+2025,https://openalex.org/S6309402219,Preprints.org,7
+2025,https://openalex.org/S64418186,Journal of Clinical Epidemiology,1
+2025,https://openalex.org/S64516541,European journal of medical research,2
+2025,https://openalex.org/S6505649,BMC Medical Imaging,1
+2025,https://openalex.org/S67118044,American Journal of Therapeutics,1
+2025,https://openalex.org/S67965910,International Journal of Surgery,2
+2025,https://openalex.org/S7265121,Medicina Intensiva,1
+2025,https://openalex.org/S73678819,Journal of Minimally Invasive Gynecology,2
+2025,https://openalex.org/S7407051455,JuSER Publikationsportal,1
+2025,https://openalex.org/S7407052948,KITopen,1
+2025,https://openalex.org/S7407053631,International Journal of AI EBioMedicine Innovations,1
+2025,https://openalex.org/S7407056034,International Journal of Advanced Research in Computer Science and Engineering,1
+2025,https://openalex.org/S7407056657,Trends in Biosciences Research,1
+2025,https://openalex.org/S7407058230,Paradise,1
+2025,https://openalex.org/S7407058388,Journal of Multidisciplinary Health and Innovative Technology,1
+2025,https://openalex.org/S7407059582,International Research Journal of Computer and Electronics Engineering,1
+2025,https://openalex.org/S7407065516,International Insurance Law Review,1
+2025,https://openalex.org/S7407066162,The Insight,1
+2025,https://openalex.org/S7407075226,The Research of Medical Science Review,1
+2025,https://openalex.org/S7407075465,Eureka Journal of Health Sciences & Medical Innovation,1
+2025,https://openalex.org/S7407075832,Journal of Advanced Artificial Intelligence Research,1
+2025,https://openalex.org/S7407076907,Journal of Multidisciplinary Research and Innovation,1
+2025,https://openalex.org/S7407078626,National Journal of Signal and Image Processing,1
+2025,https://openalex.org/S7407078653,Journal of Innovation and Digital Health,1
+2025,https://openalex.org/S7407079330,European Journal of Emerging Data Science and Machine Learning,1
+2025,https://openalex.org/S7407079808,Journal of Intelligent Systems and Future Computing,1
+2025,https://openalex.org/S7407080664,International Journal of Emerging Research in Applied Medical Sciences,10
+2025,https://openalex.org/S7407082007,Preventive Care Journal,1
+2025,https://openalex.org/S7407082192,Biotechnology and Regenerative Sciences E: 3117-6445 P: 3117-6453,1
+2025,https://openalex.org/S74104863,Journal of Robotic Surgery,1
+2025,https://openalex.org/S76904441,American Journal of Critical Care,1
+2025,https://openalex.org/S76925378,Pediatric Surgery International,1
+2025,https://openalex.org/S77494981,PEDIATRICS,1
+2025,https://openalex.org/S79054089,BMJ Open,2
+2025,https://openalex.org/S79587146,British Journal of Ophthalmology,1
+2025,https://openalex.org/S79704628,Neurology,1
+2025,https://openalex.org/S8119441,Brain Research Bulletin,1
+2025,https://openalex.org/S84775595,IEEE Transactions on Visualization and Computer Graphics,1
+2025,https://openalex.org/S85505639,Heart & Lung,1
+2025,https://openalex.org/S86387881,The Laryngoscope,1
+2025,https://openalex.org/S87542449,Jordan Medical Journal,1
+2025,https://openalex.org/S90149737,European Journal of Innovation Management,1
+2025,https://openalex.org/S91767247,Briefings in Bioinformatics,2
+2025,https://openalex.org/S92766711,Frontiers in Psychiatry,1
+2025,https://openalex.org/S9336330,Annals of Anatomy - Anatomischer Anzeiger,1
+2025,https://openalex.org/S96638545,Brain Research,1
+2025,https://openalex.org/S96975567,Frontiers in Neurology,3
+2025,https://openalex.org/S97303050,Kidney International,1
+2025,https://openalex.org/S99068972,Canadian Journal of Emergency Medicine,1
+2025,unknown,Unknown,10

@@ -1,0 +1,13 @@
+check_id,scenario,expected,observed,status,tester,date,notes
+B01,Open application locally,Application starts without traceback,,NOT_TESTED,,,
+B02,Switch all five tabs,Views render without errors,,NOT_TESTED,,,
+B03,Change year filter,Displayed totals and charts reconcile,,NOT_TESTED,,,
+B04,Change signal filter,Counts and selected corpus update consistently,,NOT_TESTED,,,
+B05,Select NMF topic,Filtered text and network respond correctly,,NOT_TESTED,,,
+B06,Reset filters,Original defaults restored,,NOT_TESTED,,,
+B07,Set empty or rare filter,Informative empty state without crash,,NOT_TESTED,,,
+B08,Inspect text alternatives and data tables,Key evidence available without hover or color,,NOT_TESTED,,,
+B09,Keyboard navigation,Primary controls usable without mouse,,NOT_TESTED,,,
+B10,Mobile-width layout,Content accessible without chart clipping,,NOT_TESTED,,,
+B11,Export selected records,Downloaded counts match chosen subset,,NOT_TESTED,,,
+B12,Deploy application,Public URL loads and repeat checks pass,,NOT_TESTED,,,

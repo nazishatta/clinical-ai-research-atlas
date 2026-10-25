@@ -1,0 +1,21 @@
+{
+  "baseline_2024": 216,
+  "baseline_2025": 644,
+  "ratio_2025_to_2024": 2.9814814814814814,
+  "article_only_2024": 179,
+  "article_only_2025": 561,
+  "excluding_top5_2025_sources_2024": 202,
+  "excluding_top5_2025_sources_2025": 579,
+  "top5_source_ids_excluded": [
+    "https://openalex.org/S107516304",
+    "https://openalex.org/S196734849",
+    "https://openalex.org/S4306525896",
+    "https://openalex.org/S7407080664",
+    "unknown"
+  ],
+  "duplicate_title_rows": 42,
+  "duplicate_abstract_rows": 10,
+  "indexing_date_analysis": "NOT POSSIBLE: created/updated dates were not selected in the frozen snapshot",
+  "retrieved_at_utc": "2026-10-22T06:43:02.500201+00:00",
+  "query_variant_status": "See query_variants.json; new API count queries, not a manually screened corpus"
+}

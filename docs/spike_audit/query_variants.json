@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "baseline",
+    "year": 2024,
+    "filter": "from_publication_date:2024-01-01,to_publication_date:2024-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": null,
+    "status": "HTTPError"
+  },
+  {
+    "variant": "baseline",
+    "year": 2025,
+    "filter": "from_publication_date:2025-01-01,to_publication_date:2025-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": 645,
+    "status": "success"
+  },
+  {
+    "variant": "prediction_only",
+    "year": 2024,
+    "filter": "from_publication_date:2024-01-01,to_publication_date:2024-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:\"clinical prediction\" AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": null,
+    "status": "HTTPError"
+  },
+  {
+    "variant": "prediction_only",
+    "year": 2025,
+    "filter": "from_publication_date:2025-01-01,to_publication_date:2025-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:\"clinical prediction\" AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": null,
+    "status": "HTTPError"
+  },
+  {
+    "variant": "decision_support_only",
+    "year": 2024,
+    "filter": "from_publication_date:2024-01-01,to_publication_date:2024-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:\"clinical decision support\" AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": 172,
+    "status": "success"
+  },
+  {
+    "variant": "decision_support_only",
+    "year": 2025,
+    "filter": "from_publication_date:2025-01-01,to_publication_date:2025-12-31,language:en,type:article|review|preprint,is_retracted:false,title_and_abstract.search:\"clinical decision support\" AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": null,
+    "status": "HTTPError"
+  },
+  {
+    "variant": "title_only",
+    "year": 2024,
+    "filter": "from_publication_date:2024-01-01,to_publication_date:2024-12-31,language:en,type:article|review|preprint,is_retracted:false,title.search:(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": 6,
+    "status": "success"
+  },
+  {
+    "variant": "title_only",
+    "year": 2025,
+    "filter": "from_publication_date:2025-01-01,to_publication_date:2025-12-31,language:en,type:article|review|preprint,is_retracted:false,title.search:(\"clinical prediction\" OR \"clinical decision support\") AND (\"machine learning\" OR \"artificial intelligence\") AND (calibration OR explainability OR uncertainty OR interpretability)",
+    "count": null,
+    "status": "HTTPError"
+  }
+]
