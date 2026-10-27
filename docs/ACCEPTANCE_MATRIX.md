@@ -10,10 +10,10 @@ Status separates software implementation from scientific approval. These are che
 | Streamlit with widgets | Years, lexical signals, topics, paper browser, edge threshold, rank, author focus, cap, layout, downloads | AppTest filter/reset/empty/network tests | Implemented; browser verification pending |
 | Multi-tab design | Five analysis tabs | AppTest asserts five tabs | Verified |
 | Narrative | Question, dynamic coverage, snapshot findings, limitations | Text review against computed data | Implemented; owner interpretation approval pending |
-| Accessibility | Native controls, redundant encodings, text summaries, expandable tables | Manual keyboard, contrast, mobile/screen-reader checks outstanding | Partial |
+| Accessibility | Colour-blind-safe palette with measured contrast, non-colour encodings, alt text and generated chart summaries, data tables | Palette contrast/CVD computed; alt text checked in Chromium; manual keyboard, mobile and screen-reader checks outstanding | Improved; partial |
 | Reproducible code/data | Pinned direct dependencies, raw snapshot, build scripts, checksums | Tests, compile, source/hash checks | Verified computationally; clean Mac install pending |
 | Accompanying narrative | METHODS, DATA_AUDIT, findings in app, presentation guide | Owner review | Draft complete |
-| Public deployment | Deployment instructions | Live URL and complete browser audit | Not deployed |
+| Public deployment | Live at https://clinical-ai-research-atlas.streamlit.app/ | Live URL; complete browser audit pending | Deployed |
 
 ## Release gate
 Complete human corpus and topic review, inspect representative papers, approve analytical claims, perform live browser accessibility/responsiveness checks, and publish through the user's own account. Do not label the application submission-certified or claim a guaranteed grade before these steps.

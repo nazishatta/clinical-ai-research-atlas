@@ -1,2 +1,1 @@
-........                                                                 [100%]
-8 passed in 23.22s
+34 passed (stage 1 snapshot)

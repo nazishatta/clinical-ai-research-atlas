@@ -10,11 +10,14 @@ import math
 import networkx as nx
 from pyvis.network import Network
 
+from src.labels import HIDDEN_LABEL, top_label_nodes
 
-def build_clustered_network_html(graph: nx.Graph, communities: list, colors: list[str], show_labels: bool = True) -> str:
+
+def build_clustered_network_html(graph: nx.Graph, communities: list, colors: list[str], show_labels: bool = False) -> str:
     """Show detected communities as separated islands with live draggable physics."""
     net = Network(height="760px", width="100%", bgcolor="#0B101A", font_color="#F2F6FC", cdn_resources="in_line")
     membership = {node: idx for idx, group in enumerate(communities) for node in group}
+    labelled = set(graph.nodes) if show_labels else top_label_nodes(graph)
     count = max(1, len(communities))
     # Place connected researchers near their community center before the live solver starts.
     # Centers are a visualization aid, not measured dissimilarities.
@@ -39,7 +42,7 @@ def build_clustered_network_html(graph: nx.Graph, communities: list, colors: lis
         x, y = positions.get(node, (0.0, 0.0))
         net.add_node(
             str(node),
-            label=name[:29] if show_labels else '',
+            label=name[:29] if node in labelled else HIDDEN_LABEL,
             title=f"{escape(name)} · Community {group_id+1} · {degree} displayed collaborators · {int(data.get('papers',0))} corpus papers",
             color=colors[group_id % len(colors)],
             size=min(37, 9 + 3.1 * math.sqrt(degree)),

@@ -8,15 +8,31 @@ import html
 import json
 import math
 
-COLORS = ["#79C9BA", "#A9B8FF", "#E8BB75", "#F49FBD", "#91D1F2", "#C6A4E8"]
+from src.palette import CATEGORICAL as COLORS
 
 
-def topic_bubbles_html(records: list[dict]) -> str:
+def _luminance(hex_colour: str) -> float:
+    channels = [int(hex_colour.lstrip('#')[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+    linear = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+
+def label_colour(fill: str) -> str:
+    """Dark or white label text, whichever has more contrast on the fill."""
+    lum = _luminance(fill)
+    dark = (lum + 0.05) / (_luminance('#132234') + 0.05)
+    white = 1.05 / (lum + 0.05)
+    return '#132234' if dark >= white else '#FFFFFF'
+
+
+def topic_bubbles_html(records: list[dict], colours: dict[str, str] | None = None) -> str:
+    """``colours`` maps topic label to fill so a topic keeps one colour across charts."""
     clean = [(str(r["Topic"]), int(r["Works"])) for r in records if int(r["Works"]) > 0]
     clean.sort(key=lambda x: (-x[1], x[0]))
     if not clean:
         return '<p>No text-eligible documents in this selection.</p>'
     total = sum(count for _, count in clean)
+    colour_of = lambda i, label: (colours or {}).get(label, COLORS[i % len(COLORS)])
     # Actual display area pi*r^2 is proportional to count.
     max_count = max(n for _, n in clean)
     radii = [90 * math.sqrt(n / max_count) for _, n in clean]
@@ -58,18 +74,20 @@ def topic_bubbles_html(records: list[dict]) -> str:
         cx, cy, rr = x * sc + xoff, y * sc + yoff, rad * sc
         pct = count / total * 100
         label_short = label if len(label) <= 27 else label[:25] + '…'
+        fill = colour_of(i, label)
+        ink = label_colour(fill)
         # Tooltip gives complete label and exact percentages, without risking SVG text overflow.
         circle = (
             f'<g class="bubble" style="transform-origin:{cx:.2f}px {cy:.2f}px;animation-delay:{i*.12:.2f}s">'
             f'<title>{html.escape(label)}: {count:,} works, {pct:.1f}% of topic-assigned works</title>'
-            f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="{rr:.2f}" fill="{COLORS[i%len(COLORS)]}" fill-opacity=".90" stroke="#EAF1FF" stroke-opacity=".65" stroke-width="2"/>'
-            f'<text x="{cx:.2f}" y="{cy-5:.2f}" fill="#132234" text-anchor="middle" font-weight="700" font-size="{max(11, min(17, rr*.21)):.1f}">{html.escape(label_short)}</text>'
-            f'<text x="{cx:.2f}" y="{cy+19:.2f}" fill="#132234" text-anchor="middle" font-size="14">{count:,} works · {pct:.1f}%</text>'
+            f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="{rr:.2f}" fill="{fill}" fill-opacity="1" stroke="#EAF1FF" stroke-opacity=".65" stroke-width="2"/>'
+            f'<text x="{cx:.2f}" y="{cy-5:.2f}" fill="{ink}" text-anchor="middle" font-weight="700" font-size="{max(11, min(17, rr*.21)):.1f}">{html.escape(label_short)}</text>'
+            f'<text x="{cx:.2f}" y="{cy+19:.2f}" fill="{ink}" text-anchor="middle" font-size="14">{count:,} works · {pct:.1f}%</text>'
             '</g>'
         )
         items.append(circle)
     legend = ''.join(
-        f'<li><span style="background:{COLORS[i%len(COLORS)]}"></span><b>{html.escape(label)}</b> · {count:,} works · {count/total*100:.1f}%</li>'
+        f'<li><span style="background:{colour_of(i, label)}"></span><b>{html.escape(label)}</b> · {count:,} works · {count/total*100:.1f}%</li>'
         for i, (label, count) in enumerate(clean)
     )
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
