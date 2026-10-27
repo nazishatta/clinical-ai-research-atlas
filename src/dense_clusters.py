@@ -6,7 +6,7 @@ from html import escape
 import networkx as nx
 from pyvis.network import Network
 
-PALETTE = ['#fb61ad','#ffd866','#6dd3ff','#ffa666','#9bea9d','#ac99ff','#ff7575','#78ddcf','#e7a3fa','#fee38b','#91b8ff','#cfef8c']
+from src.palette import CATEGORICAL as PALETTE
 
 def display_subgraph(graph: nx.Graph, limit: int = 350) -> nx.Graph:
     """Select connected components, then highest-strength nodes within each; never fabricate links."""

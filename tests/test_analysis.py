@@ -59,3 +59,26 @@ def test_frozen_corpus_contract_and_hashes():
  assert works[works.text_eligible].abstract.str.split().str.len().ge(30).all()
  for name,expected in json.loads((p/'checksums.json').read_text()).items():
   assert hashlib.sha256((p/name).read_bytes()).hexdigest()==expected
+
+
+def test_period_buckets_pool_sparse_years_and_merge_short_tail():
+ from src.analysis import period_buckets
+ counts={2016:3,2017:8,2018:11,2019:20,2020:60,2021:10}
+ assert period_buckets(counts,2016,2021,30)==[(2016,2019),(2020,2021)]
+ assert period_buckets({2020:5},2020,2021,30)==[(2020,2021)]
+
+
+def test_topic_shares_sum_to_100_and_exclude_unassigned():
+ from src.analysis import topic_shares_by_period
+ df=pd.DataFrame({'year':[2020,2020,2020,2021,2021],'topic':[0,0,1,1,-1],'text_eligible':[True,True,True,True,False]})
+ out=topic_shares_by_period(df,{0:'T1',1:'T2'},2020,2021,min_works=1)
+ assert out.groupby('Period')['Share (%)'].sum().round(6).tolist()==[100.0,100.0]
+ row=out[(out.Period=='2020')&(out.Topic=='T1')].iloc[0]
+ assert (row.Works,row.Denominator)==(2,3)
+ assert out[out.Period=='2021'].Denominator.iloc[0]==1
+
+
+def test_topic_shares_empty_selection():
+ from src.analysis import topic_shares_by_period
+ df=pd.DataFrame({'year':[2020],'topic':[-1],'text_eligible':[False]})
+ assert topic_shares_by_period(df,{0:'T1'},2020,2020).empty

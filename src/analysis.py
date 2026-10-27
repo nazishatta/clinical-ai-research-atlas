@@ -83,3 +83,50 @@ def graph_ranking(graph: nx.Graph) -> pd.DataFrame:
     if not rows:
         return pd.DataFrame(columns=['Author ID','Author','Collaborators','Team-normalized strength','Corpus papers'])
     return pd.DataFrame(rows).sort_values(['Collaborators','Author ID'],ascending=[False,True])
+
+
+def period_buckets(year_counts: dict[int, int], start: int, end: int, min_works: int = 30) -> list[tuple[int, int]]:
+    """Group consecutive years until each period has at least ``min_works`` works.
+
+    Sparse early years are pooled instead of shown as unstable single-year shares.
+    A short final period is merged into the previous one.
+    """
+    buckets: list[list[int]] = []
+    current: list[int] = []
+    total = 0
+    for year in range(start, end + 1):
+        current.append(year)
+        total += year_counts.get(year, 0)
+        if total >= min_works:
+            buckets.append(current)
+            current, total = [], 0
+    if current:
+        if buckets:
+            buckets[-1].extend(current)
+        else:
+            buckets.append(current)
+    return [(b[0], b[-1]) for b in buckets]
+
+
+def topic_shares_by_period(df: pd.DataFrame, topic_names: dict[int, str], start: int, end: int,
+                           min_works: int = 30) -> pd.DataFrame:
+    """Share of text-eligible works per NMF topic in each period.
+
+    Every text-eligible work has exactly one dominant topic, so shares in a period
+    sum to 100%. Periods pool sparse years (see ``period_buckets``).
+    """
+    columns = ['Period', 'Start', 'End', 'Topic', 'Works', 'Denominator', 'Share (%)']
+    text_df = df[df.text_eligible & df.topic.isin(list(topic_names))]
+    if text_df.empty:
+        return pd.DataFrame(columns=columns)
+    counts = text_df.groupby('year').size().to_dict()
+    rows = []
+    for first, last in period_buckets(counts, start, end, min_works):
+        group = text_df[text_df.year.between(first, last)]
+        label = str(first) if first == last else f'{first}–{last}'
+        for topic_id, name in topic_names.items():
+            works = int((group.topic == topic_id).sum())
+            rows.append({'Period': label, 'Start': first, 'End': last, 'Topic': name, 'Works': works,
+                         'Denominator': len(group),
+                         'Share (%)': 100 * works / len(group) if len(group) else np.nan})
+    return pd.DataFrame(rows, columns=columns)
