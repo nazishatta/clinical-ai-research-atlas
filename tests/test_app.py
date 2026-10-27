@@ -26,3 +26,14 @@ def test_empty_subset_does_not_crash():
  app.selectbox(key='topic').select(app.selectbox(key='topic').options[-1]).run()
  assert not app.exception
  assert app.metric[0].value=='0'
+
+def test_topic_mix_chart_and_text_alternatives_render():
+ app=AppTest.from_file(str(APP),default_timeout=90).run()
+ assert not app.exception
+ texts=[m.value for m in app.markdown]
+ assert any('How the topic mix changed over time' in t for t in texts)
+ assert sum(t.startswith('**In short:**') for t in texts)>=4
+ assert any('#### Accessibility' in t for t in texts)
+ app.selectbox(key='topic').select(app.selectbox(key='topic').options[1]).run()
+ assert not app.exception
+ assert any('needs at least two topics' in i.value for i in app.info)
