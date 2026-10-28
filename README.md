@@ -284,7 +284,7 @@ python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-**Test status:** 34 passed on Python 3.13 with the pinned requirements (see [`docs/test_results.txt`](docs/test_results.txt)). The earlier 14 passed / 1 failed run no longer reproduces.
+**Test status:** 26 passed on Python 3.13 with the pinned requirements (see [`docs/test_results.txt`](docs/test_results.txt)). The earlier 14 passed / 1 failed run no longer reproduces.
 
 The reset defect was only visible in a real browser, so it also has a browser check. With the app running locally:
 

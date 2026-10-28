@@ -1,1 +1,1 @@
-34 passed (stage 1 snapshot)
+26 passed in 28.71s

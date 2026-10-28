@@ -11,9 +11,12 @@ import networkx as nx
 from pyvis.network import Network
 
 from src.labels import HIDDEN_LABEL, top_label_nodes
+from src.author_topics import node_colour
 
 
-def build_clustered_network_html(graph: nx.Graph, communities: list, colors: list[str], show_labels: bool = False) -> str:
+def build_clustered_network_html(graph: nx.Graph, communities: list, colors: list[str], show_labels: bool = False,
+                                 highlight: dict | None = None, topic_colour: str | None = None,
+                                 extra_hover: dict | None = None) -> str:
     """Show detected communities as separated islands with live draggable physics."""
     net = Network(height="760px", width="100%", bgcolor="#0B101A", font_color="#F2F6FC", cdn_resources="in_line")
     membership = {node: idx for idx, group in enumerate(communities) for node in group}
@@ -43,10 +46,11 @@ def build_clustered_network_html(graph: nx.Graph, communities: list, colors: lis
         net.add_node(
             str(node),
             label=name[:29] if node in labelled else HIDDEN_LABEL,
-            title=f"{escape(name)} · Community {group_id+1} · {degree} displayed collaborators · {int(data.get('papers',0))} corpus papers",
-            color=colors[group_id % len(colors)],
+            title=f"{escape(name)} · Community {group_id+1} · {degree} displayed collaborators · {int(data.get('papers',0))} corpus papers"
+                  + (f" · {escape((extra_hover or {}).get(node, ''))}" if (extra_hover or {}).get(node) else ''),
+            color=node_colour(colors[group_id % len(colors)], highlight, node, topic_colour),
             size=min(37, 9 + 3.1 * math.sqrt(degree)),
-            x=x, y=y, physics=True, borderWidth=1, borderWidthSelected=3,
+            x=x, y=y, physics=True, borderWidth=3 if highlight else 1, borderWidthSelected=3,
         )
     for u, v, data in graph.edges(data=True):
         same_group = membership.get(u) == membership.get(v)

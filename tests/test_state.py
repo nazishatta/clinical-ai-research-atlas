@@ -16,7 +16,7 @@ def dirty_state():
     return {
         'years': (2020, 2023), 'signals': ['Calibration'], 'topic': 'T1 · care / health / patients',
         'author_focus': 'https://openalex.org/A1', 'pair_author': 'https://openalex.org/A2',
-        'focus': 'https://openalex.org/A3', 'community_choice': 'Community 2', 'paper': 'https://openalex.org/W1',
+        'focus': 'https://openalex.org/A3', 'community_choice': 'Community 2', 'paper': 'https://openalex.org/W1', 'highlight_topic': 'T2 · patients / prediction / curve',
         'evidence_years': [2024], 'evidence_topics': [1], 'evidence_term': 'calibration',
         'chart_pick_year': [2024], 'chart_pick_topic': [1], 'chart_pick_term': 'calibration',
         **DISPLAY_SETTINGS,
@@ -41,7 +41,8 @@ def test_reset_clears_every_analytical_selection():
     assert state['focus'] == ALL_AUTHORS
     assert state['community_choice'] == NO_COMMUNITY
     assert state['paper'] is None
-    assert set(SELECTION_DEFAULTS) == {'author_focus', 'pair_author', 'focus', 'community_choice', 'paper'}
+    assert state['highlight_topic'] == 'No highlight'
+    assert set(SELECTION_DEFAULTS) == {'author_focus', 'pair_author', 'focus', 'community_choice', 'paper', 'highlight_topic'}
 
 
 def test_reset_keeps_network_display_settings():

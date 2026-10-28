@@ -1,4 +1,4 @@
-"""Network defaults: few names, physics kept."""
+"""Network defaults: few names, physics kept, topic highlight is additive."""
 import json, re
 import networkx as nx
 import pytest
@@ -7,6 +7,7 @@ from src.clustered_network import build_clustered_network_html
 from src.dense_clusters import moving_community_html
 from src.live_network import build_live_network_html
 from src.labels import top_label_nodes
+from src.palette import CATEGORICAL
 
 
 def star_graph(n=20):
@@ -54,3 +55,21 @@ def test_physics_stays_enabled_in_moving_modes():
     assert 'forceAtlas2Based' in build_live_network_html(g, [set(g.nodes)], 'Force-directed', ['#56B4E9'])
     _, nodes = node_labels(moving_community_html(g)[0])
     assert all(n.get('physics') for n in nodes)
+
+
+@pytest.mark.parametrize('builder', ['clustered', 'live', 'dense'])
+def test_topic_highlight_recolours_fill_but_keeps_community_border(builder):
+    g = star_graph(10)
+    kw = dict(highlight={'a00': True}, topic_colour='#E69F00', extra_hover={'a00': 'Topics: T1 2'})
+    html = {
+        'clustered': lambda: build_clustered_network_html(g, [set(g.nodes)], ['#56B4E9'], **kw),
+        'live': lambda: build_live_network_html(g, [set(g.nodes)], 'Force-directed', ['#56B4E9'], **kw),
+        'dense': lambda: moving_community_html(g, False, **kw)[0],
+    }[builder]()
+    _, nodes = node_labels(html)
+    by_id = {n['id']: n for n in nodes}
+    assert by_id['a00']['color']['background'] == '#E69F00'
+    assert by_id['a01']['color']['background'] == '#3A4250'
+    # Borders keep the community colour (each builder detects or receives its own communities).
+    assert all(n['color']['border'] in CATEGORICAL + ['#56B4E9'] for n in nodes)
+    assert 'Topics: T1 2' in by_id['a00']['title']

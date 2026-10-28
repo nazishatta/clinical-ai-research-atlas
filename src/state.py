@@ -27,6 +27,7 @@ SELECTION_DEFAULTS = {
     'focus': ALL_AUTHORS,        # Focus author and direct collaborators (network)
     'community_choice': NO_COMMUNITY,
     'paper': None,               # Read a selected paper
+    'highlight_topic': 'No highlight',  # Topic highlighted on the networks
 }
 
 
