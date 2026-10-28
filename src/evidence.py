@@ -44,3 +44,19 @@ def population_counts(df: pd.DataFrame) -> dict[str, int]:
 def export_columns(df: pd.DataFrame) -> pd.DataFrame:
     cols = ['id', 'doi', 'title', 'year', 'type', 'topic', 'topic_weight_share', 'author_count']
     return df[[c for c in cols if c in df.columns]].sort_values(['year','id'],ascending=[False,True]).reset_index(drop=True)
+
+
+def reading_table(df: pd.DataFrame, topic_names: dict[int, str], excerpt_chars: int = 280) -> pd.DataFrame:
+    """Papers as a reader sees them: title, year, topic, abstract excerpt and source link."""
+    def excerpt(text) -> str:
+        text = str(text or '').strip()
+        if not text:
+            return '(no usable abstract)'
+        return text if len(text) <= excerpt_chars else text[:excerpt_chars].rsplit(' ', 1)[0] + ' …'
+    out = pd.DataFrame({
+        'Title': df['title'], 'Year': df['year'],
+        'Topic': df['topic'].map(topic_names).fillna('No topic (abstract too short or missing)'),
+        'Abstract excerpt': df['abstract'].map(excerpt) if 'abstract' in df else '(no usable abstract)',
+        'Source': df['id'],
+    })
+    return out.sort_values(['Year', 'Source'], ascending=[False, True]).reset_index(drop=True)

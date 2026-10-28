@@ -37,3 +37,13 @@ def test_topic_mix_chart_and_text_alternatives_render():
  app.selectbox(key='topic').select(app.selectbox(key='topic').options[1]).run()
  assert not app.exception
  assert any('needs at least two topics' in i.value for i in app.info)
+
+
+def test_findings_start_here_and_spike_audit_render():
+ app=AppTest.from_file(str(APP),default_timeout=90).run()
+ assert not app.exception
+ texts=[m.value for m in app.markdown]
+ assert any('Key findings' in t for t in texts)
+ assert any(t.startswith('**Start here**') for t in texts)
+ assert sum(t[:3] in {'1. ','2. ','3. ','4. ','5. '} and '**' in t for t in texts)>=5
+ assert any('2025 spike audit' in e.label for e in app.expander)

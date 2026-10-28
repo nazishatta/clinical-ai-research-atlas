@@ -13,7 +13,9 @@ from src.live_network import build_live_network_html
 from src.clustered_network import build_clustered_network_html
 from src.analysis import SIGNALS, annual_counts, build_graph, filter_works, graph_ranking, signal_shares, term_frequencies, topic_shares_by_period, topic_shares_by_year, representative_papers
 from src.palette import CATEGORICAL
-from src.evidence import apply_evidence_filters, papers_for_author, papers_for_pair, population_counts, export_columns
+from src.evidence import apply_evidence_filters, papers_for_author, papers_for_pair, population_counts, export_columns, reading_table
+from src.findings import key_findings, load_spike_audit, top_sources
+from src.author_topics import NO_HIGHLIGHT, MUTED_FILL, author_topic_profiles, authors_in_topic, hover_text
 from src import state
 from src import summaries
 
@@ -37,6 +39,17 @@ def load_data():
     p=ROOT/'data/processed'
     return (pd.read_json(p/'works.jsonl',lines=True,convert_dates=False),json.loads((p/'topics.json').read_text()),
             json.loads((p/'audit.json').read_text()),json.loads((p/'retrieval_manifest.json').read_text()))
+
+@st.cache_data
+def cached_findings(works_json: str, topics_json: str, audit_json: str):
+    from io import StringIO
+    frame=pd.read_json(StringIO(works_json),orient='records',convert_dates=False)
+    names={int(k):v for k,v in json.loads(topics_json).items()}
+    return key_findings(frame,names,json.loads(audit_json))
+
+@st.cache_data
+def cached_spike_audit():
+    return load_spike_audit(ROOT)
 
 @st.cache_data
 def cached_graph(records_json: str, minimum: int):
@@ -130,9 +143,11 @@ selected=apply_evidence_filters(selected, st.session_state.get('chart_pick_year'
 pop=population_counts(selected)
 text_selected=selected[selected.text_eligible]
 authors={a['id'] for values in selected.authors for a in values}
-c1,c2,c3,c4=st.columns(4)
+topic_assigned=int(text_selected.topic.isin(list(topic_names)).sum())
+c1,c2,c3,c4,c5=st.columns(5)
 c1.metric('Selected works',f'{len(selected):,}');c2.metric('Text-eligible works',f'{len(text_selected):,}')
-c3.metric('Network-eligible works',f"{pop['network_eligible']:,}");c4.metric('Snapshot works',f'{len(works):,}')
+c3.metric('Topic-assigned works',f'{topic_assigned:,}');c4.metric('Network-eligible works',f"{pop['network_eligible']:,}")
+c5.metric('Snapshot works',f'{len(works):,}')
 st.caption(f"Selection: {years[0]}–{years[1]} · {' OR '.join(chosen_signals) if chosen_signals else 'all signals / no restriction'} · {selected_topic} · chart years: {st.session_state.get('chart_pick_year') or evidence_years or 'all'} · chart topics: {st.session_state.get('chart_pick_topic') or evidence_topics or 'all'} · term: {st.session_state.get('chart_pick_term') or evidence_term or 'none'} · {pop['unique_authors']:,} identified authors")
 with st.expander('Export current evidence selection',expanded=False):
     st.download_button('Download selected evidence (CSV)',export_columns(selected).to_csv(index=False),'selected_evidence.csv','text/csv',key='download_evidence')
@@ -143,6 +158,24 @@ with tabs[0]:
     st.subheader('One corpus. Three connected perspectives.')
     st.write(scope['question'])
     st.markdown('**Time-series** tracks publication activity. **Text** reveals language and model-derived themes. **Networks** preserve documented coauthorship relationships.')
+    with st.container(border=True):
+        st.markdown('**Start here** · a five-minute path through the Atlas')
+        st.markdown(
+            '1. Read the **key findings** below and open each one\'s evidence.\n'
+            '2. **Research Evolution:** annual counts and signal trends, then the **2025 spike audit** that explains the last-year jump.\n'
+            '3. **Research Language:** the topic mix over time (pooled or every year), then the **representative papers** behind each topic.\n'
+            '4. **Collaboration Network:** **highlight a topic** to see which authors publish in it, then **inspect an author\'s papers**.\n'
+            '5. **Synthesis & Methods:** what the corpus can and cannot support, accessibility, and downloads.\n\n'
+            'The sidebar filters apply to every tab; **Reset all filters** returns everything to the full corpus.')
+    st.markdown('#### Key findings · full snapshot')
+    st.caption('Computed from the frozen snapshot each time the app loads; they do not change with the sidebar filters. '
+               'Each finding states its limitation and has its supporting table underneath.')
+    findings_works=works[['id','year','type','text_eligible','signals','topic']]
+    for number,finding in enumerate(cached_findings(findings_works.to_json(orient='records'),json.dumps(topic_names),json.dumps(audit)),start=1):
+        st.markdown(f'{number}. {finding["text"]}')
+        with st.expander(f'Evidence for finding {number}'):
+            st.dataframe(finding['table'],hide_index=True,width='stretch')
+    st.markdown('#### Your current selection')
     if selected.empty:
         st.info('No works match. Widen the years or clear a filter.')
     else:
@@ -151,8 +184,6 @@ with tabs[0]:
         st.markdown(f"**Text coverage:** **{len(text_selected):,}/{len(selected):,}** selected works meet the abstract-length rule. Missing text can change the apparent theme mix.")
         st.markdown('#### Inspect the evidence')
         st.dataframe(selected.sort_values(['year','id'],ascending=[False,True]).head(8)[['title','year','type','doi']],hide_index=True,width='stretch',column_config={'doi':st.column_config.LinkColumn('DOI')})
-    st.markdown('#### How to explore')
-    st.write('Use the sidebar to filter research papers by publication year, trustworthiness signal, or topic. Explore publication trends in Research Evolution, discover key terms and abstracts in Research Language, and investigate coauthor communities in Collaboration Network. Your filters remain active across tabs.')
 
 with tabs[1]:
     st.subheader('Publication activity and language over time')
@@ -170,6 +201,41 @@ with tabs[1]:
     fig.update_traces(hovertemplate='%{x}: %{y:.1f}%<br>%{customdata[0]} of %{customdata[1]} text-eligible works<extra>%{fullData.name}</extra>')
     fig.update_yaxes(range=[0,100]);fig.update_xaxes(dtick=1)
     chart(fig,'Signals use term rules in titles/abstracts. Categories overlap; shares need not total 100%. Missing denominators appear as gaps. A signal filter conditions these shares on that selection.',shares,'signal_shares',summary=summaries.signal_shares(shares))
+    spike=cached_spike_audit()
+    if spike:
+        summary=spike['summary']
+        with st.expander('2025 spike audit · why the last year jumps, and what that does and does not mean'):
+            st.markdown(f"Within this query-defined frozen corpus, retained 2025 records outnumber 2024 records by roughly "
+                        f"**{summary['ratio_2025_to_2024']:.1f} to 1** ({summary['baseline_2024']:,} → {summary['baseline_2025']:,}). "
+                        "The increase persists in article-only counts. **Its cause, and whether it represents clinical-AI research as a whole, "
+                        "remain unverified.** Do not read it as an acceleration of the whole field.")
+            checks=pd.DataFrame([
+                {'Check':'All retained works','2024':summary['baseline_2024'],'2025':summary['baseline_2025'],'What it shows':'The rise in the frozen corpus'},
+                {'Check':'Records typed as articles only','2024':summary['article_only_2024'],'2025':summary['article_only_2025'],'What it shows':'Preprints and reviews do not explain the rise'},
+                {'Check':'Excluding the five largest 2025 sources','2024':summary['excluding_top5_2025_sources_2024'],'2025':summary['excluding_top5_2025_sources_2025'],'What it shows':'A few sources do not explain it either (sensitivity check only)'},
+            ])
+            st.dataframe(checks,hide_index=True,width='stretch')
+            col_a,col_b=st.columns(2)
+            with col_a:
+                st.markdown('**Document types by year**')
+                st.dataframe(spike['document_types_by_year'].tail(5),hide_index=True,width='stretch')
+            with col_b:
+                st.markdown('**Largest 2025 sources, with 2024 counts**')
+                st.dataframe(top_sources(spike['sources_by_year'],(2024,2025)),hide_index=True,width='stretch')
+            st.markdown(f"**Possible duplicates to inspect:** {summary['duplicate_title_rows']} rows share a title and "
+                        f"{summary['duplicate_abstract_rows']} share an abstract. Matching titles do not prove duplicate works.")
+            with st.expander('Repeated titles'):
+                st.dataframe(spike['repeated_titles'],hide_index=True,width='stretch')
+            with st.expander('Repeated abstracts'):
+                st.dataframe(spike['repeated_abstracts'],hide_index=True,width='stretch')
+            variants=spike['query_variants']
+            if not variants.empty:
+                ok=int((variants.status=='success').sum())
+                st.markdown(f'**Search-variant comparison:** only {ok} of {len(variants)} count requests succeeded; failed requests are missing, not zero. '
+                            'No complete 2024/2025 pair was verified, so agreement across query wordings is still unknown.')
+                st.dataframe(variants[['variant','year','count','status']],hide_index=True,width='stretch')
+            st.caption('Not answerable from this snapshot: indexing dates were not retrieved, so publication growth cannot be separated from '
+                       'newly indexed sources or backfill. Full write-up: docs/2025_SPIKE_AUDIT.md.')
     with st.expander('Full-corpus abstract coverage by year'):
         st.dataframe(pd.DataFrame(audit['by_year']),hide_index=True,width='stretch')
 
@@ -276,6 +342,20 @@ with tabs[2]:
 with tabs[3]:
     # LARGE_MOVING_COMMUNITIES_V1 - independent of the 60-author ranked view.
     st.markdown('### Research Communities')
+    # Topic-aware layer: who in the selected corpus publishes in which NMF topic.
+    author_profiles=author_topic_profiles(selected,topic_names)
+    author_hover=hover_text(author_profiles)
+    highlight_label=st.selectbox('Highlight a research topic on the networks',[NO_HIGHLIGHT]+list(topic_names.values()),key='highlight_topic',
+                                 help='Fills authors who have at least one selected, topic-assigned paper in the topic; others turn grey. '
+                                      'Borders keep the collaboration-community colour. Physics and layout are unchanged.')
+    highlight=None; highlight_colour=None
+    if highlight_label!=NO_HIGHLIGHT:
+        topic_authors=authors_in_topic(author_profiles,highlight_label)
+        highlight={author:(author in topic_authors) for author in author_profiles['Author ID']}
+        highlight_colour=topic_colours[highlight_label]
+        st.caption(f'{len(topic_authors):,} of {len(author_profiles):,} selected authors have at least one topic-assigned paper in '
+                   f'{highlight_label}. Fill = in this topic (grey = not); border = collaboration community. '
+                   'Having a paper in a topic is not the same as specialising in it; see the author topic profiles below.')
     st.caption('Visualizes documented coauthorship within the selected corpus. The large view includes single-paper edges and samples connected components; community colors are algorithmic, not subject labels.')
     dense_limit=st.slider('Researchers in large cluster view',100,600,350,50,key='large_cluster_limit')
     dense_labels=st.checkbox('Show all author names on the large cluster graph',value=False,key='large_cluster_names',help='Off by default: only the 12 most-connected authors are named. Hover any node for its name.')
@@ -283,7 +363,7 @@ with tabs[3]:
     dense_graph=cached_graph(selected[['id','authors']].to_json(orient='records'),1)
     dense_view=display_subgraph(dense_graph,dense_limit)
     if dense_view.number_of_edges():
-        dense_html, dense_community_count=moving_community_html(dense_view,dense_labels)
+        dense_html, dense_community_count=moving_community_html(dense_view,dense_labels,highlight,highlight_colour,author_hover)
         st.caption(f'Large view: {len(dense_view):,}/{len(dense_graph):,} authors; {dense_view.number_of_edges():,}/{dense_graph.number_of_edges():,} real collaboration edges; {dense_community_count} displayed-graph communities.')
         st.iframe(dense_html,height=880,alt=summaries.network(len(dense_view),dense_view.number_of_edges(),dense_community_count,'Moving community network'))
         st.caption('Drag and zoom to explore. Nodes initially form community islands and move under physics before settling; distance is not a measured similarity. Hover to identify researchers. The original ranked network and paper evidence continue below.')
@@ -313,7 +393,7 @@ with tabs[3]:
             show_labels=st.checkbox('Show all author names (can become crowded)',value=False,key='show_network_labels',help='Off by default: only the 12 most-connected authors are named. Hover any node for its name.')
             st.caption('Hover over a node to read its author name and collaborator count. Use the author selectors below for keyboard-accessible evidence exploration.')
             st.caption('Live physics is active by default in force-directed mode. Drag authors to explore; physics settles as the network stabilizes. Switch to Circular for intentionally fixed positions.')
-            network_html=(build_clustered_network_html(view,communities,COLORS,show_labels=show_labels) if render_mode=='Cluster islands (moving)' else build_live_network_html(view,communities,layout_name,COLORS,show_labels=show_labels))
+            network_html=(build_clustered_network_html(view,communities,COLORS,show_labels=show_labels,highlight=highlight,topic_colour=highlight_colour,extra_hover=author_hover) if render_mode=='Cluster islands (moving)' else build_live_network_html(view,communities,layout_name,COLORS,show_labels=show_labels,highlight=highlight,topic_colour=highlight_colour,extra_hover=author_hover))
             st.iframe(network_html,height=800 if render_mode=='Cluster islands (moving)' else 650,alt=summaries.network(len(view),view.number_of_edges(),len(communities),'Ranked coauthorship network'))
             st.caption('Live network: size = selected-graph collaborator count, color = detected community, edges = shared papers. Positions have no measured distance interpretation.')
         else:
@@ -324,7 +404,11 @@ with tabs[3]:
             symbols=['circle','square','diamond','triangle-up','cross','x']
             for cid,comm in enumerate(communities):
                 nodes=sorted(comm)
-                fig.add_trace(go.Scatter(x=[pos[n][0] for n in nodes],y=[pos[n][1] for n in nodes],mode='markers',name=f'Community {cid+1}',marker={'size':[10+2*np.sqrt(graph.degree(n)) for n in nodes],'color':COLORS[cid%len(COLORS)],'symbol':symbols[cid%len(symbols)],'line':{'width':1,'color':'#EDF2F7'}},text=[f"{graph.nodes[n]['name']}<br>{graph.degree(n)} selected-graph collaborators<br>{graph.nodes[n]['papers']} selected papers" for n in nodes],hovertemplate='%{text}<extra></extra>'))
+                fig.add_trace(go.Scatter(x=[pos[n][0] for n in nodes],y=[pos[n][1] for n in nodes],mode='markers',name=f'Community {cid+1}',marker={'size':[10+2*np.sqrt(graph.degree(n)) for n in nodes],
+                        'color':([highlight_colour if highlight.get(n) else MUTED_FILL for n in nodes] if highlight else COLORS[cid%len(COLORS)]),
+                        'symbol':symbols[cid%len(symbols)],
+                        'line':{'width':2.5 if highlight else 1,'color':COLORS[cid%len(COLORS)] if highlight else '#EDF2F7'}},
+                text=[f"{graph.nodes[n]['name']}<br>{graph.degree(n)} selected-graph collaborators<br>{graph.nodes[n]['papers']} selected papers<br>{author_hover.get(n,'')}" for n in nodes],hovertemplate='%{text}<extra></extra>'))
             fig.update_layout(title='Coauthorship · selected graph, capped display',height=600,xaxis={'visible':False},yaxis={'visible':False},showlegend=len(communities)<=12)
             chart(fig,'Size encodes selected-graph collaborator count. Color/shape encode algorithmic communities of the displayed subgraph. Layout distance is not measured similarity; communities are not confirmed laboratories.',ranking.head(cap),'coauthorship',summary=summaries.network(len(view),view.number_of_edges(),len(communities),'Ranked coauthorship network'))
         st.markdown('#### Research communities · collaboration clustering')
@@ -399,14 +483,30 @@ with tabs[3]:
         if focus_author!='None':
             author_papers=papers_for_author(selected,focus_author)
             st.write(f'**{len(author_papers):,} paper(s)** associated with this author in the current selected corpus.')
-            st.dataframe(export_columns(author_papers),hide_index=True,width='stretch')
+            profile=author_profiles[author_profiles['Author ID']==focus_author]
+            if not profile.empty:
+                p=profile.iloc[0]
+                st.markdown(f"**Topic profile:** {p['Topic profile']} → **{p['Classification']}**"
+                            + (f" ({p['Dominant topic']})" if p['Classification']=='Dominant' else '')
+                            + f" · {int(p['Topic-assigned papers'])} of {int(p['Selected papers'])} papers have a topic.")
+                st.caption('Dominant = at least 2 topic-assigned papers and one topic above 50%. Mixed = no topic above 50%. '
+                           'Insufficient evidence = fewer than 2 topic-assigned papers.')
+            st.dataframe(reading_table(author_papers,topic_names),hide_index=True,width='stretch',
+                         column_config={'Source':st.column_config.LinkColumn('Source')})
             st.download_button('Download author evidence',export_columns(author_papers).to_csv(index=False),'author_papers.csv','text/csv')
             other=st.selectbox('Inspect shared papers with another author',['None']+[a for a in ranking['Author ID'] if a!=focus_author],key='pair_author',format_func=lambda a:'Choose collaborator' if a=='None' else graph.nodes[a]['name']+' · '+a)
             if other!='None':
                 common=papers_for_pair(selected,focus_author,other)
                 st.write(f'**{len(common):,} shared paper(s)** in the current selected corpus. Zero means no matching shared papers in this selection, not necessarily no collaboration elsewhere.')
-                st.dataframe(export_columns(common),hide_index=True,width='stretch')
+                st.dataframe(reading_table(common,topic_names),hide_index=True,width='stretch',
+                             column_config={'Source':st.column_config.LinkColumn('Source')})
                 st.download_button('Download shared-paper evidence',export_columns(common).to_csv(index=False),'author_pair_papers.csv','text/csv')
+        with st.expander('Author topic profiles · every selected author, as a table'):
+            st.caption('One row per author in the current selection. Topic counts use only papers with a usable abstract and an NMF topic. '
+                       'Dominant needs at least 2 topic-assigned papers and one topic above 50%; exactly 50% counts as Mixed.')
+            shown_profiles=author_profiles if highlight_label==NO_HIGHLIGHT else author_profiles[author_profiles[highlight_label]>0]
+            st.dataframe(shown_profiles,hide_index=True,width='stretch')
+            st.download_button('Download author topic profiles (CSV)',shown_profiles.to_csv(index=False),'author_topic_profiles.csv','text/csv',key='download_author_topics')
         st.markdown('#### Top 10 collaborators')
         top = ranking.head(10).copy()
         if not top.empty:

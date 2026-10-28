@@ -8,6 +8,7 @@ from pyvis.network import Network
 
 from src.palette import CATEGORICAL as PALETTE
 from src.labels import HIDDEN_LABEL, top_label_nodes
+from src.author_topics import node_colour
 
 def display_subgraph(graph: nx.Graph, limit: int = 350) -> nx.Graph:
     """Select connected components, then highest-strength nodes within each; never fabricate links."""
@@ -37,7 +38,8 @@ def display_subgraph(graph: nx.Graph, limit: int = 350) -> nx.Graph:
             break
     return graph.subgraph(chosen).copy()
 
-def moving_community_html(graph: nx.Graph, display_names: bool = False) -> tuple[str,int]:
+def moving_community_html(graph: nx.Graph, display_names: bool = False, highlight: dict | None = None,
+                          topic_colour: str | None = None, extra_hover: dict | None = None) -> tuple[str,int]:
     if graph.number_of_nodes()==0:
         return '',0
     comms = (list(nx.community.greedy_modularity_communities(graph,weight='strength'))
@@ -62,10 +64,12 @@ def moving_community_html(graph: nx.Graph, display_names: bool = False) -> tuple
         net.add_node(str(n),x=x,y=y,physics=True,
              label=name[:24] if n in labelled else HIDDEN_LABEL,
              title=(f'<b>{escape(name)}</b><br>Community {i+1}<br>'
-                    f'{degree} displayed collaborators<br>{int(d.get("papers",0))} selected papers'),
-             color={'background':PALETTE[i%len(PALETTE)],'border':'#f3f6ff',
-                    'highlight':{'background':'#ffffff','border':PALETTE[i%len(PALETTE)]}},
-             size=min(28,3.5+2.4*math.sqrt(degree)),borderWidth=0.5)
+                    f'{degree} displayed collaborators<br>{int(d.get("papers",0))} selected papers'
+                    + (f'<br>{escape((extra_hover or {}).get(n, ""))}' if (extra_hover or {}).get(n) else '')),
+             color=(node_colour(PALETTE[i%len(PALETTE)], highlight, n, topic_colour) if highlight else
+                    {'background':PALETTE[i%len(PALETTE)],'border':'#f3f6ff',
+                     'highlight':{'background':'#ffffff','border':PALETTE[i%len(PALETTE)]}}),
+             size=min(28,3.5+2.4*math.sqrt(degree)),borderWidth=2.5 if highlight else 0.5)
     for u,v,d in graph.edges(data=True):
         within=membership[u]==membership[v]
         net.add_edge(str(u),str(v),width=min(2,0.35+0.22*float(d.get('shared',1))),

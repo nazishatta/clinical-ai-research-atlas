@@ -284,16 +284,25 @@ python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-**Test status:** 34 passed on Python 3.13 with the pinned requirements (see [`docs/test_results.txt`](docs/test_results.txt)). The earlier 14 passed / 1 failed run no longer reproduces.
+**Test status:** 48 passed on Python 3.13 with the pinned requirements (see [`docs/test_results.txt`](docs/test_results.txt)).
 
-The reset defect was only visible in a real browser, so it also has a browser check. With the app running locally:
+Two behaviours only show up in a real browser, so they have browser checks that **exit with an error if any expectation fails**. With the app running locally:
 
 ```bash
 npm install playwright   # once
-node tests/browser/reset_browser.cjs http://localhost:8501
+node tests/browser/reset_browser.cjs http://localhost:8501     # Reset really clears the topic, and it stays cleared
+node tests/browser/motion_controls.cjs http://localhost:8501   # Pause/Resume, Replay, Show final values, keyboard, reduced motion
 ```
 
-It selects a topic, presses **Reset all filters**, moves the year slider, and prints the selected-works count and topic box after each step. After reset the topic box must read "All topics" and stay that way.
+The reset check fails on the earlier version of the app (topic box stuck on T1, 197 works instead of 1,390) and passes on this one.
+
+### What the Atlas adds on top of the three modalities
+
+- **Key findings** on the Overview, computed from the snapshot at load time, each with its limitation and an evidence table, plus a **Start here** path.
+- **Topic mix over time**, as pooled periods (each with at least 30 works) or every year (small samples marked), with the **representative papers** behind each topic.
+- **Topic-aware networks:** highlight a topic to fill the authors who publish in it, while borders keep the collaboration-community colour; physics and layouts are unchanged. Author **topic profiles** classify each author as Dominant (at least 2 topic-assigned papers and one topic above 50%), Mixed or Insufficient evidence.
+- **Paper evidence:** an author's or author pair's papers with year, topic, abstract excerpt and source link.
+- **2025 spike audit** in Research Evolution: article-only and source-exclusion checks, document types, top sources, possible duplicates and the search-variant status.
 
 ---
 
