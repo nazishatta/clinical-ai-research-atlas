@@ -14,6 +14,7 @@ from src.clustered_network import build_clustered_network_html
 from src.analysis import SIGNALS, annual_counts, build_graph, filter_works, graph_ranking, signal_shares, term_frequencies, topic_shares_by_period, topic_shares_by_year, representative_papers
 from src.palette import CATEGORICAL
 from src.evidence import apply_evidence_filters, papers_for_author, papers_for_pair, population_counts, export_columns, reading_table
+from src.findings import key_findings, load_spike_audit, top_sources
 from src.author_topics import NO_HIGHLIGHT, MUTED_FILL, author_topic_profiles, authors_in_topic, hover_text
 from src import state
 from src import summaries
@@ -38,6 +39,17 @@ def load_data():
     p=ROOT/'data/processed'
     return (pd.read_json(p/'works.jsonl',lines=True,convert_dates=False),json.loads((p/'topics.json').read_text()),
             json.loads((p/'audit.json').read_text()),json.loads((p/'retrieval_manifest.json').read_text()))
+
+@st.cache_data
+def cached_findings(works_json: str, topics_json: str, audit_json: str):
+    from io import StringIO
+    frame=pd.read_json(StringIO(works_json),orient='records',convert_dates=False)
+    names={int(k):v for k,v in json.loads(topics_json).items()}
+    return key_findings(frame,names,json.loads(audit_json))
+
+@st.cache_data
+def cached_spike_audit():
+    return load_spike_audit(ROOT)
 
 @st.cache_data
 def cached_graph(records_json: str, minimum: int):
@@ -146,6 +158,24 @@ with tabs[0]:
     st.subheader('One corpus. Three connected perspectives.')
     st.write(scope['question'])
     st.markdown('**Time-series** tracks publication activity. **Text** reveals language and model-derived themes. **Networks** preserve documented coauthorship relationships.')
+    with st.container(border=True):
+        st.markdown('**Start here** · a five-minute path through the Atlas')
+        st.markdown(
+            '1. Read the **key findings** below and open each one\'s evidence.\n'
+            '2. **Research Evolution:** annual counts and signal trends, then the **2025 spike audit** that explains the last-year jump.\n'
+            '3. **Research Language:** the topic mix over time (pooled or every year), then the **representative papers** behind each topic.\n'
+            '4. **Collaboration Network:** **highlight a topic** to see which authors publish in it, then **inspect an author\'s papers**.\n'
+            '5. **Synthesis & Methods:** what the corpus can and cannot support, accessibility, and downloads.\n\n'
+            'The sidebar filters apply to every tab; **Reset all filters** returns everything to the full corpus.')
+    st.markdown('#### Key findings · full snapshot')
+    st.caption('Computed from the frozen snapshot each time the app loads; they do not change with the sidebar filters. '
+               'Each finding states its limitation and has its supporting table underneath.')
+    findings_works=works[['id','year','type','text_eligible','signals','topic']]
+    for number,finding in enumerate(cached_findings(findings_works.to_json(orient='records'),json.dumps(topic_names),json.dumps(audit)),start=1):
+        st.markdown(f'{number}. {finding["text"]}')
+        with st.expander(f'Evidence for finding {number}'):
+            st.dataframe(finding['table'],hide_index=True,width='stretch')
+    st.markdown('#### Your current selection')
     if selected.empty:
         st.info('No works match. Widen the years or clear a filter.')
     else:
@@ -154,8 +184,6 @@ with tabs[0]:
         st.markdown(f"**Text coverage:** **{len(text_selected):,}/{len(selected):,}** selected works meet the abstract-length rule. Missing text can change the apparent theme mix.")
         st.markdown('#### Inspect the evidence')
         st.dataframe(selected.sort_values(['year','id'],ascending=[False,True]).head(8)[['title','year','type','doi']],hide_index=True,width='stretch',column_config={'doi':st.column_config.LinkColumn('DOI')})
-    st.markdown('#### How to explore')
-    st.write('Use the sidebar to filter research papers by publication year, trustworthiness signal, or topic. Explore publication trends in Research Evolution, discover key terms and abstracts in Research Language, and investigate coauthor communities in Collaboration Network. Your filters remain active across tabs.')
 
 with tabs[1]:
     st.subheader('Publication activity and language over time')
@@ -173,6 +201,41 @@ with tabs[1]:
     fig.update_traces(hovertemplate='%{x}: %{y:.1f}%<br>%{customdata[0]} of %{customdata[1]} text-eligible works<extra>%{fullData.name}</extra>')
     fig.update_yaxes(range=[0,100]);fig.update_xaxes(dtick=1)
     chart(fig,'Signals use term rules in titles/abstracts. Categories overlap; shares need not total 100%. Missing denominators appear as gaps. A signal filter conditions these shares on that selection.',shares,'signal_shares',summary=summaries.signal_shares(shares))
+    spike=cached_spike_audit()
+    if spike:
+        summary=spike['summary']
+        with st.expander('2025 spike audit · why the last year jumps, and what that does and does not mean'):
+            st.markdown(f"Within this query-defined frozen corpus, retained 2025 records outnumber 2024 records by roughly "
+                        f"**{summary['ratio_2025_to_2024']:.1f} to 1** ({summary['baseline_2024']:,} → {summary['baseline_2025']:,}). "
+                        "The increase persists in article-only counts. **Its cause, and whether it represents clinical-AI research as a whole, "
+                        "remain unverified.** Do not read it as an acceleration of the whole field.")
+            checks=pd.DataFrame([
+                {'Check':'All retained works','2024':summary['baseline_2024'],'2025':summary['baseline_2025'],'What it shows':'The rise in the frozen corpus'},
+                {'Check':'Records typed as articles only','2024':summary['article_only_2024'],'2025':summary['article_only_2025'],'What it shows':'Preprints and reviews do not explain the rise'},
+                {'Check':'Excluding the five largest 2025 sources','2024':summary['excluding_top5_2025_sources_2024'],'2025':summary['excluding_top5_2025_sources_2025'],'What it shows':'A few sources do not explain it either (sensitivity check only)'},
+            ])
+            st.dataframe(checks,hide_index=True,width='stretch')
+            col_a,col_b=st.columns(2)
+            with col_a:
+                st.markdown('**Document types by year**')
+                st.dataframe(spike['document_types_by_year'].tail(5),hide_index=True,width='stretch')
+            with col_b:
+                st.markdown('**Largest 2025 sources, with 2024 counts**')
+                st.dataframe(top_sources(spike['sources_by_year'],(2024,2025)),hide_index=True,width='stretch')
+            st.markdown(f"**Possible duplicates to inspect:** {summary['duplicate_title_rows']} rows share a title and "
+                        f"{summary['duplicate_abstract_rows']} share an abstract. Matching titles do not prove duplicate works.")
+            with st.expander('Repeated titles'):
+                st.dataframe(spike['repeated_titles'],hide_index=True,width='stretch')
+            with st.expander('Repeated abstracts'):
+                st.dataframe(spike['repeated_abstracts'],hide_index=True,width='stretch')
+            variants=spike['query_variants']
+            if not variants.empty:
+                ok=int((variants.status=='success').sum())
+                st.markdown(f'**Search-variant comparison:** only {ok} of {len(variants)} count requests succeeded; failed requests are missing, not zero. '
+                            'No complete 2024/2025 pair was verified, so agreement across query wordings is still unknown.')
+                st.dataframe(variants[['variant','year','count','status']],hide_index=True,width='stretch')
+            st.caption('Not answerable from this snapshot: indexing dates were not retrieved, so publication growth cannot be separated from '
+                       'newly indexed sources or backfill. Full write-up: docs/2025_SPIKE_AUDIT.md.')
     with st.expander('Full-corpus abstract coverage by year'):
         st.dataframe(pd.DataFrame(audit['by_year']),hide_index=True,width='stretch')
 
