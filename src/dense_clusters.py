@@ -6,7 +6,8 @@ from html import escape
 import networkx as nx
 from pyvis.network import Network
 
-PALETTE = ['#fb61ad','#ffd866','#6dd3ff','#ffa666','#9bea9d','#ac99ff','#ff7575','#78ddcf','#e7a3fa','#fee38b','#91b8ff','#cfef8c']
+from src.palette import CATEGORICAL as PALETTE
+from src.labels import HIDDEN_LABEL, top_label_nodes
 
 def display_subgraph(graph: nx.Graph, limit: int = 350) -> nx.Graph:
     """Select connected components, then highest-strength nodes within each; never fabricate links."""
@@ -43,6 +44,7 @@ def moving_community_html(graph: nx.Graph, display_names: bool = False) -> tuple
              if graph.number_of_edges() else [set([n]) for n in graph])
     comms.sort(key=lambda c:(-len(c),min(map(str,c))))
     membership={n:k for k,group in enumerate(comms) for n in group}
+    labelled=set(graph.nodes) if display_names else top_label_nodes(graph)
     net=Network(height='850px',width='100%',bgcolor='#0b0e19',font_color='#e9edf9',cdn_resources='in_line',directed=False)
     # Community centers are display-only starting locations; link lengths have no measured meaning.
     centers={}
@@ -58,7 +60,7 @@ def moving_community_html(graph: nx.Graph, display_names: bool = False) -> tuple
         name=str(d.get('name',n))
         x,y=centers[n]
         net.add_node(str(n),x=x,y=y,physics=True,
-             label=name[:24] if display_names else '',
+             label=name[:24] if n in labelled else HIDDEN_LABEL,
              title=(f'<b>{escape(name)}</b><br>Community {i+1}<br>'
                     f'{degree} displayed collaborators<br>{int(d.get("papers",0))} selected papers'),
              color={'background':PALETTE[i%len(PALETTE)],'border':'#f3f6ff',

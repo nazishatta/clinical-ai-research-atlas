@@ -8,6 +8,8 @@ from html import escape
 import networkx as nx
 from pyvis.network import Network
 
+from src.labels import HIDDEN_LABEL, top_label_nodes
+
 
 def build_live_network_html(
     graph: nx.Graph, communities: list, layout: str, colors: list[str], show_labels: bool = False
@@ -19,12 +21,13 @@ def build_live_network_html(
     """
     network = Network(height="620px", width="100%", bgcolor="#1B222C", font_color="#ECF3F9", cdn_resources="in_line", directed=False)
     groups = {author: idx for idx, group in enumerate(communities) for author in group}
+    labelled = set(graph.nodes) if show_labels else top_label_nodes(graph)
     for author, data in graph.nodes(data=True):
         degree = graph.degree(author)
         name = str(data.get("name", author))
         # HTML escaped because metadata may originate from OpenAlex.
         title = f"{escape(name)} · {degree} selected-graph collaborators · {data.get('papers', 0)} selected papers"
-        network.add_node(str(author), label=name[:34] if show_labels else "", title=title,
+        network.add_node(str(author), label=name[:34] if author in labelled else HIDDEN_LABEL, title=title,
             size=11 + 2.0 * (degree ** 0.5),
             color=colors[groups.get(author,0) % len(colors)],
             borderWidth=1, borderWidthSelected=3)

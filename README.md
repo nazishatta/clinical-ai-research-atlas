@@ -284,7 +284,16 @@ python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-**Test-status transparency:** a prior local run reported **14 passed and 1 failed** because a network-label test expected hidden author labels while the newer interface displays them. The suite must be rerun after that test is appropriately corrected. A successful browser launch is not a substitute for passing automated tests.
+**Test status:** 34 passed on Python 3.13 with the pinned requirements (see [`docs/test_results.txt`](docs/test_results.txt)). The earlier 14 passed / 1 failed run no longer reproduces.
+
+The reset defect was only visible in a real browser, so it also has a browser check. With the app running locally:
+
+```bash
+npm install playwright   # once
+node tests/browser/reset_browser.cjs http://localhost:8501
+```
+
+It selects a topic, presses **Reset all filters**, moves the year slider, and prints the selected-works count and topic box after each step. After reset the topic box must read "All topics" and stay that way.
 
 ---
 
@@ -338,11 +347,17 @@ This Atlas intentionally distinguishes **analytical patterns** from **independen
 
 **Accessibility considerations**
 
-Tables, visible labels, supplementary line styles, fixed visual alternatives and source links can reduce dependence on one graphical representation. Full keyboard, mobile, reduced-motion and screen-reader behavior still require systematic verification. Consult [`docs/QA.md`](docs/QA.md).
+- **Colour-blind-safe palette:** Okabe-Ito colours reordered for the dark theme ([`src/palette.py`](src/palette.py)). Every series colour has at least 3:1 contrast with the chart background; under simulated protanopia, deuteranopia and tritanopia the closest pair of the first six colours stays at CIE76 ΔE ≥ 16. The previous pastel palette dropped to ΔE 4.3 under deuteranopia.
+- **Not colour alone:** dash styles on signal lines, fill patterns on topic bars, marker shapes on communities, hover values and data tables.
+- **Alt text:** every embedded or animated chart has alt text, and every chart has an "In short" sentence generated from the numbers it draws ([`src/summaries.py`](src/summaries.py)).
+- **Consistent encoding:** each topic keeps one colour in every topic chart.
+- **Text alternatives:** an "Accessible data table" under each chart; keyboard-operable selectors and relationship tables for the networks.
+
+Full keyboard, mobile, reduced-motion and screen-reader behavior still require systematic verification. Consult [`docs/QA.md`](docs/QA.md).
 
 **Current quality status**
 
-The app has been opened and interacted with in a deployed-browser review. That review also identified issues requiring verification or correction, including reset-state synchronization, some clipped labels, animation-control wording and network label crowding. These are tracked as review findings, **not** presented as completed fixes.
+The app has been opened and interacted with in a deployed-browser review. That review identified reset-state synchronization, some clipped labels, animation-control wording and network label crowding. **Reset-state synchronization is fixed** (Reset now assigns widget defaults instead of deleting keys; covered by `tests/test_state.py` and the browser check above). The other findings remain open.
 
 <details>
 <summary><strong>▶ Known validation work before a stronger research claim</strong></summary>

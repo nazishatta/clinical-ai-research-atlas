@@ -8,12 +8,14 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-import streamlit.components.v1 as components
 from src.motion import animated_html, animated_network_html
 from src.live_network import build_live_network_html
 from src.clustered_network import build_clustered_network_html
-from src.analysis import SIGNALS, annual_counts, build_graph, filter_works, graph_ranking, signal_shares, term_frequencies
+from src.analysis import SIGNALS, annual_counts, build_graph, filter_works, graph_ranking, signal_shares, term_frequencies, topic_shares_by_period, topic_shares_by_year, representative_papers
+from src.palette import CATEGORICAL
 from src.evidence import apply_evidence_filters, papers_for_author, papers_for_pair, population_counts, export_columns
+from src import state
+from src import summaries
 
 ROOT=Path(__file__).resolve().parent
 st.set_page_config(page_title='Clinical AI Research Atlas',page_icon='◈',layout='wide')
@@ -26,7 +28,9 @@ a {color:#96E2D2;}
 @media(max-width:700px){.block-container {padding:1rem;} h1 {font-size:1.8rem;}}
 </style>''',unsafe_allow_html=True)
 px.defaults.template='plotly_dark'
-COLORS=['#80C9BB','#E8BB75','#A9B8FF','#F49FBD','#91D1F2','#D0C37B','#C6A4E8','#CFD8E3','#F0A07D','#B7D5A0']
+# Colour-blind-safe categorical palette; see src/palette.py for the contrast and CVD checks.
+COLORS=CATEGORICAL
+px.defaults.color_discrete_sequence=COLORS
 
 @st.cache_data
 def load_data():
@@ -39,7 +43,7 @@ def cached_graph(records_json: str, minimum: int):
     from io import StringIO
     return build_graph(pd.read_json(StringIO(records_json),orient='records'),minimum)
 
-def chart(fig, description: str, table: pd.DataFrame, key: str, selectable: bool = False):
+def chart(fig, description: str, table: pd.DataFrame, key: str, selectable: bool = False, summary: str | None = None):
     fig.update_layout(font={'size':14},paper_bgcolor='#101318',plot_bgcolor='#1B222C',
                       margin={'l':35,'r':20,'t':65,'b':45},legend_title_text='')
     # The HTML reveal is decorative and cannot send Plotly selection events back to Streamlit.
@@ -63,7 +67,8 @@ def chart(fig, description: str, table: pd.DataFrame, key: str, selectable: bool
             col = 'Documents' if key == 'document_terms' else 'Works'
             if col in table:
                 motion_fig.update_xaxes(range=[0, max(1, float(table[col].max()) * 1.1)])
-        components.html(animated_network_html(motion_fig) if key == 'coauthorship' else animated_html(motion_fig, auto_loop=(key == 'signal_shares')), height=int(motion_fig.layout.height or 500) + 120, scrolling=False)
+        alt_text = summary or str(fig.layout.title.text or key.replace('_', ' '))
+        st.iframe(animated_network_html(motion_fig) if key == 'coauthorship' else animated_html(motion_fig, auto_loop=(key == 'signal_shares')), height=int(motion_fig.layout.height or 500) + 120, alt=alt_text)
         if selectable:
             if key == 'annual_works':
                 st.caption('Choose years in the sidebar under Selected chart years to filter papers. The animated chart displays the same annual counts.')
@@ -75,44 +80,48 @@ def chart(fig, description: str, table: pd.DataFrame, key: str, selectable: bool
                 else:
                     st.caption('Animated preview above. Select the native chart below to filter evidence.')
         else:
-            st.caption('Animated chart plays automatically when visible. Replay, Pause/Resume, and Show final values are available; reduced-motion preferences skip motion.')
+            st.caption('The chart animates once when it scrolls into view. Use Pause/Resume, Replay or Show final values above it; with reduced motion turned on in your system settings, final values show at once.')
     event = (st.plotly_chart(fig,width='stretch',key=key,
                              on_select='rerun' if selectable else 'ignore',
                              selection_mode='points') if (selectable and key not in {'annual_works', 'document_terms', 'topic_distribution'}) or not animate else None)
+    if summary:
+        st.markdown(f'**In short:** {summary}')
     st.markdown(description)
     with st.expander('Accessible data table · '+key.replace('_',' ')):
         st.dataframe(table,width='stretch',hide_index=True)
     return event
 
-def reset_filters():
-    for key in ['years','signals','topic','evidence_years','evidence_topics','evidence_term','author_focus','chart_pick_year','chart_pick_topic','chart_pick_term']:
-        st.session_state.pop(key,None)
+def reset_filters(start_year: int, end_year: int):
+    state.reset_filters(st.session_state,start_year,end_year)
+
+def clear_chart_selections():
+    state.clear_chart_selections(st.session_state)
 
 if not (ROOT/'data/processed/works.jsonl').exists():
     st.error('Prepared corpus is missing. Run the documented fetch and build commands first.');st.stop()
 works,topics,audit,manifest=load_data()
 scope=manifest['scope'];topic_names={t['id']:t['label'] for t in topics}
+# One fixed colour per topic, shared by every topic chart.
+topic_colours={name:COLORS[i%len(COLORS)] for i,name in enumerate(topic_names.values())}
 st.caption('RESEARCH INTELLIGENCE / OPENALEX SNAPSHOT')
 st.title('Clinical AI Research Atlas')
 st.markdown('**When did the literature change, what language distinguishes it, and who collaborated?**')
 st.caption('A search-defined exploration of clinical prediction and decision support, 2016–2025. Descriptive evidence, not an assessment of clinical safety.')
 with st.sidebar:
     st.header('Explore the corpus')
-    st.caption('Chart entrance animation is automatic; the preview respects reduced-motion settings and provides replay/pause controls.')
+    st.caption('Animated charts play once when they scroll into view and have Pause/Resume, Replay and Show final values buttons. If your system asks for reduced motion, charts show their final values immediately.')
     years=st.slider('Publication years',scope['start_year'],scope['end_year'],(scope['start_year'],scope['end_year']),key='years')
     chosen_signals=st.multiselect('Trustworthiness signals',list(SIGNALS),key='signals',help='Title/abstract term matches. Multiple selections use OR. These overlap and are not quality labels.')
     selected_topic=st.selectbox('NMF topic',['All topics']+list(topic_names.values()),key='topic')
     st.caption('Topics are fixed across years. Labels use automatic top terms; human interpretation review remains pending.')
-    st.button('Reset all filters',on_click=reset_filters)
+    st.button('Reset all filters',on_click=reset_filters,args=(scope['start_year'],scope['end_year']))
+    st.caption('Reset clears every filter and selection (years, signals, topic, evidence filters, selected paper, focus author, author pair, community). Network display settings are kept.')
     st.markdown('#### Evidence selection')
     st.caption('OR within a category; AND between categories. Chart clicks override the corresponding sidebar evidence selection until cleared. Author focus never silently filters the corpus.')
     evidence_years=st.multiselect('Selected chart years',list(range(scope['start_year'],scope['end_year']+1)),key='evidence_years')
     evidence_topics=st.multiselect('Selected chart topics',list(topic_names),format_func=lambda x:topic_names[x],key='evidence_topics')
     evidence_term=st.text_input('Selected term (exact token or bigram)',key='evidence_term')
-    if st.button('Clear chart selections'):
-        for k in ['evidence_years','evidence_topics','evidence_term','chart_pick_year','chart_pick_topic','chart_pick_term']:
-            st.session_state.pop(k,None)
-        st.rerun()
+    st.button('Clear chart selections',on_click=clear_chart_selections)
     st.divider()
     st.caption('Views share one selection. Text needs ≥30 abstract words; networks need identified authors.')
 topic_id=next((k for k,v in topic_names.items() if v==selected_topic),None)
@@ -150,7 +159,7 @@ with tabs[1]:
     counts=annual_counts(selected,*years)
     fig=px.bar(counts,x='Year',y='Works',color_discrete_sequence=COLORS,title='Annual works in the selected corpus')
     fig.update_xaxes(dtick=1);fig.update_yaxes(rangemode='tozero')
-    year_event=chart(fig,'Bars count unique eligible works. Zero means no retained records, not proof of no research. All years are completed calendar years. Use Selected chart years in the sidebar to filter works by year.',counts,'annual_works',selectable=True)
+    year_event=chart(fig,'Bars count unique eligible works. Zero means no retained records, not proof of no research. All years are completed calendar years. Use Selected chart years in the sidebar to filter works by year.',counts,'annual_works',selectable=True,summary=summaries.annual_works(counts))
     if year_event and year_event.selection.points:
         chosen=int(year_event.selection.points[0]['x'])
         if st.session_state.get('chart_pick_year') != [chosen]:
@@ -160,7 +169,7 @@ with tabs[1]:
     fig=px.line(shares,x='Year',y='Share (%)',color='Signal',line_dash='Signal',markers=True,color_discrete_sequence=COLORS,custom_data=['Works','Denominator'],title='Trends in Clinical AI Trustworthiness')
     fig.update_traces(hovertemplate='%{x}: %{y:.1f}%<br>%{customdata[0]} of %{customdata[1]} text-eligible works<extra>%{fullData.name}</extra>')
     fig.update_yaxes(range=[0,100]);fig.update_xaxes(dtick=1)
-    chart(fig,'Signals use term rules in titles/abstracts. Categories overlap; shares need not total 100%. Missing denominators appear as gaps. A signal filter conditions these shares on that selection.',shares,'signal_shares')
+    chart(fig,'Signals use term rules in titles/abstracts. Categories overlap; shares need not total 100%. Missing denominators appear as gaps. A signal filter conditions these shares on that selection.',shares,'signal_shares',summary=summaries.signal_shares(shares))
     with st.expander('Full-corpus abstract coverage by year'):
         st.dataframe(pd.DataFrame(audit['by_year']),hide_index=True,width='stretch')
 
@@ -171,7 +180,7 @@ with tabs[2]:
     if frequency.empty:st.info('No usable terms in this selection.')
     else:
         fig=px.bar(frequency.sort_values('Documents'),x='Documents',y='Term',orientation='h',height=600,color_discrete_sequence=COLORS,title='Terms by number of selected documents')
-        term_event=chart(fig,'A term counts at most once per document. English stop words are removed; unigrams/bigrams are included. Select a term from the Evidence selection sidebar control.',frequency,'document_terms',selectable=True)
+        term_event=chart(fig,'A term counts at most once per document. English stop words are removed; unigrams/bigrams are included. Select a term from the Evidence selection sidebar control.',frequency,'document_terms',selectable=True,summary=summaries.document_terms(frequency))
         if term_event and term_event.selection.points:
             term=str(term_event.selection.points[0]['y'])
             if st.session_state.get('chart_pick_term')!=term:
@@ -182,21 +191,65 @@ with tabs[2]:
         # NMF_TOPIC_CIRCLE_PACKING_V1: a single one-shot animated visual, not duplicate bars.
         from src.topic_bubbles import topic_bubbles_html
         st.markdown('#### NMF topic distribution')
-        components.html(topic_bubbles_html(dist[['Topic','Works']].to_dict(orient='records')),
-                        height=750, scrolling=False)
+        topic_summary=summaries.topic_distribution(dist[['Topic','Works']])
+        st.iframe(topic_bubbles_html(dist[['Topic','Works']].to_dict(orient='records'),topic_colours),
+                  height=750, alt='Topic bubble chart. '+topic_summary)
+        st.markdown(f'**In short:** {topic_summary}')
         st.caption('Each circle represents one fixed NMF topic; circle area is proportional to assigned papers. '
                    'Topic labels are provisional, not clinically validated categories. '
                    'Use Evidence selection → Selected chart topics to filter supporting papers.')
         with st.expander('Accessible data table · topic distribution'):
             st.dataframe(dist[['Topic','Works']].sort_values('Works',ascending=False),
                          hide_index=True,width='stretch')
+    st.markdown('#### How the topic mix changed over time')
+    topic_view=st.radio('Topic-mix view',['Pooled periods (stable)','Every year'],horizontal=True,key='topic_view',
+                        help='Pooled periods merge sparse early years until each period has at least 30 text-eligible works. '
+                             'Every year shows all years, with small samples marked.')
+    if topic_view=='Every year':
+        topic_shares=topic_shares_by_year(text_selected,topic_names,*years)
+    else:
+        topic_shares=topic_shares_by_period(text_selected,topic_names,*years)
+    topics_present=topic_shares.loc[topic_shares.Works>0,'Topic'].nunique() if not topic_shares.empty else 0
+    if topics_present<2 and not text_selected.empty:
+        st.info('The topic-mix-over-time chart needs at least two topics. Clear the NMF topic or chart-topic filter to see it.')
+    elif not topic_shares.empty and topic_shares.Period.nunique()>=2:
+        # Axis labels carry the period and its sample size. Labels such as "2020" alone would be
+        # read by Plotly as numbers, so the "n=" suffix also keeps the axis categorical.
+        small=topic_shares.get('Small sample',pd.Series(False,index=topic_shares.index)).fillna(False).astype(bool)
+        plot_shares=topic_shares.assign(Label=topic_shares.Period+'<br>n='+topic_shares.Denominator.map('{:,}'.format)+small.map({True:'*',False:''}))
+        label_order=list(dict.fromkeys(plot_shares.Label))
+        fig=px.bar(plot_shares,x='Label',y='Share (%)',color='Topic',pattern_shape='Topic',color_discrete_map=topic_colours,
+                   category_orders={'Label':label_order,'Topic':list(topic_names.values())},
+                   custom_data=['Period','Works','Denominator'],height=540,
+                   title='Share of text-eligible works by NMF topic'+(' · every year' if topic_view=='Every year' else ' · pooled periods'))
+        fig.update_traces(hovertemplate='%{customdata[0]}: %{y:.1f}%<br>%{customdata[1]} of %{customdata[2]} works<extra>%{fullData.name}</extra>',
+                          marker_line_color='#101318',marker_line_width=1)
+        fig.update_yaxes(range=[0,100],ticksuffix='%')
+        fig.update_xaxes(type='category',title_text='Period (n = text-eligible works)')
+        fig.update_layout(legend={'orientation':'h','y':-0.25})
+        if topic_view=='Every year':
+            note=('Each bar is one year and sums to 100% of that year\'s text-eligible works. '
+                  '* marks years with fewer than 30 works, where one or two papers can move a share by several points. '
+                  'A year with n=0 has no bar. ')
+        else:
+            note=('Each bar is one period and sums to 100% of its text-eligible works (n under the bar). '
+                  'Years with few works are pooled until a period has at least 30, so early shares are not driven by a handful of papers. ')
+        chart(fig,note+'Shares describe this retrieved, text-eligible corpus, not the whole field. '
+                  'Topics are fixed NMF assignments with automatic labels; read the representative papers below before naming a trend.',
+              topic_shares[['Period','Topic','Works','Denominator','Share (%)']],'topic_shares',summary=summaries.topic_shares(topic_shares))
+    with st.expander('Representative papers for each topic · read these before interpreting a topic'):
+        st.caption('The papers the NMF model ranks as most representative of each topic, from the full snapshot (filters do not change them). '
+                   'Topic labels stay provisional until these are reviewed.')
+        st.dataframe(representative_papers(works,topics),hide_index=True,width='stretch',
+                     column_config={'Source':st.column_config.LinkColumn('Source')})
     if not text_selected.empty:
         title_lookup=text_selected.set_index('id').title.to_dict()
-        paper_id=st.selectbox('Read a selected paper',text_selected.id.tolist(),format_func=lambda wid:title_lookup[wid],key='paper')
-        record=text_selected[text_selected.id==paper_id].iloc[0]
-        st.markdown('#### '+record.title)
-        st.caption(f"{record.year} · {topic_names.get(record.topic,'Unassigned')} · normalized dominant NMF weight {record.topic_weight_share:.2f} (not a probability)")
-        st.write(record.abstract);st.link_button('Open source record',record.id)
+        paper_id=st.selectbox('Read a selected paper',text_selected.id.tolist(),format_func=lambda wid:title_lookup[wid],key='paper',index=None,placeholder='Choose a paper to read its abstract')
+        if paper_id is not None and paper_id in title_lookup:
+            record=text_selected[text_selected.id==paper_id].iloc[0]
+            st.markdown('#### '+record.title)
+            st.caption(f"{record.year} · {topic_names.get(record.topic,'Unassigned')} · normalized dominant NMF weight {record.topic_weight_share:.2f} (not a probability)")
+            st.write(record.abstract);st.link_button('Open source record',record.id)
     with st.expander('Topic evaluation · initialization stability, not semantic validation'):
         st.dataframe(pd.DataFrame(audit['topic_evaluation']),hide_index=True,width='stretch')
         st.write('Three candidate counts, five seeds, aligned component cosine and top-term overlap. Smallest converged candidate with mean cosine ≥0.90 is selected provisionally. Human topic/relevance reviews remain pending; review sheets are bundled.')
@@ -206,14 +259,14 @@ with tabs[3]:
     st.markdown('### Research Communities')
     st.caption('Visualizes documented coauthorship within the selected corpus. The large view includes single-paper edges and samples connected components; community colors are algorithmic, not subject labels.')
     dense_limit=st.slider('Researchers in large cluster view',100,600,350,50,key='large_cluster_limit')
-    dense_labels=st.checkbox('Show names on large cluster graph',value=True,key='large_cluster_names')
+    dense_labels=st.checkbox('Show all author names on the large cluster graph',value=False,key='large_cluster_names',help='Off by default: only the 12 most-connected authors are named. Hover any node for its name.')
     from src.dense_clusters import display_subgraph, moving_community_html
     dense_graph=cached_graph(selected[['id','authors']].to_json(orient='records'),1)
     dense_view=display_subgraph(dense_graph,dense_limit)
     if dense_view.number_of_edges():
         dense_html, dense_community_count=moving_community_html(dense_view,dense_labels)
         st.caption(f'Large view: {len(dense_view):,}/{len(dense_graph):,} authors; {dense_view.number_of_edges():,}/{dense_graph.number_of_edges():,} real collaboration edges; {dense_community_count} displayed-graph communities.')
-        components.html(dense_html,height=880,scrolling=False)
+        st.iframe(dense_html,height=880,alt=summaries.network(len(dense_view),dense_view.number_of_edges(),dense_community_count,'Moving community network'))
         st.caption('Drag and zoom to explore. Nodes initially form community islands and move under physics before settling; distance is not a measured similarity. Hover to identify researchers. The original ranked network and paper evidence continue below.')
     else:
         st.info('No multi-author collaborations for this selection. Clear filters or widen publication years.')
@@ -238,11 +291,11 @@ with tabs[3]:
         communities=list(nx.community.greedy_modularity_communities(view,weight='strength')) if view.number_of_edges() else [{n} for n in view]
         render_mode=st.radio('Network experience',['Cluster islands (moving)','Live moving network (PyVis)','Plotly fixed network'],horizontal=True,help='PyVis moves and allows dragging; Plotly retains native hover/zoom. Circular layouts use fixed positions.',index=0,key='network_mode_cluster_default_v2')
         if render_mode in ('Cluster islands (moving)','Live moving network (PyVis)'):
-            show_labels=st.checkbox('Show all author names (can become crowded)',value=True,key='show_network_labels')
+            show_labels=st.checkbox('Show all author names (can become crowded)',value=False,key='show_network_labels',help='Off by default: only the 12 most-connected authors are named. Hover any node for its name.')
             st.caption('Hover over a node to read its author name and collaborator count. Use the author selectors below for keyboard-accessible evidence exploration.')
             st.caption('Live physics is active by default in force-directed mode. Drag authors to explore; physics settles as the network stabilizes. Switch to Circular for intentionally fixed positions.')
             network_html=(build_clustered_network_html(view,communities,COLORS,show_labels=show_labels) if render_mode=='Cluster islands (moving)' else build_live_network_html(view,communities,layout_name,COLORS,show_labels=show_labels))
-            components.html(network_html,height=800 if render_mode=='Cluster islands (moving)' else 650,scrolling=False)
+            st.iframe(network_html,height=800 if render_mode=='Cluster islands (moving)' else 650,alt=summaries.network(len(view),view.number_of_edges(),len(communities),'Ranked coauthorship network'))
             st.caption('Live network: size = selected-graph collaborator count, color = detected community, edges = shared papers. Positions have no measured distance interpretation.')
         else:
             pos=nx.spring_layout(view,seed=42,weight='strength') if layout_name=='Force-directed' else nx.circular_layout(view)
@@ -254,7 +307,7 @@ with tabs[3]:
                 nodes=sorted(comm)
                 fig.add_trace(go.Scatter(x=[pos[n][0] for n in nodes],y=[pos[n][1] for n in nodes],mode='markers',name=f'Community {cid+1}',marker={'size':[10+2*np.sqrt(graph.degree(n)) for n in nodes],'color':COLORS[cid%len(COLORS)],'symbol':symbols[cid%len(symbols)],'line':{'width':1,'color':'#EDF2F7'}},text=[f"{graph.nodes[n]['name']}<br>{graph.degree(n)} selected-graph collaborators<br>{graph.nodes[n]['papers']} selected papers" for n in nodes],hovertemplate='%{text}<extra></extra>'))
             fig.update_layout(title='Coauthorship · selected graph, capped display',height=600,xaxis={'visible':False},yaxis={'visible':False},showlegend=len(communities)<=12)
-            chart(fig,'Size encodes selected-graph collaborator count. Color/shape encode algorithmic communities of the displayed subgraph. Layout distance is not measured similarity; communities are not confirmed laboratories.',ranking.head(cap),'coauthorship')
+            chart(fig,'Size encodes selected-graph collaborator count. Color/shape encode algorithmic communities of the displayed subgraph. Layout distance is not measured similarity; communities are not confirmed laboratories.',ranking.head(cap),'coauthorship',summary=summaries.network(len(view),view.number_of_edges(),len(communities),'Ranked coauthorship network'))
         st.markdown('#### Research communities · collaboration clustering')
         st.caption('Communities are detected using weighted greedy modularity on the displayed author subgraph, not on all researchers. Community membership and sizes may change with filters, ranking, author focus, and display cap. Colors are algorithmic group identifiers, not research topics or verified institutions.')
         community_rows = []
@@ -282,7 +335,7 @@ with tabs[3]:
                 showlegend=False, xaxis_title='Researchers in displayed subgraph',
                 yaxis_title='',
             )
-            chart(summary_fig, 'Community sizes reflect only the displayed author subgraph. Community colors do not indicate research topics.', community_table, 'community_sizes')
+            chart(summary_fig, 'Community sizes reflect only the displayed author subgraph. Community colors do not indicate research topics.', community_table, 'community_sizes', summary=summaries.communities(community_table))
             st.dataframe(community_table, hide_index=True, width='stretch')
             community_choice=st.selectbox(
                 'Explore a collaboration community',
@@ -329,7 +382,7 @@ with tabs[3]:
             st.write(f'**{len(author_papers):,} paper(s)** associated with this author in the current selected corpus.')
             st.dataframe(export_columns(author_papers),hide_index=True,width='stretch')
             st.download_button('Download author evidence',export_columns(author_papers).to_csv(index=False),'author_papers.csv','text/csv')
-            other=st.selectbox('Inspect shared papers with another author',['None']+[a for a in ranking['Author ID'] if a!=focus_author],format_func=lambda a:'Choose collaborator' if a=='None' else graph.nodes[a]['name']+' · '+a)
+            other=st.selectbox('Inspect shared papers with another author',['None']+[a for a in ranking['Author ID'] if a!=focus_author],key='pair_author',format_func=lambda a:'Choose collaborator' if a=='None' else graph.nodes[a]['name']+' · '+a)
             if other!='None':
                 common=papers_for_pair(selected,focus_author,other)
                 st.write(f'**{len(common):,} shared paper(s)** in the current selected corpus. Zero means no matching shared papers in this selection, not necessarily no collaboration elsewhere.')
@@ -352,7 +405,7 @@ with tabs[3]:
             chart(ranking_fig,
                   'Ranking describes collaboration within the selected OpenAlex corpus; '
                   'it does not measure scientific impact.', top,
-                  'collaborator_ranking')
+                  'collaborator_ranking', summary=summaries.ranking(top, rank_measure))
         else:
             st.info('No authors match the current selection.')
         st.markdown('#### Collaborator ranking')
@@ -370,6 +423,25 @@ with tabs[4]:
     st.write('Comparisons within this retrieved corpus; transparent term mentions; exploratory topic structure; documented coauthorship. Search terms select trustworthiness language by design, so its prevalence across all clinical AI cannot be estimated.')
     st.markdown('#### Human interpretation review')
     st.write('Relevance precision, known-paper coverage, topic labels, ambiguous identities, and final substantive conclusions require review. Supplied worksheets make these decisions auditable. No manual validation is claimed.')
+    st.markdown('#### Accessibility')
+    st.markdown(
+        '- **Colour:** a colour-blind-safe Okabe-Ito palette, reordered for the dark theme. Every series colour has at least 3:1 '
+        'contrast with the chart background, and the closest pair of the first six colours stays distinguishable under simulated '
+        'protanopia, deuteranopia and tritanopia (details in `src/palette.py`).\n'
+        '- **Not colour alone:** signal lines also differ by dash style, topic bars by fill pattern, network communities by marker '
+        'shape, and every value is available on hover and in a table.\n'
+        '- **Alt text:** every animated or embedded chart carries alt text, and each chart has an "In short" sentence stating its '
+        'main point, generated from the same numbers the chart draws.\n'
+        '- **Text alternatives:** each chart has an "Accessible data table" with its exact values; network views have keyboard-'
+        'operable author selectors and relationship tables.\n'
+        '- **Labels and motion:** charts have titles, axis labels and units. Animated bar and line charts have keyboard-operable '
+        'Pause/Resume, Replay and Show final values buttons with a spoken status, and show final values at once when the system asks '
+        'for reduced motion; the topic bubbles also skip their entrance animation then. The moving networks use live physics; '
+        'the Circular layout and the Plotly fixed network are static alternatives.\n'
+        '- **Network names:** only the 12 most-connected authors are named by default, to keep the networks readable; every name is '
+        'available on hover, in the author selectors and in the tables, and "Show all author names" draws them all.\n'
+        '- **Not yet verified:** full screen-reader, keyboard-only and small-screen testing.'
+    )
     st.markdown('#### Retrieval and eligibility');st.code(manifest['filter'],language=None)
     st.write(f"Retrieved {manifest['retrieved_count']:,}/{manifest['expected_count']:,} candidates at {manifest['retrieved_at_utc']}. Retained {len(works):,} English article/review/preprint works after deduplication and retraction-flag exclusions. Type does not establish peer review.")
     st.write('Text needs ≥30 reconstructed abstract words. Short/missing abstracts remain in temporal and eligible network analyses. OpenAlex IDs support joins; author disambiguation can still be wrong.')
