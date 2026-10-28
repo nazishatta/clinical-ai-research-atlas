@@ -9,10 +9,12 @@ import networkx as nx
 from pyvis.network import Network
 
 from src.labels import HIDDEN_LABEL, top_label_nodes
+from src.author_topics import node_colour
 
 
 def build_live_network_html(
-    graph: nx.Graph, communities: list, layout: str, colors: list[str], show_labels: bool = False
+    graph: nx.Graph, communities: list, layout: str, colors: list[str], show_labels: bool = False,
+    highlight: dict | None = None, topic_colour: str | None = None, extra_hover: dict | None = None,
 ) -> str:
     """Produce self-contained, draggable vis.js network HTML for Streamlit.
 
@@ -27,10 +29,12 @@ def build_live_network_html(
         name = str(data.get("name", author))
         # HTML escaped because metadata may originate from OpenAlex.
         title = f"{escape(name)} · {degree} selected-graph collaborators · {data.get('papers', 0)} selected papers"
+        if (extra_hover or {}).get(author):
+            title += f" · {escape(extra_hover[author])}"
         network.add_node(str(author), label=name[:34] if author in labelled else HIDDEN_LABEL, title=title,
             size=11 + 2.0 * (degree ** 0.5),
-            color=colors[groups.get(author,0) % len(colors)],
-            borderWidth=1, borderWidthSelected=3)
+            color=node_colour(colors[groups.get(author,0) % len(colors)], highlight, author, topic_colour),
+            borderWidth=3 if highlight else 1, borderWidthSelected=3)
     for u,v,d in graph.edges(data=True):
         weight=float(d.get('strength',1.0))
         count=int(d.get('shared',1))

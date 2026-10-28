@@ -1,1 +1,1 @@
-34 passed (stage 1 snapshot)
+Stage 2–3 conflict reconciliation: local tests and release validation PENDING. Run the full suite on the resolved branch before publishing.
